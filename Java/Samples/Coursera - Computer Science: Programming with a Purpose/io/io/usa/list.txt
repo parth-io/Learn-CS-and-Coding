@@ -1,0 +1,51 @@
+usa-ak,Alaska
+usa-al,Alabama
+usa-az,Arizona
+usa-ar,Arkansas
+usa-ca,California
+usa-co,Colorado
+usa-ct,Connecticut
+usa-de,Denver
+usa-fl,Florida
+usa-ga,Georgia
+usa-hi,Hawaii
+usa-ia,Iowa
+usa-id,Idaho
+usa-il,Illinois
+usa-in,Indiana
+usa-ks,Kansas
+usa-ky,Kentucky
+usa-la,Louisiana
+usa-me,Maine
+usa-md,Maryland
+usa-ma,Massachusetts
+usa-mi,Michigan
+usa-mo,Missouri
+usa-mn,Minnesota
+usa-ms,Mississippi
+usa-mt,Montana
+usa-nc,North Carolina
+usa-nd,North Dakota
+usa-ne,Nebraska
+usa-nh,New Hampshire
+usa-nj,New Jersey
+usa-nm,New Mexico
+usa-nv,Nevada
+usa-ny,New York
+usa-oh,Ohio
+usa-ok,Oklahoma
+usa-or,Oregon
+usa-pa,Pennsylvania
+usa-ri,Rhode Island
+usa-sc,South Carolina
+usa-sd,South Dakota
+usa-tn,Tennessee
+usa-tx,Texas
+usa-ut,Utah
+usa-va,Virginia
+usa-vt,Vermont
+usa-wa,Washington
+usa-dc,Washington D.C.
+usa-wi,Wisconsin
+usa-wv,West Virginia
+usa-wy,Wyoming

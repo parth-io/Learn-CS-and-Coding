@@ -1,0 +1,126 @@
+andorra,Andorra
+angola,Angola
+armenia,Armenia
+australia,Australia
+bahamas,Bahamas
+bahrain,Bahrain
+bangladesh,Bangladesh
+belarus,Belarus
+belgium,Belgium
+bhutan,Bhutan
+bolivia,Bolivia
+bosnia-herzegovina-1,Bosnia Herzegovina 1
+bosnia-herzegovina-2,Bosnia Herzegovina 2
+botswana,Botswana
+brazil,Brazil
+brunei-darussalam,Brunei Darussalam
+bulgaria,Bulgaria
+burkina-faso,Burkina Faso
+burundi,Burundi
+cameroon,Cameroon
+canada,Canada
+cape-verde,Cape Verde
+central-african-republic,Central African Republic
+chad,Chad
+chile,Chile
+china,China
+colombia,Colombia
+congo,Congo
+congo-dr,Congo Dr
+costa-rica,Costa Rica
+croatia,Croatia
+cuba,Cuba
+cyprus,Cyprus
+czech-republic,Czech Republic
+denmark,Denmark
+djibouti,Djibouti
+dominican-republic,Dominican Republic
+ecuador,Ecuador
+egypt,Egypt
+el-salvador,El Salvador
+estonia,Estonia
+faroeIslands,Faroe Islands
+finland,Finland
+france,France
+france-departments,France Departments
+georgia,Georgia
+germany,Germany
+greece,Greece
+guatemala,Guatemala
+guinea,Guinea
+haiti,Haiti
+honduras,Honduras
+hong-kong,Hong Kong
+hungary,Hungary
+iceland,Iceland
+india,India
+indonesia,Indonesia
+iran,Iran
+iraq,Iraq
+ireland,Ireland
+israel,Israel
+italy,Italy
+jamaica,Jamaica
+japan,Japan
+kazakhstan,Kazakhstan
+kenya,Kenya
+kosovo,Kosovo
+kyrgyzstan,Kyrgyzstan
+laos,Laos
+latvia,Latvia
+liechtenstein,Liechtenstein
+lithuania,Lithuania
+luxembourg,Luxembourg
+macedonia,Macedonia
+malaysia,Malaysia
+mali,Mali
+malta,Malta
+mexico,Mexico
+moldova,Moldova
+montenegro,Montenegro
+morocco,Morocco
+myanmar,Myanmar
+nepal,Nepal
+netherlands,Netherlands
+new-zealand,New Zealand
+nicaragua,Nicaragua
+nigeria,Nigeria
+norway,Norway
+oman,Oman
+pakistan,Pakistan
+panama,Panama
+paraguay,Paraguay
+philippines,Philippines
+poland,Poland
+portugal,Portugal
+portugal-regions,Portugal Regions
+qatar,Qatar
+romania,Romania
+rwanda,Rwanda
+san-marino,San Marino
+saudi-arabia,Saudi Arabia
+serbia,Serbia
+serbia-without-kosovo,Serbia Without Kosovo
+singapore,Singapore
+slovakia,Slovakia
+slovenia,Slovenia
+south-africa,South Africa
+south-korea,South Korea
+spain,Spain
+sri-lanka,Sri Lanka
+sweden,Sweden
+switzerland,Switzerland
+syria,Syria
+taiwan,Taiwan
+tajikistan,Tajikistan
+thailand,Thailand
+turkey,Turkey
+uganda,Uganda
+ukraine,Ukraine
+united-arab-emirates,United Arab Emirates
+united-kingdom,United Kingdom
+uruguay,Uruguay
+venezuela,Venezuela
+vietnam,Vietnam
+yemen,Yemen
+zambia,Zambia

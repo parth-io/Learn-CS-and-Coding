@@ -1,0 +1,7 @@
+Either extract the class file out to working directory or try the following
+javac -cp stdlib.jar ShannonEntropy.java
+
+OR
+
+% javac -classpath .:stdlib.jar TheProgram.java
+% java  -classpath .:stdlib.jar TheProgram
