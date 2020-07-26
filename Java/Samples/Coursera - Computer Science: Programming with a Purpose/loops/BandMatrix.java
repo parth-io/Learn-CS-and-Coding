@@ -4,7 +4,7 @@ public class BandMatrix {
         double width = Double.parseDouble(args[1]);
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if ((i <= (j + width)) && (i >= (j - width))) {
+                if ((i <= (j + width)) && (i >= (j - width))) { //Another if statement - if((i-j) == r || (j-i) == r || i==j)
                     System.out.print("*");
                 }
                 else {
