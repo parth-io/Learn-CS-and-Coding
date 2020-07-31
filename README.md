@@ -1,6 +1,6 @@
 # Learn CS and Coding
 
-Just a summary detailing my CS and Coding learning journey, replete with code fragments I have created.
+Just a summary detailing my CS and coding learning journey, replete with code fragments I have created.
 
 My aim to serve the legions of interested wannabe-programmers, and help them use this page as a starting point.
 My advice is, get started with Python first, then transition to OOP, then to C++ and C (then assembly language if you feel like it - and Perl for the whiz kids).
