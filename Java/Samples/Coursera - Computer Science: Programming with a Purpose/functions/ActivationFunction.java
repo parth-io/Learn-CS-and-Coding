@@ -25,7 +25,15 @@ public class ActivationFunction {
     }
 
     public static double softsign(double x){
-        return x/(1+Math.abs(x));
+        if (Double.isInfinite(x)) {
+            if (x > 0) {
+                return 1.0;
+            }
+            else {return -1.0;}
+        }
+        else {
+            return x/(1+Math.abs(x));
+        }
     }
 
     public static double sqnl(double x){
@@ -40,19 +48,27 @@ public class ActivationFunction {
 
     public static void main(String[] args){
          double x = Double.parseDouble(args[0]);
-
-         double heave = heaviside(x);
-         double sig = sigmoid(x);
-         double tanh = tanh(x);
-         double soft = softsign(x);
-         double sqnl = sqnl(x);
-
+         
+         double heave, sig, tanh, soft, sqnl;
+         
+         if (Double.isNaN(x)) {
+            heave = Double.NaN;
+            sig = Double.NaN;
+            tanh = Double.NaN;
+            soft = Double.NaN;
+            sqnl = Double.NaN;
+         }
+         else {
+            heave = heaviside(x);
+            sig = sigmoid(x);
+            tanh = tanh(x);
+            soft = softsign(x);
+            sqnl = sqnl(x);
+         }
          System.out.println("heaveside(" + x + ")" + " = " + heave);
          System.out.println("sigmoid(" + x + ")" + " = " + sig);
          System.out.println("tanh(" + x + ")" + " = " + tanh);
          System.out.println("softsign(" + x + ")" + " = " + soft);
          System.out.println("sqnl(" + x + ")" + " = " + sqnl);
-
-
     }
 }

@@ -24,7 +24,9 @@ public class Divisors {
         int x= Math.abs(a);
         int y = Math.abs(b);
 
-        int lc = (x*y)/ gcd(x, y);
+        int lc = x / gcd(x, y);
+        
+        lc = lc * y;
 
         return lc;
     }
