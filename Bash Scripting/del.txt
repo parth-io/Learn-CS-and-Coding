@@ -1,0 +1,6 @@
+del.txt
+Experiments with VPN Script
+HackerRank
+lol.sh
+My First Bash Script.sh
+Short Script to Delete Files.sh
