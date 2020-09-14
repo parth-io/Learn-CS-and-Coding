@@ -7,59 +7,11 @@ Aberration
 Abet
 Abeyance
 Abhor
-Crux
-Incur
-Mum 
-Virtuous 
-Renowned 
-Accomplished 
-Unscathed 
-Dissert 
-Uncritical
-Mooch 
-
-Expound 
-
-Mantling pool 
-Credulous
-Abiding 
-Accredites 
-Ed 
-Stringent 
-Purview 
-Slather 
-Unfazed 
-Disingenuous 
-Enact 
-Concoction 
-Amalgamate
-Munificence 
-Strictures 
-Acquiesce 
-Whittle 
-Reckoning 
-Exorbitant 
-Castigate 
-Inane
-Unfounded 
-Ignoramus 
-Preposterous 
-Travails 
-Scrupulous 
-Denigrate 
-Reckoning 
-Homophilous 
-Surrogate
-Purport
-Putrid 
-Whence 
-Whencesoever 
-Decrepit 
-Moulder
 Abide
 Abiding
 Abject
 Abjure
+Ablative
 Abode
 Abominable
 Abomination
@@ -72,6 +24,7 @@ Abridge
 Abridged
 Abrogate
 Abscond
+Absentmindedly
 Absolute
 Absolution
 Absolutism
@@ -92,10 +45,12 @@ Accommodating
 Accomodate
 Accompaniment
 Accomplish
+Accomplished
 Accord
 Accost
 Accoutrement
 Accoutrements
+Accredites
 Accrete
 Accretion
 Accrue
@@ -159,6 +114,7 @@ Affront
 Aficionado
 Aficionados
 Afield
+Aflame
 Aflurry
 Afoot
 Afore
@@ -242,6 +198,7 @@ Ancestry
 Ancillary
 Android
 Angsry
+Anguish
 Angular
 Animate
 Animated
@@ -386,6 +343,7 @@ Atwitter
 Atypical
 Audacious
 Audacity
+Audible
 Augment
 Augur
 Augurs
@@ -420,6 +378,7 @@ Bacchanalian
 Backing
 Backlash
 Backlight
+Backtrack
 Backwaters
 Badgered
 Baggy
@@ -429,6 +388,7 @@ Baleful
 Balk
 Ballyhooed
 Balmy
+Balustrade
 Bamboozle
 Banal
 Bandwagon
@@ -453,6 +413,7 @@ Bash
 Bastion
 Batten
 Batter
+Battered
 Bauble
 Bawl
 Baying
@@ -511,6 +472,7 @@ Bequeath
 Bequest
 Berate
 Bereave
+Bereaved
 Bereavement
 Bereft
 Beseech
@@ -529,6 +491,7 @@ Bewail
 Bewhisker
 Bewilder
 Bewitch
+Bibulous
 Bicker
 Biddable
 Bidding
@@ -552,6 +515,7 @@ Blather
 Blaze
 Bleak
 Bleary
+Bleary-eyed
 Bleat
 Blemish
 Blench
@@ -615,6 +579,7 @@ Brass
 Bravado
 Brawl
 Brawn
+Brawny
 Bray
 Brazen
 Breach
@@ -678,6 +643,7 @@ Bustle
 Buttressed
 Buxom
 Bygone
+Bypass
 Bystander
 Cabal
 Cachet
@@ -723,6 +689,7 @@ Canvassing
 Capacious
 Caparisoned
 Caper
+Capitalise
 Capitulate
 Caprice
 Capricious
@@ -767,6 +734,7 @@ Caveat
 Cavern
 Cavernous
 Cavil
+Cavity
 Cavort
 Cawl
 Cease
@@ -782,6 +750,7 @@ Certifiable
 Certitude
 Cesspool
 Chafe
+Chance
 Chaperon
 Charier
 Charitable
@@ -919,6 +888,7 @@ Communal
 Commune
 Communique
 Commute
+Commuters
 Compact
 Compathy
 Compatible
@@ -945,6 +915,7 @@ Composed
 Composition
 Composure
 Compound
+Comprehend
 Comprehension
 Comprehensive
 Compulsion
@@ -980,6 +951,7 @@ Confection
 Confederate
 Confer
 Confess
+Confide
 Confines
 Confiscate
 Conflagration
@@ -1069,6 +1041,7 @@ Conventional
 Convergence
 Convergent
 Conversant
+Conversational
 Converse
 Conversely
 Convey
@@ -1144,9 +1117,11 @@ Crags
 Craned
 Cranny
 Crate
+Crave
 Craved
 Crease
 Creased
+Creations
 Credence
 Credibly
 Credo
@@ -1169,6 +1144,7 @@ Crotchety
 Crouch
 Crump
 Crutch
+Crux
 Crystallise
 Cue
 Culminate
@@ -1212,6 +1188,7 @@ Daunting
 Dawned
 Dawning
 Dazed
+Dazzling
 Deadwood
 Dearth
 Debacle
@@ -1272,6 +1249,7 @@ Delirious
 Deliverance
 Dell
 Delphic
+Deluded
 Deluge
 Delusion
 Delve
@@ -1280,6 +1258,7 @@ Demarcate
 Demean
 Demeanour
 Demented
+Demolish
 Demos
 Demote
 Demotic
@@ -1303,6 +1282,7 @@ Depravation
 Depraved
 Depravity
 Deprecate
+Deprecatory
 Depredation
 Depredations
 Deprivation
@@ -1342,6 +1322,7 @@ Detente
 Deter
 Deteriorate
 Determined
+Detest
 Detonate
 Detour
 Detract
@@ -1413,6 +1394,7 @@ Discord
 Discordant
 Discount
 Discourse
+Discourteous
 Discourtesy
 Discredit
 Discreet
@@ -1420,6 +1402,7 @@ Discrepancies
 Discrepancy
 Discursive
 Disdain
+Disembodied
 Disembody
 Disembowel
 Disenchant
@@ -1432,10 +1415,12 @@ Disgrace
 Disgruntle
 Disgruntled
 Dishearten
+Disheveled
 Dishevelled
 Disillusion
 Disincline
 Disingenuous
+Disinherit
 Disinterested
 Disinterment
 Disjoint
@@ -1450,6 +1435,7 @@ Dismissive
 Disorder
 Disown
 Disparage
+Disparaging
 Disparate
 Disparity
 Dispel
@@ -1473,6 +1459,7 @@ Disseminate
 Dissension
 Dissent
 Dissenter
+Dissert
 Dissident
 Dissimulate
 Dissipate
@@ -1587,6 +1574,7 @@ EE
 Ear-splitting
 Earmark
 Earnest
+Earsplitting
 Ebb
 Ebullient
 Echelon
@@ -1595,6 +1583,7 @@ Economical
 Economy
 Ecstatic
 Ecumenical
+Ed
 Eddy
 Edentate
 Edicts
@@ -1737,6 +1726,7 @@ Enumerate
 Enunciate
 Enunciation
 Environ
+Envisae
 Envisage
 Envision
 Enwreath
@@ -1797,6 +1787,7 @@ Evenly
 Everyday
 Evict
 Evidence
+Evidently
 Evince
 Eviscerate
 Evitable
@@ -1807,6 +1798,7 @@ Exaction
 Exasperate
 Exasperation
 Excavate
+Exceeding
 Excelsior
 Excise
 Excitable
@@ -1859,6 +1851,7 @@ Exploits
 Explosive
 Exposit
 Expostulate
+Expound
 Exprobrate
 Expropriate
 Expropriation
@@ -1873,6 +1866,7 @@ Extend
 Extensive
 Extenuate
 Exterminate
+Extinguish
 Extirpate
 Extirpation
 Extol
@@ -1909,6 +1903,7 @@ Fanatic
 Fanned
 Far-fetched
 Far-flung
+Far-off
 Farce
 Farcical
 Fare
@@ -1979,6 +1974,7 @@ Finessed
 Finicky
 Firebrand
 Firmament
+Firth
 Fissiparous
 Fissure
 Fitful
@@ -1997,6 +1993,7 @@ Flak
 Flamboyant
 Flaneur
 Flap
+Flare
 Flared
 Flashpoint
 Flatly
@@ -2163,6 +2160,7 @@ Gameable
 Gamely
 Gamut
 Gangling
+Gape
 Gaping
 Garb
 Garbled
@@ -2200,6 +2198,7 @@ Gibber
 Gibberish
 Gibes
 Giddy
+Gifted
 Gig
 Gild
 Gilt
@@ -2224,10 +2223,13 @@ Glint
 Glisten
 Glitter
 Gloat
+Gloating
 Globe-girdling
 Globulous
 Gloom
+Glorious
 Glower
+Glug-glug
 Glum
 Glumly
 Glutton
@@ -2258,6 +2260,7 @@ Grasp
 Grate
 Gratify
 Gratings
+Gratitude
 Gratuitous
 Gravely
 Gravid
@@ -2426,6 +2429,7 @@ Hinterland
 Hirsute
 Historic
 Histrionic
+Hitherto
 Hoard
 Hoarding
 Hoary
@@ -2442,6 +2446,7 @@ Homestretch
 Homilies
 Homily
 Homonym
+Homophilous
 Hone
 Hoodlum
 Hooligan
@@ -2499,6 +2504,7 @@ Ignoble
 Ignominious
 Ignominy
 Ignoramus
+Ill-advisedly
 Illicit
 Illimitable
 Imbibe
@@ -2508,8 +2514,10 @@ Imitation
 Imitator
 Immaterial
 Immemorial
+Immensely
 Imminent
 Immiserate
+Immoderately
 Immoral
 Immortalise
 Immure
@@ -2592,6 +2600,7 @@ Inbred
 Inc
 Incandescent
 Incant
+Incantation
 Incapability
 Incapacitate
 Incarceration
@@ -2613,6 +2622,7 @@ Inclusive
 Incoherent
 Incommensurable
 Incompatible
+Incomprehensible
 Incomprehension
 Inconceivable
 Inconclusive
@@ -2638,6 +2648,7 @@ Incursion
 Incursions
 Indecorous
 Indefatigable
+Indefinable
 Indelible
 Indelicate
 Indentation
@@ -2650,10 +2661,12 @@ Indictment
 Indifferent
 Indigene
 Indigent
+Indignant
 Indiscretion
 Indiscriminate
 Indispensable
 Indisposed
+Indistinct
 Indolence
 Indolent
 Indomitable
@@ -2677,6 +2690,7 @@ Inerrant
 Inexhaustible
 Inexorable
 Inexplicable
+Inexplicably
 Inextricable
 Infallible
 Infamy
@@ -2695,6 +2709,7 @@ Inflict
 Influx
 Infraction
 Infringe
+Infuriate
 Infused
 Infusion
 Ingenious
@@ -2879,6 +2894,7 @@ Jitter
 Jocularity
 Jolt
 Jostle
+Jubilation
 Judder
 Judgemental
 Judicious
@@ -3030,6 +3046,7 @@ Longing
 Longstanding
 Longtime
 Lookalike
+Loom
 Looming
 Lope
 Lopsided
@@ -3239,6 +3256,7 @@ Misleading
 Misnomer
 Misogynist
 Misplaced
+Misshapen
 Missive
 Mizzle
 Moan
@@ -3258,6 +3276,7 @@ Monomania
 Monomanical
 Monotony
 Monumental
+Mooch
 Mooning
 Moonlight
 Moonstruck
@@ -3287,9 +3306,11 @@ Motlet
 Motley
 Mottled
 Mould
+Moulder
 Mound
 Mount
 Mourn
+Mourning
 Mousy-haired
 Moving
 Much-vaunted
@@ -3302,6 +3323,7 @@ Multifarious
 Multilateral
 Multiplicity
 Multitude
+Mum
 Mumble
 Mundane
 Munificence
@@ -3421,6 +3443,7 @@ Obeisance
 Obfuscation
 Objection
 Objurgate
+Objurgation
 Oblation
 Oblige
 Oblique
@@ -3468,6 +3491,7 @@ Oncology
 Oncoming
 Onerous
 Ongoing
+Onlooker
 Onset
 Onslaught
 Onus
@@ -3541,6 +3565,7 @@ Overlapping
 Overlate
 Overlay
 Overlook
+Overpower
 Overpowering
 Override
 Overrun
@@ -3577,6 +3602,7 @@ Palliative
 Pallid
 Pallor
 Palpable
+Palpably
 Palpitate
 Paltry
 Pamper
@@ -3702,6 +3728,7 @@ Perky
 Permeate
 Permissive
 Permissivist
+Permit
 Permutation
 Pernicious
 Peroration
@@ -3733,6 +3760,7 @@ Pesky
 Peter
 Petered
 Petrify
+Petty
 Petulance
 Petulant
 Pewter
@@ -3777,6 +3805,7 @@ Piscatorial
 Pitfall
 Pithiness
 Pithy
+Pitiful
 Pittance
 Pitted
 Pitting
@@ -3854,12 +3883,14 @@ Portent
 Portentous
 Portmanteau
 Posit
+Possibility
 Posterior
 Posterity
 Postern
 Posthumous
 Posting
 Potation
+Potations
 Potent
 Potsherd
 Potter
@@ -3916,6 +3947,7 @@ Preoccupied
 Preordained
 Preponderance
 Preposterous
+Preprandial
 Prerequisite
 Prerogative
 Presage
@@ -4027,6 +4059,7 @@ Provisioned
 Provocateur
 Provoke
 Prowess
+Prowl
 Proximate
 Prudent
 Prudish
@@ -4143,6 +4176,7 @@ Rancorous
 Rancour
 Rank
 Rankle
+Rankled
 Ransack
 Rant
 Rapacious
@@ -4181,7 +4215,9 @@ Reams
 Reap
 Reappraisal
 Reasonable
+Reasonably
 Reassemble
+Reassurance
 Reassure
 Rebarbative
 Rebuff
@@ -4245,6 +4281,7 @@ Regime
 Regimen
 Regress
 Regressive
+Regurgitate
 Rehabilitate
 Reign
 Reiterate
@@ -4273,8 +4310,10 @@ Reminiscent
 Remission
 Remit
 Remnant
+Remnants
 Remonstrate
 Remonstrated
+Remorse
 Remote
 Remotest
 Remunerate
@@ -4286,6 +4325,7 @@ Renege
 Renew
 Renounce
 Renown
+Renowned
 Rentier
 Reparation
 Repartee
@@ -4312,6 +4352,7 @@ Reproof
 Reprove
 Repudiate
 Repugnant
+Repulse
 Repulsive
 Requiem
 Requisite
@@ -4369,6 +4410,7 @@ Revelation
 Revellers
 Reverberate
 Reverberations
+Reverence
 Reverent
 Revert
 Revictual
@@ -4420,6 +4462,7 @@ Roundel
 Rouse
 Rout
 Rove
+Rubble
 Rubric
 Ruckus
 Ruction
@@ -4429,6 +4472,7 @@ Rudimentary
 Rue
 Rueful
 Ruffle
+Ruffled
 Rugged
 Rugrats
 Ruinous
@@ -4491,6 +4535,7 @@ Saucy
 Saudade
 Savage
 Savant
+Saviour
 Savvy
 Scabrous
 Scalability
@@ -4542,6 +4587,7 @@ Scruff
 Scruffy
 Scrunch
 Scruple
+Scruples
 Scrupulous
 Scrutinise
 Scry
@@ -4628,6 +4674,7 @@ Sheaf
 Shear
 Sheen
 Sheepish
+Sheer
 Shenanigan
 Shibboleth
 Shifty
@@ -4684,6 +4731,7 @@ Sinecure
 Sinewy
 Singe
 Singsong
+Singular
 Singularly
 Sinister
 Sinuous
@@ -4714,6 +4762,7 @@ Slather
 Slatted
 Slavering
 Slavish
+Sleep-deprived
 Slender
 Slew
 Slick
@@ -4758,6 +4807,7 @@ Snagged
 Snaggle
 Snaggle-tooth
 Snarky
+Snarl
 Snatched
 Sneer
 Snicker
@@ -4777,6 +4827,8 @@ Sodden
 Soggy
 Solace
 Solecism
+Solemn
+Solicitous
 Solidarity
 Solidity
 Soliloquy
@@ -4918,6 +4970,7 @@ Stem
 Stems
 Stench
 Stentorian
+Stentorous
 Sterling
 Stertorous
 Stewpot
@@ -4968,6 +5021,7 @@ Stride
 Strident
 Strides
 Strife
+Stringent
 Stringy
 Stripling
 Stronghold
@@ -4983,6 +5037,7 @@ Stultifying
 Stumble
 Stump
 Stupefy
+Stupendous
 Stupor
 Sturdy
 Sty
@@ -5000,6 +5055,7 @@ Submissive
 Subordinate
 Suborn
 Suborne
+Subservience
 Subside
 Subsist
 Substantial
@@ -5016,6 +5072,7 @@ Succor
 Succour
 Succulent
 Succumb
+Sudden
 Sufferance
 Suffering
 Suffice
@@ -5065,6 +5122,7 @@ Swaddled
 Swamped
 Swanky
 Sward
+Swarm
 Swarthy
 Swashbuckling
 Swath
@@ -5098,9 +5156,11 @@ Taciturn
 Tack
 Tacking
 Tact
+Tactful
 Tactile
 Tad
 Taint
+Talisman
 Talismanic
 Tamed
 Tamper
@@ -5120,6 +5180,7 @@ Tatter
 Tattered
 Tattletale
 Taunt
+Taut
 Tauten
 Tawdry
 Tawny
@@ -5139,6 +5200,8 @@ Temperamentally
 Temperance
 Tempestuous
 Temporal
+Temporizing
+Temptation
 Tenable
 Tenacious
 Tenacity
@@ -5157,6 +5220,7 @@ Terse
 Testament
 Testy
 Tetchy
+Tether
 Teutonic
 Theatric
 Theatrical
@@ -5297,6 +5361,7 @@ Truss
 Tryst
 Tuft
 Tumble
+Tumult
 Tumultous
 Tumultuous
 Tundra
@@ -5333,9 +5398,11 @@ Umpteenth
 Unabashed
 Unabated
 Unanimous
+Unashamedly
 Unassailable
 Unattainable
 Unbearable
+Unbearably
 Unbeknownst
 Unbelievable
 Unbidden
@@ -5347,6 +5414,7 @@ Unchartered
 Unconditional
 Unconventional
 Uncouth
+Uncritical
 Unctuous
 Undented
 Under
@@ -5374,6 +5442,7 @@ Undertone
 Underwhelm
 Underworld
 Underwrite
+Undetected
 Undisclosed
 Undivided
 Undue
@@ -5390,12 +5459,15 @@ Unerring
 Unfailing
 Unfailingly
 Unfathomable
+Unfazed
 Unfeasibly
 Unfetter
 Unfettered
 Unflagging
 Unfold
+Unforgivable
 Unforgiving
+Unfounded
 Unfurl
 Ungainly
 Unguarded
@@ -5412,6 +5484,7 @@ Univocal
 Unkempt
 Unleash
 Unleaven
+Unlettered
 Unmanned
 Unmistakable
 Unmoor
@@ -5423,6 +5496,7 @@ Unnerving
 Unpalatable
 Unperturbed
 Unprecedented
+Unprecendented
 Unprepossessing
 Unravel
 Unrelenting
@@ -5433,6 +5507,7 @@ Unresolved
 Unruly
 Unsanctioned
 Unscalable
+Unscathed
 Unscrupulous
 Unseemly
 Unsettle
@@ -5442,6 +5517,8 @@ Unsourced
 Unspeakable
 Unsteadily
 Unstinting
+Unsullied
+Unsure
 Unswerving
 Untainted
 Untangle
@@ -5459,6 +5536,7 @@ Unwavering
 Unwholesome
 Unwitting
 Unwont
+Unworthy
 Unyielding
 Upbeat
 Upbraid
@@ -5471,6 +5549,7 @@ Upholstery
 Uplift
 Upraise
 Uprising
+Uproar
 Uproarious
 Upset
 Upside
@@ -5480,6 +5559,7 @@ Upturn
 Urge
 Ursine
 Usher
+Usurp
 Usury
 Utmost
 Utopian
@@ -5493,14 +5573,18 @@ Vainglorious
 Valediction
 Valedictory
 Valetudinarian
+Valiant
 Valient
 Valise
 Valorous
+Valour
+Vanquish
 Vantage
 Vapid
 Variegate
 Vat
 Vault
+Vaulted
 Veer
 Vegetate
 Vehement
@@ -5558,6 +5642,7 @@ Virile
 Virility
 Virtuosity
 Virtuoso
+Virtuous
 Virulent
 Vis-a-vis
 Vis-à-vis
@@ -5602,6 +5687,7 @@ Voyeur
 Voyeuristic
 Vulgar
 Vulgarian
+Vulpine
 Vying
 Wadlands
 Waffle
@@ -5656,6 +5742,8 @@ Wend
 Westerly
 Whatsoever
 Wheedle
+Whence
+Whencesoever
 Whereabouts
 Wherewith
 Wherewithal
@@ -5699,9 +5787,11 @@ Wishy-washy
 Wisp
 Wispy
 Wistful
+Withdraw
 Withdrawn
 Wither
 Withering
+Withhold
 Without
 Withstand
 Witter
@@ -5740,6 +5830,7 @@ Wrongdoing
 Wrought
 Wry
 Wuthering
+Xebecs
 Yammer
 Yearn
 Yelp

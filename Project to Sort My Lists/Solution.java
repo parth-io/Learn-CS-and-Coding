@@ -13,6 +13,7 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
+//The program looks for EOF in the last line of your list of words, so you must add the string EOF to the file
 public class Solution {
 
     static Pattern p_Trailing = Pattern.compile("^(\\r\\n|[ \\t\\x0B\\f\\n\\r\\u2028\\u2029\\u0085])+|(\\r\\n|[ \\t\\x0B\\f\\n\\r\\u2028\\u2029\\u0085])+$");
