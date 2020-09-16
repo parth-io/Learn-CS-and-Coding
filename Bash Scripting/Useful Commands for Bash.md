@@ -19,6 +19,9 @@ getopt supports long options, but is system-specific\
 More detailed explanation - [https://www.computerhope.com/unix/bash/getopts.htm](https://www.computerhope.com/unix/bash/getopts.htm)
 
 ### shift
+https://unix.stackexchange.com/questions/174566/what-is-the-purpose-of-using-shift-in-shell-scripts
+https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#index-shift
+Shift vs for loops - https://docstore.mik.ua/orelly/unix3/upt/ch35_22.htm
 
 ### time
 
