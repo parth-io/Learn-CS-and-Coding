@@ -1,6 +1,11 @@
 # Learn CS and Coding
 
-This repository is meant to serve as a guide for beginners beginning their journey into the realm of Computer Science, Mathematics and Software Development. It is in the form of short notes that are intended to serve as a diving platform for deeper studies or for review of the individual's own knowledge of the subject matter. In addition, I have posted numerous resources that will aid the seeker on his journey forward.
+**UPDATE - This repository is going significant reconstruction. I am planning to narrow its purpose to only short summaries of Java and Python, and code samples. For learning resources (to which instead I intend to contribute), please see:
+https://github.com/rossant/awesome-math
+https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md 
+**
+
+This repository is meant to serve as a guide for beginners beginning their journey into the realm of Computer Science, Mathematics and Software Development. It is in the form of code samples I created when learning CS and coding, and short notes that are intended to serve as a diving platform for deeper studies or for review of the individual's own knowledge of the subject matter. I also am posting collections of resources I have gathered.
 
 It also serves as a summary detailing my CS and coding learning journey for my own use, replete with code fragments I have created!
 
