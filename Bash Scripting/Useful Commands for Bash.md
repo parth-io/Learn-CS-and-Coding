@@ -21,3 +21,42 @@ More detailed explanation - [https://www.computerhope.com/unix/bash/getopts.htm]
 ### shift
 
 ### time
+
+### fdisk; cfdisk 
+
+### chmod; chown
+
+### su; sudo
+
+### apt; apt-get
+
+### checkinstall
+When compiling from source\
+Compare with make install\
+http://checkinstall.izto.org/; https://en.wikipedia.org/wiki/CheckInstall 
+
+## Managing processes
+### top
+`top, ps aux | grep process_name` 
+### killall
+`killall –9 process_name`
+
+### touch
+Compare with cat
+
+### locate
+Compare with find
+
+### whereis
+
+### whoami
+
+### which
+
+## Getting help
+### info
+### man
+### tldr
+A more concise version of man
+
+### history
