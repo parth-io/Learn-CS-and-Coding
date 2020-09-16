@@ -1,0 +1,1 @@
+### Essential Commands for Bash
