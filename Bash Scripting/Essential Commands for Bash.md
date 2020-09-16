@@ -7,24 +7,37 @@ Description\
 
 ## Directory Commands
 ### pwd
-to **P**rint current **W**orking **D**irectory to show you which directory you are currently in 
+**P**rint current **W**orking **D**irectory to show you which directory you are currently in 
 ### ls
-to **L**i**S**t files in your current directory 
+**L**i**S**t files in your current directory 
 ### cd
-to Change Directory
+**C**hange **D**irectory
 ### mkdir
+**M**a**K**e sub**DIR**ectory
 ### rmdir
+**R**e**M**ove empty sub**DIR**ectory\
+`rm -vrf` - to recursively remove files and folders from non-empty directories in verbose format, ignoring non-existent files and arguments
 
 ## File Commands
 ### cp
+Copy
 ### mv
+Move
 ### rm
+Delete file
 
 ## Commands to display text files
 ### cat
+To string together or display (**CAT**enate) the contents of files onto the screen 
 ### less
+Variant of "cat" that includes features to read each page leisurely)\ 
+In "less", use <space> to move down one page, 'b' to move Back up one page, and 'q' to Quit. You can also use the up/down arrow keys to move one line at a time.
 ### more
-
+This baby existed before `less`, it has fewer features than `less` and [is slower than `less` as it loads the entire file at once](https://www.tecmint.com/linux-more-command-and-less-command-examples/#:~:text=Learn%20Linux%20'less'%20Command,using%20page%20up%2Fdown%20keys.), but its implementation is only 2000 lines as compared to `less`'s implementation, which is over 25000 lines\
+Some systems hardlink more to less\
+For more details, see [this](https://unix.stackexchange.com/questions/604/isnt-less-just-more).
+### most
+Ah, another one purporting to be more than `less`. See [this](https://unix.stackexchange.com/questions/81129/what-are-the-differences-between-most-more-and-less).
 ## Useful sequences of keys for vim
 
 ### i
@@ -42,4 +55,4 @@ Exits from vim without saving your program.
 ### \<ESC>ZQ
 Exits from vim without saving your program.
 
-## For more vim commands, go to 
+## For more vim commands, go to this [reference](https://github.com/parth-io/Learn-CS-and-Coding/blob/master/Bash%20Scripting/vimqrc.pdf).
