@@ -1,6 +1,6 @@
 #!/bin/bash
-#cd /media/parth/My\ Passport/Videos/Movies/English/
-cd /media/parth/.BIN/Videos/TV Shows/Classics/
+#Getting the names of my collection
+cd /media/parth/My\ Passport/Movies/
 pwd
 ls > del.txt
 printf "Done"
