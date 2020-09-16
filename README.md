@@ -1,6 +1,8 @@
 # Learn CS and Coding
 
-Just a summary detailing my CS and coding learning journey, replete with code fragments I have created.
+This repository is meant to serve as a guide for beginners beginning their journey into the realm of Computer Science, Mathematics and Software Development. It is in the form of short notes that are intended to serve as a diving platform for deeper studies or for review of the individual's own knowledge of the subject matter. In addition, I have posted numerous resources that will aid the seeker on his journey forward.
+
+It also serves as a summary detailing my CS and coding learning journey for my own use, replete with code fragments I have created!
 
 My aim to serve the legions of interested wannabe-programmers, and help them use this page as a starting point.
 My advice is, get started with Python first, then transition to OOP, then to C++ and C (then assembly language if you feel like it - and Perl for the whiz kids).
