@@ -1,0 +1,3 @@
+https://guides.github.com/features/mastering-markdown/
+https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
+https://daringfireball.net/projects/markdown/
