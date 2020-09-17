@@ -22,19 +22,49 @@ To create environmental variables, use `export`.\
 A **login** shell is a shell session that begins by authenticating the user. If you are signing into a terminal session or through SSH and authenticate, your shell session will be set as a “login” shell. If you start a new shell session from within your authenticated session, a **non-login** shell session is started.\
 An **interactive** shell session is a shell session that is attached to a terminal. A **non-interactive** shell session is one is not attached to a terminal session.
 
+### $0
+It expands to the name of the shell or shell script, set at shell initialization.\
+If Bash is invoked by a script, $0 is set to the name of that file.\
+If Bash is started with the -c option, then $0 is set to the first argument after the string to be executed, if one is present.\
+Otherwise, it is set to the filename used to invoke Bash, as given by argument zero.
+
 ## Shells, Subshells and Child Processes
 
 ### Shells (bash)
-bash; ($0); $0; /bin/bash
+$0; /bin/bash
 ```
 $ bash -c 'echo "\$0=$0, \$1=$1, \$2=$2"' zero one two
 $0=zero, $1=one, $2=two
 ```
-To test whether PPID\
-`ssh-agent bash -c 'ssh-add private-key && do_something_else` - If you add the `-c` option, the argument following `-c` needs to be in quotes and acts like a mini-script
+`ssh-agent bash -c 'ssh-add private-key && do_something_else` - If you add the `-c` option, the argument following `-c` needs to be in quotes and acts like a mini-script. The arguments following the mini-script are assigned to the positional parameters ($0, $1, ...).
 
 ### Subshells
-Equivalent forms to spawn subshells
-`bash && echo $shell_variable`
-`(echo $shell_variable)`
-`bash -c 'echo $shell_variable`
+Running a shell script creates a new process called subshell; a subshell can be used to do parallel processing; if you start another shell on top of your current shell, it can be referred to as a subshell.
+`echo $BASH_SUBSHELL` - the subshell level you are at
+Run `ps -f` to check the PID and PPID. The PPID of the child process/subshell should be the same as the PID of the parent.\
+Equivalent forms to spawn subshells **(careful, some forms will terminate the subshell after the command is executed)**
+```
+$ bash
+$ bash -c '...'
+$ $0
+$ /bin/bash
+$ ( ... ) #Subshell for grouping
+$ $( ... ) #Command substitution
+$ 
+```
+https://unix.stackexchange.com/questions/138463/do-parentheses-really-put-the-command-in-a-subshell
+https://unix.stackexchange.com/questions/524506/how-can-i-detect-if-im-in-a-subshell?noredirect=1&lq=1
+https://unix.stackexchange.com/questions/421020/what-is-the-exact-difference-between-a-subshell-and-a-child-process?noredirect=1&lq=1
+https://unix.stackexchange.com/questions/261638/is-a-sub-shell-the-same-thing-as-a-child-shell
+https://unix.stackexchange.com/questions/430050/why-doesnt-spawn-a-new-child-process-when-run-in-background?noredirect=1&lq=1
+https://unix.stackexchange.com/questions/358850/what-are-all-the-ways-to-create-a-subshell-in-bash?noredirect=1&lq=1
+https://unix.stackexchange.com/questions/442692/is-a-subshell
+https://bash.cyberciti.biz/guide/What_is_a_Subshell%3F
+https://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/subshells.html
+https://bash.cyberciti.biz/guide/What_is_a_Subshell%3F
+https://stackoverflow.com/questions/34799161/difference-between-linux-variables-bash-subshell-vs-shlvl
+https://unix.stackexchange.com/questions/329117/why-does-the-value-of-bash-subshell-not-change-while-the-value-of-shlvl-changes
+https://unix.stackexchange.com/questions/560162/how-to-show-how-many-times-bash-has-been-invoked
+### Sourcing vs Subshells
+https://superuser.com/questions/176783/what-is-the-difference-between-executing-a-bash-script-vs-sourcing-it
+### Child Processes
