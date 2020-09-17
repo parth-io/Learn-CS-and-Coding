@@ -52,10 +52,10 @@ Compare with find
 
 ### history
 
-### bash; ($0); $0; /bin/bash
+### bash
 Starts a subshell in exisiting shell\
-To test whether PPID
-`ssh-agent bash -c 'ssh-add private-key && do_something_else` - If you add the `-c` option, the argument following `-c` needs to be in quotes and acts like a mini-script
+See [Scripting Notes](https://github.com/parth-io/Learn-CS-and-Coding/blob/master/Bash%20Scripting/Scripting%20Notes.md#shells-bash) for more details
+
 ## Getting help
 ### info
 ### man
@@ -68,3 +68,12 @@ A more concise version of man
 ### killall
 `killall –9 process_name`
 ### ps
+
+## Managing variables
+### printenv
+To print environmental variables
+### env
+To modify environmental variables
+### set
+Anything to do with shell variables
+`set -o posix; set` - to view shell variables but not shell functions, by setting it to POSIX mode
