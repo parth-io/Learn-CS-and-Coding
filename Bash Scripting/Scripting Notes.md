@@ -4,6 +4,17 @@
 [From the Bash manual](https://www.gnu.org/software/bash/manual/html_node/Quoting.html#Quoting)\
 https://unix.stackexchange.com/questions/503013/what-is-the-difference-between-and-quotes
 
+### Unicode support
+Bash now supports both the UTF-8 hexadecimal encoding and Java/C++ escape sequence.
+```
+$ printf '\xC3\xAA'
+ê
+$ echo -e '\xC3\xAA'
+ê
+$ echo -e '\u00ea'
+ê
+```
+
 ### eval
 Used to execute arguments as shell commands\
 Useful when you wish to run a program or command that needs to modify the parent process\
