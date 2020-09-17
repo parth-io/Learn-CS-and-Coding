@@ -43,6 +43,7 @@ http://checkinstall.izto.org/; https://en.wikipedia.org/wiki/CheckInstall
 `top, ps aux | grep process_name` 
 ### killall
 `killall –9 process_name`
+### ps
 
 ### touch
 Compare with cat
