@@ -41,20 +41,28 @@ http://checkinstall.izto.org/; https://en.wikipedia.org/wiki/CheckInstall
 ### touch
 Compare with cat
 
-### locate
-Compare with find
-
 ### whereis
 
 ### whoami
 
 ### which
 
-### history
-
 ### bash
 Starts a subshell in exisiting shell\
 See [Scripting Notes](https://github.com/parth-io/Learn-CS-and-Coding/blob/master/Bash%20Scripting/Scripting%20Notes.md#shells-bash) for more details
+
+## Managing files
+### locate; find
+### wildcards
+
+## Managing file content
+### cat
+### touch
+### head
+### tail
+### less; more; most
+### nano; vi; vim
+### grep
 
 ## Getting help
 ### info
@@ -65,7 +73,7 @@ A more concise version of man
 ## Managing processes
 ### top
 `top, ps aux | grep process_name` 
-### killall
+### killall; kill
 `killall –9 process_name`
 ### ps
 
@@ -77,3 +85,14 @@ To modify environmental variables
 ### set
 Anything to do with shell variables
 `set -o posix; set` - to view shell variables but not shell functions, by setting it to POSIX mode
+
+## Introductory terminal commands
+### clear
+### date
+### cal
+### history
+
+## Networking
+### wget; curl
+### ifconfig
+### ping
