@@ -1,0 +1,40 @@
+FROM https://stackoverflow.com/questions/59507011/empty-positional-argument-when-using-bin-bash-c-script
+
+#!/bin/bash
+echo $0
+echo $1
+
+$ ./test.sh a
+./test.sh
+a
+
+$ /bin/bash -c ./test.sh a
+./test.sh
+#$1 is not printed as expected
+
+$ /bin/bash -c 'echo $0' a
+a
+
+$ /bin/bash -c "./test.sh a"
+./test.sh
+a
+
+The string after -c acts like a miniature script, and the arguments after that are passed to it as $0, $1, $2, etc.
+
+$ bash -c 'echo "\$0=$0, \$1=$1, \$2=$2"' zero one two
+$0=zero, $1=one, $2=two
+
+Note: it's important that the mini-script is in single-quotes; without them the references to $0 would be expanded by your interactive shell before they even get passed to the bash -c command.
+
+In your case, the mini-script runs another script (./test.sh), but doesn't pass on the arguments. If you wanted to pass them on, you'd do something like this:
+
+$ bash -c './test.sh "$1" "$2"' zero one two
+./test.sh
+one
+
+If the script had bothered to print its $2 here, it would've gotten "two". It doesn't help to pass on $0, because for a real script that's automatically set to the actual command used to run the script.
+
+The -c option does not collect all following arguments of the bash command, but just uses the first non-option argument, which in your case is the one immediately following it. I don't see why you want to use -c here. I would write your command as
+
+/bin/bash test.sh a
+Since in this case, no PATH search is involved, you can also omit the ./ part. In fact, test.sh doesn't even need to be executable here.
