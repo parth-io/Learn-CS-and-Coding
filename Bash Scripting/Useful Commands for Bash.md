@@ -38,13 +38,6 @@ When compiling from source\
 Compare with make install\
 http://checkinstall.izto.org/; https://en.wikipedia.org/wiki/CheckInstall 
 
-## Managing processes
-### top
-`top, ps aux | grep process_name` 
-### killall
-`killall –9 process_name`
-### ps
-
 ### touch
 Compare with cat
 
@@ -57,10 +50,21 @@ Compare with find
 
 ### which
 
+### history
+
+### bash; ($0); $0; /bin/bash
+Starts a subshell in exisiting shell\
+To test whether 
+
 ## Getting help
 ### info
 ### man
 ### tldr
 A more concise version of man
 
-### history
+## Managing processes
+### top
+`top, ps aux | grep process_name` 
+### killall
+`killall –9 process_name`
+### ps
