@@ -54,8 +54,8 @@ Compare with find
 
 ### bash; ($0); $0; /bin/bash
 Starts a subshell in exisiting shell\
-To test whether 
-
+To test whether PPID
+`ssh-agent bash -c 'ssh-add private-key && do_something_else` - If you add the `-c` option, the argument following `-c` needs to be in quotes and acts like a mini-script
 ## Getting help
 ### info
 ### man
