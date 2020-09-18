@@ -42,6 +42,10 @@ Useful when you wish to run a program or command that needs to modify the parent
 As programs or commands are run as child processes and hence cannot modify parent processes, we use functions instead, as functions run in the current process.
 `eval $(ssh-agent)`
 
+### Learning printf with awk
+https://unix.stackexchange.com/questions/443578/pass-arguments-from-previous-commands-pipes-to-awk-printf-function-and-format
+https://stackoverflow.com/questions/6462894/how-can-i-format-the-output-of-a-bash-command-in-neat-columns
+
 ### exec
 To replace the shell with a command - in effect, redirecting output to the command
 https://askubuntu.com/questions/525767/what-does-an-exec-command-do
