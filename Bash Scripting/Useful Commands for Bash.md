@@ -41,6 +41,8 @@ http://checkinstall.izto.org/; https://en.wikipedia.org/wiki/CheckInstall
 ### touch
 Compare with cat
 
+### hash
+
 ### whereis
 
 ### whoami
