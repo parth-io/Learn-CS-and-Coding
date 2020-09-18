@@ -1,6 +1,5 @@
 From - https://stackoverflow.com/questions/26130909/bash-output-column-formatting
-Other variants - https://unix.stackexchange.com/questions/59249/print-output-to-3-separate-columns
-https://stackoverflow.com/questions/6462894/how-can-i-format-the-output-of-a-bash-command-in-neat-columns
+Also see - https://unix.stackexchange.com/questions/59249/print-output-to-3-separate-columns
 
 #Script 1
 #!/bin/bash
