@@ -1,5 +1,20 @@
 # Scripting Notes
 
+### Piping and redirection
+```
+| < > << >>
+```
+In the case of passing input to echo and other similar commands that cannot process standard input:
+```
+cat my_file.txt | xargs echo 
+echo $(<my_file.txt) #This is called input redirection
+echo "$(cat my_file.txt)"
+```
+
+### Passing data/string to a command instead of a file
+https://unix.stackexchange.com/questions/505828/how-to-pass-a-string-to-a-command-that-expects-a-file
+https://unix.stackexchange.com/questions/16990/using-data-read-from-a-pipe-instead-than-from-a-file-in-command-options
+
 ### Quoting
 [From the Bash manual](https://www.gnu.org/software/bash/manual/html_node/Quoting.html#Quoting)\
 https://unix.stackexchange.com/questions/503013/what-is-the-difference-between-and-quotes
@@ -15,12 +30,21 @@ $ echo -e '\u00ea'
 ê
 ```
 
+### Array variables
+Subscripts - @ vs *
+https://www.gnu.org/software/bash/manual/bash.html#Arrays
+https://stackoverflow.com/questions/16627986/bash-array-variables-or
+
 ### eval
 Used to execute arguments as shell commands\
 Useful when you wish to run a program or command that needs to modify the parent process\
 **How does it work**\
 As programs or commands are run as child processes and hence cannot modify parent processes, we use functions instead, as functions run in the current process.
 `eval $(ssh-agent)`
+
+### exec
+To replace the shell with a command - in effect, redirecting output to the command
+https://askubuntu.com/questions/525767/what-does-an-exec-command-do
 
 ### Creating Shell and Environmental Variables
 When creating a shell variable `shell_variable='Hello World`, ensure it does not clash with an existing environmental variable by running `printenv | grep shell_variable`.\
@@ -38,6 +62,10 @@ It expands to the name of the shell or shell script, set at shell initialization
 If Bash is invoked by a script, $0 is set to the name of that file.\
 If Bash is started with the -c option, then $0 is set to the first argument after the string to be executed, if one is present.\
 Otherwise, it is set to the filename used to invoke Bash, as given by argument zero.
+
+### Disambiguation
+`${var}text` - Give me the contents of `var`, then followed by `text`\
+Contrast with `$vartext`, which means give me the contents of vartext
 
 ## Shells, Subshells and Child Processes
 
@@ -59,7 +87,7 @@ $ bash
 $ bash -c '...'
 $ $0
 $ /bin/bash
-$ ( ... ) #Subshell for grouping
+$ ( ... ) #Creates a subshell; useful for grouping commands together
 $ $( ... ) #Command substitution
 $ 
 ```
