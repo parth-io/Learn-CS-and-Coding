@@ -71,6 +71,10 @@ Otherwise, it is set to the filename used to invoke Bash, as given by argument z
 `${var}text` - Give me the contents of `var`, then followed by `text`\
 Contrast with `$vartext`, which means give me the contents of vartext
 
+### Shell equality operators and syntax
+https://stackoverflow.com/questions/20449543/shell-equality-operators-eq
+https://stackoverflow.com/questions/3427872/whats-the-difference-between-and-in-bash
+
 ## Shells, Subshells and Child Processes
 
 ### Shells (bash)
