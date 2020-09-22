@@ -67,6 +67,15 @@ If Bash is invoked by a script, $0 is set to the name of that file.\
 If Bash is started with the -c option, then $0 is set to the first argument after the string to be executed, if one is present.\
 Otherwise, it is set to the filename used to invoke Bash, as given by argument zero.
 
+### Long and short options
+https://stackoverflow.com/questions/10818443/short-long-options-with-option-argument-is-this-some-sort-of-convention
+https://www.gnu.org/software/libc/manual/html_node/Argument-Syntax.html#Argument-Syntax
+http://www.catb.org/~esr/writings/taoup/html/ch10s05.html
+For tar - https://www.gnu.org/software/tar/manual/html_section/tar_21.html\
+It should be explained that all of this is a matter of convention…there are MANY commands that allow (or REQUIRE) long-form names to use a single ‘-’ (“find”, for example), and many that don’t need either ‘-’ or ‘—’ and rely only on the positions of arguments alone to distinguish parameters from filenames (“tar” and “ar” for example).\
+Some programs (for example “rm” - for removing a file) have problems distinguishing between a command line option (like “rm -f”) and a file that might possibly have a ‘-’ sign in it’s name.\
+So - if, for example, you accidentally created a file called ‘-file’ - it would be impossible to delete it because ‘rm -file’ would think the ‘-file’ was a set of four command-line options and not a filename. Hence it offers the option to us ‘—’ to mean “this is the last command line option - what comes next is a filename”.
+
 ### Disambiguation
 `${var}text` - Give me the contents of `var`, then followed by `text`\
 Contrast with `$vartext`, which means give me the contents of vartext
