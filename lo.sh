@@ -5,9 +5,10 @@ gh gist list
 gh issue list
 gh pr list
 gh release list
-printf "Do you want to view details about your repo?\n Input 'Y\N'\n"
+printf "Do you want to view a summary of your repo?\nInput 'Y\N'\n"
 read -e ANSWER
-{ANSWER^^}
-if [ANSWER=Y] then
+ANSWER={ANSWER^^}
+if [ ANSWER=Y ]; then
     gh repo view
 fi
+exit 0
