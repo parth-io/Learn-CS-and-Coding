@@ -9,5 +9,5 @@ printf "Do you want to view details about your repo?\n Input 'Y\N'\n"
 read -e ANSWER
 {ANSWER^^}
 if [ANSWER=Y] then
-gh repo view
+    gh repo view
 fi
