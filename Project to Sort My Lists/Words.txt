@@ -4615,6 +4615,8 @@ Seethe
 Selective
 Self-abasement
 Self-aggrandise
+Coiton
+Retroussé
 Self-aggrandising
 Self-aggrandisment
 Self-assurance
@@ -5839,6 +5841,9 @@ Yip
 Yokel
 Yon
 Yonder
+Prognathous
+Predacious
+Red in tooth and claw
 Zany
 Zeal
 Zeitgeist
