@@ -49,6 +49,9 @@ Compare with cat
 
 ### which
 
+### echo $?
+Gets the exit status of the last run command
+
 ### bash
 Starts a subshell in exisiting shell\
 See [Scripting Notes](https://github.com/parth-io/Learn-CS-and-Coding/blob/master/Bash%20Scripting/Scripting%20Notes.md#shells-bash) for more details
@@ -62,6 +65,8 @@ The command also assumes that it is run while in the directory hosting the ISO i
 ### uname
 ### dmesg
 To access kernel logs
+### Check if your laptop is 32 or 64-bit
+`grep -qP '^flags\s*:.*\blm\b' /proc/cpuinfo && echo 64-bit || echo 32-bit`
 
 ## Managing files
 ### locate; find
