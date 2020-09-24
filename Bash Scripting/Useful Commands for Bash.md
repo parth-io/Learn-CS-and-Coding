@@ -53,6 +53,16 @@ Compare with cat
 Starts a subshell in exisiting shell\
 See [Scripting Notes](https://github.com/parth-io/Learn-CS-and-Coding/blob/master/Bash%20Scripting/Scripting%20Notes.md#shells-bash) for more details
 
+### dd
+Might need root permissions\
+If copying to a USB, ensure that the USB key is unused; make sure that none of its partitions are mounted.\
+The command also assumes that it is run while in the directory hosting the ISO image or file to be copied, otherwise the full path will need to be provided.
+
+## Computer Info
+### uname
+### dmesg
+To access kernel logs
+
 ## Managing files
 ### locate; find
 ### wildcards
