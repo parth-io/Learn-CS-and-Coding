@@ -1,5 +1,9 @@
 # Scripting Notes
 
+### `man bash`
+`man bash` has a lot of interesting commands and builtins.\
+For example, `$?`.
+
 ### Piping and redirection
 ```
 | < > << >>
@@ -14,6 +18,12 @@ echo "$(cat my_file.txt)"
 ### Passing data/string to a command instead of a file
 https://unix.stackexchange.com/questions/505828/how-to-pass-a-string-to-a-command-that-expects-a-file
 https://unix.stackexchange.com/questions/16990/using-data-read-from-a-pipe-instead-than-from-a-file-in-command-options
+
+### Reading user input
+`read -e var_to_store_user_input` is used for bash shells. To adhere to POSIX, see https://unix.stackexchange.com/questions/399930/is-there-a-posix-shell-alternative-to-read-e and https://unix.stackexchange.com/questions/112109/using-shells-read-command-with-live-editing-functionality-readline-like.
+
+### Changing the case of alphabetic characters
+Use {Variable,,} or {Variable^^}. See the 'Parameter Expansion' heading in `man bash`. 
 
 ### Quoting
 [From the Bash manual](https://www.gnu.org/software/bash/manual/html_node/Quoting.html#Quoting)\
