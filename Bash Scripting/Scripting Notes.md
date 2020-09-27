@@ -4,10 +4,17 @@
 `man bash` has a lot of interesting commands and builtins.\
 For example, `$?`.
 
-### Piping and redirection
-```
-| < > << >>
-```
+### Operators
+
+#### The best resource - https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators (Read it once, read it twice, ... bloody hell just reread it)
+#### Control operators
+`&   &&   (   )   ;   ;;   <newline>   |   ||`\
+`|&` - only for bash\
+`!` - it is a Reserved Word that acts as a NOT operator in test constructs and arithmetic expressions\
+
+` command &` - run command in background\
+#### Piping and redirection
+`<     >     >|     <<     >>     <&     >&     <<-     <>`\
 In the case of passing input to echo and other similar commands that cannot process standard input:
 ```
 cat my_file.txt | xargs echo 

@@ -31,6 +31,8 @@ Shift vs for loops - https://docstore.mik.ua/orelly/unix3/upt/ch35_22.htm
 
 ### su; sudo
 
+### mount
+
 ### apt; apt-get
 
 ### checkinstall
@@ -45,6 +47,8 @@ Compare with cat
 
 ### whereis
 
+### editor
+
 ### whoami
 
 ### which
@@ -57,6 +61,7 @@ Starts a subshell in exisiting shell\
 See [Scripting Notes](https://github.com/parth-io/Learn-CS-and-Coding/blob/master/Bash%20Scripting/Scripting%20Notes.md#shells-bash) for more details
 
 ### dd
+https://linuxconfig.org/learning-linux-commands-dd\
 Might need root permissions\
 If copying to a USB, ensure that the USB key is unused; make sure that none of its partitions are mounted.\
 The command also assumes that it is run while in the directory hosting the ISO image or file to be copied, otherwise the full path will need to be provided.
@@ -81,6 +86,12 @@ To access kernel logs
 ### nano; vi; vim
 ### grep
 
+## Managing text
+### sed
+### cut
+### spell
+### sort
+
 ## Getting help
 ### info
 ### man
@@ -89,10 +100,17 @@ A more concise version of man
 
 ## Managing processes
 ### top
-`top, ps aux | grep process_name` 
+`top | grep process_name` 
 ### killall; kill
-`killall –9 process_name`
+`killall –9 process_name`\
+TERM - terminate gracefully\
+KILL - force kill
 ### ps
+`ps aux`
+### jobs
+### fg; bg
+`fg/bg %job-number` - restore job to foreground or background\
+The Ctrl + Z key combination pauses the prcess and resumes control of the command line.
 
 ## Managing variables
 ### printenv

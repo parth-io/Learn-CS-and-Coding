@@ -11,7 +11,9 @@ Description\
 ### ls
 **L**i**S**t files in your current directory 
 ### cd
-**C**hange **D**irectory
+**C**hange **D**irectory\
+`cd -` - go to former working directory\
+If no pathname is specified, `cd` assumes you means the current working directory, i.e., the pathname begins with `./path_to_directory`
 ### mkdir
 **M**a**K**e sub**DIR**ectory
 ### rmdir
