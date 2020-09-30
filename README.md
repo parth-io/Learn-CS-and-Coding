@@ -1,12 +1,12 @@
-# Learn CS and Coding
+# Learn CS and Coding -
 
-**UPDATE - This repository is going significant reconstruction. I am planning to narrow its purpose to only short summaries of Java and Python, and code samples. For learning resources (to which instead I intend to contribute), please see:**
+**UPDATE - This repository is going significant reconstruction. I am planning to narrow its purpose to only short summaries of Java,Python, and code samples. For learning resources (to which instead I intend to contribute), please see:**
 https://github.com/rossant/awesome-math
 https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md
 
 This repository is meant to serve as a guide for beginners beginning their journey into the realm of Computer Science, Mathematics and Software Development. It is in the form of code samples I created when learning CS and coding, and short notes that are intended to serve as a diving platform for deeper studies or for review of the individual's own knowledge of the subject matter. I also am posting collections of resources I have gathered.
 
-It also serves as a summary detailing my CS and coding learning journey for my own use, replete with code fragments I have created!
+It also serves as a summary detailing my CS and coding learning journey for my own use, Replete with code fragments I have created!
 
 My aim to serve the legions of interested wannabe-programmers, and help them use this page as a starting point.
 My advice is, get started with Python first, then transition to OOP, then to C++ and C (then assembly language if you feel like it - and Perl for the whiz kids).
@@ -15,7 +15,7 @@ There are some amazing bootcamps out there, but programming is a largely meritoc
 Get used to Linux, do not be daunted by the terminal. The terminal is the coolest and snappiest feature of Linux. Period.
 Oh, and please support open-source!
 
-(Format this markdown text) (Another thing to do and learn, sigh) (Learning never stops in CS)
+(Format this markdown text) (Another thing to do and learn, sigh) (Learning never stops in CS).
 
 BEGIN HISTORY>>>>>
 So I got interested in coding, seeming to be a superpower of sorts. One hears about all these successful techpreneurs and gold-plated brands like Google, and one feels like joining their ranks. After all, it's always easier to join the winning side than to defend a losing side (the losing side being the people with unsellable or poorly-paying liberal arts degrees) (Note - I am a supporter of a broad-based education, but not of well-marketed degrees that deceive the uninformed). 
