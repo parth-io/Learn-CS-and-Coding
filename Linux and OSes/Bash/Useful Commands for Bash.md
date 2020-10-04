@@ -1,6 +1,11 @@
 # Useful Commands for Bash
 
+[TOC]
+
+
+
 ### Command
+
 Description\
 *Further links/explanation*\
 `Sample use of the command` - supporting explanation
@@ -103,8 +108,14 @@ A more concise version of man
 `top | grep process_name` 
 ### killall; kill
 `killall –9 process_name`\
+
+`kill -signal PID`- PID is Process Identifier, and signal is TERM, KILL, etc.
+
 TERM - terminate gracefully\
 KILL - force kill
+
+Lol testing
+
 ### ps
 `ps aux`
 ### jobs

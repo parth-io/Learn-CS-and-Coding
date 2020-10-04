@@ -1,6 +1,9 @@
 # Scripting Notes
 
+[TOC]
+
 ### `man bash`
+
 `man bash` has a lot of interesting commands and builtins.\
 For example, `$?`.
 
@@ -140,4 +143,5 @@ https://unix.stackexchange.com/questions/329117/why-does-the-value-of-bash-subsh
 https://unix.stackexchange.com/questions/560162/how-to-show-how-many-times-bash-has-been-invoked
 ### Sourcing vs Subshells
 https://superuser.com/questions/176783/what-is-the-difference-between-executing-a-bash-script-vs-sourcing-it
+
 ### Child Processes

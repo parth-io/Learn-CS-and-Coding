@@ -1,2 +1,0 @@
-https://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/remotes.html
-gh works on top of git

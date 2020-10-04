@@ -1,6 +1,9 @@
 # Essential Commands for Bash
 
+[TOC]
+
 ### Command
+
 Description\
 *Further links/explanation*\
 `Sample use of the command` - supporting explanation
