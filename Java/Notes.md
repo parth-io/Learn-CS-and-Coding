@@ -4,7 +4,7 @@ A quick recap of Java
 
 [TOC]
 
-*Underlined stuff is stuff I did not understand at the point of writing*
+*Italicised stuff is stuff I did not understand at the point of writing*
 
 ### To Do
 
@@ -12,7 +12,7 @@ A quick recap of Java
 2. Remove the links to a different location, and leave only content here
 3. Align the topics to and arrange using the syllabus of Java courses and books
 4. Transfer content over from bookmarks to here
-5. *Remove underlined stuff if understood*
+5. *Remove italicised stuff if understood*
 
 https://docs.oracle.com/javase/tutorial/, https://docs.oracle.com/javase/8/docs/api/index.html and https://docs.oracle.com/javase/8/docs/.  
 
