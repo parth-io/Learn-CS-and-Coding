@@ -71,10 +71,39 @@ Might need root permissions\
 If copying to a USB, ensure that the USB key is unused; make sure that none of its partitions are mounted.\
 The command also assumes that it is run while in the directory hosting the ISO image or file to be copied, otherwise the full path will need to be provided.
 
-## Computer Info
+## System Info, Logs, and Hardware
+
+### free
+
+`free -m/-g`
+
+### df
+
+`df -h`
+
+### id
+
 ### uname
+
+`uname -a`
+
 ### dmesg
 To access kernel logs
+
+### journalctl
+
+`journalctl -r` - reverse the order of systemd's journal logs
+
+`journalctl -f` - print new logs continuously as they are appended
+
+### lshw
+
+Hardware details are found in the `/proc/` and `/sys/` filesystems\
+
+`lshw` combines the 4 following individual commands, with `lsdev` for communications resources used by devices
+
+#### lspci; lsusb; lspcmcia; lsdev
+
 ### Check if your laptop is 32 or 64-bit
 `grep -qP '^flags\s*:.*\blm\b' /proc/cpuinfo && echo 64-bit || echo 32-bit`
 
@@ -103,25 +132,43 @@ To access kernel logs
 ### tldr
 A more concise version of man
 
+## Managing permissions
+
+### chown
+
+`chown user:group file` - to change both the user and group of a file at the same time
+
+### chgrp
+
+### chmod
+
+### newgrp
+
 ## Managing processes
+
 ### top
 `top | grep process_name` 
 ### killall; kill
-`killall –9 process_name`\
+`killall –9 process_name`
 
-`kill -signal PID`- PID is Process Identifier, and signal is TERM, KILL, etc.
+`kill -signal PID`- PID is Process Identifier, and signal is TERM, KILL, etc.\
 
 TERM - terminate gracefully\
 KILL - force kill
 
-Lol testing
-
 ### ps
 `ps aux`
 ### jobs
+
+Lists background processes
+
 ### fg; bg
-`fg/bg %job-number` - restore job to foreground or background\
-The Ctrl + Z key combination pauses the prcess and resumes control of the command line.
+To run a command in the background and resume control of the shell, type  `&`  after the command\
+
+`fg %job-number` - to restore a command/job running in the background to the foreground\
+The Ctrl + Z key combination pauses a foreground job and resumes control of the command line\
+
+`bg %job-number` - restart the process in the background
 
 ## Managing variables
 ### printenv

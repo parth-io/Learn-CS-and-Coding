@@ -50,7 +50,38 @@ $ echo -e '\u00ea'
 ê
 ```
 
+### Permissions
+
+Owners - user, group, others
+
+Permissions - read, write, execute
+
+For executable files, setuid and setgid bits will allow any user to execute the program with the rights of the owner or the group, respectively. Ensure a setuid root program is secure and reliable before granting it permissions.
+
+#### Directories
+
+For directories, read allows you to consult the list of contents, write create or delete files, and execute cross through the directory to access contents. Execute permission without read permission allows you to access contents whose names are known to you.
+
+The setgid bit also applies to directories. Any newly-created item in such directories is automatically assigned the owner group of the parent directory, instead of inheriting the creator’s main group as per usual. Because of this, you don’t have to change your main group (with the `newgrp` command) when working in a file tree shared between several users of the same dedicated group. The sticky bit is a permission that is only useful in directories. It is especially used for temporary directories where everybody has write access (such as `/tmp/`): it restricts deletion of files so that only their owner or the owner of the parent directory can delete them. Lacking this, everyone could delete other users’ files in `/tmp/`.
+
+#### Representing rights
+
+For each category of users `u,g,o`, set permissions `rwx`  with `=/-/+`. Example - `u=rwx,g+rw,o-r`. Use `a` for all users if you wish. Permissions `s` for setuid and  `t` for sticky bits also exist.
+
+An alternative way is to use octals - 4 for read, 2 for write, and 1 for execute. The sum of the octals gives the permissions. `chmod 754 file` gives all permissions to the owner, read and execute to the group, and read to others.
+
+To represent special rights, you can prefix a fourth digit to this number according to the same principle, where the setuid, setgid, and sticky bits are 4, 2, and 1, respectively. The command `chmod 7544` will associate the setuid bit with the previously described rights. Note that the use of octal notation only allows you to set all the rights at once on a file; you must take into account the existing rights and compute the new corresponding numerical value. 
+
+The octal representation is also used with the `umask` command, which is used to restrict permissions on newly created files. When an application creates a file, it assigns indicative permissions, knowing that the system automatically removes the rights defined with `umask`. Entering `umask` gives the mask, for example, `0022`. This is simply an octal representation of the rights to be systematically removed (in this case, the write rights for the group and other users). If you give it a new octal value, the umask command modifies the mask. Used in a shell initialization file (for example, ~/.bash_profile), it will effectively change the default mask for your work sessions.
+
+Sometimes we have to change rights for an entire file tree using `-R` to operate recursively in sub-directories. When doing so, the distinction between directories and files can be avoided with `X`.  `chmod -R a+X` directory will only add execute rights for all categories of users for all sub-directories, and in the case of files, for which at least one category of user (even if their sole owner) already has execute rights.
+
+https://unix.stackexchange.com/questions/416877/what-is-a-capital-x-in-posix-chmod
+
+https://unix.stackexchange.com/questions/90306/is-there-a-flag-corresponding-to-x-x-but-for-s-with-chmod-on-linux
+
 ### Array variables
+
 Subscripts - @ vs *
 https://www.gnu.org/software/bash/manual/bash.html#Arrays
 https://stackoverflow.com/questions/16627986/bash-array-variables-or

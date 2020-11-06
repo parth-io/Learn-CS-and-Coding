@@ -1,4 +1,7 @@
+[TOC]
+
 ## Kernel
+
 Kernel - runs in ring 0 or kernel space (https://kali.training/topic/what-is-linux-and-what-is-it-doing/)\
 https://en.wikipedia.org/wiki/Protection_ring\
 https://en.wikipedia.org/wiki/Booting\
@@ -12,6 +15,7 @@ Data about hardware - stored in /proc/ and /sys/\
 Applications can access devices via files in /dev/ - /dev/input/mouse0 for mice, /dev/snd/* for soundcards\
 Block and character device files - run ls -l /path_to_device\
 ioctl command
+
 ### File systems
 Kernel translates between disk storage locations and the filesystem hierarchy\
 Linux makes a single disk the root, other disks are simply mounted\
@@ -19,7 +23,10 @@ File system formats - ext4, NTFS, etc.
 ### Processes
 PID number
 Multitasking and multiple processor cores
+
 ### Permissions
+
+Permissions for users can be set. See Scripting Notes.
 
 ## Command Line
 
