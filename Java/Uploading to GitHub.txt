@@ -1,3 +1,0 @@
-Upload all the HackerRank answers to GitHub. 
-
-For some of the answers that you have put inside the Code Samples.../Java folder, they have multiple solutions. It's ok lol, you copied the answers from the Discussions and Editorial pages.
