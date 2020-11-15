@@ -55,9 +55,12 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
          3. Local variables shadow instance variables, to access instance variable, use this.instanceVariable
             1. Constructor parameters can shadow instance variables
          4. Neither can you have static fields inside a method, nor can you have a static field in an inner class (for why, see https://stackoverflow.com/questions/1953530/why-does-java-prohibit-static-fields-in-inner-classes)
+      
    2. Static methods and variables
-      1. You cannot access non-static members of a class from a static context
-      2. Static fields and methods are not thread-safe 
+      
+      1. Static methods can be called without having to create an object of the class to which the static method belongs
+      2. You cannot access non-static members of a class from a static context
+      3. Static fields and methods are not thread-safe 
          1. *Did not understand this*
             1. Initialization is an important aspect of a static block. Static fields or variables are initialized after the class is loaded into memory. The order of initialization is from top to bottom, in the same order in which they are declared in the source file of the Java class. Since static fields are initialized in a thread-safe manner, this process is also used to implement the Singleton pattern. If you are not using an Enum as a Singleton for some reason, then you have a good alternative. But in this case, you must take into account that this is not a "lazy" initialization. This means that the static field will be initialized even BEFORE someone "asks" for it. If an object is resource-heavy or rarely used, then initializing it in a static block won't work in your favor.
             2. https://www.geeksforgeeks.org/singleton-class-java/, https://en.wikipedia.org/wiki/Singleton_pattern
@@ -66,10 +69,17 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
             5. DayOfWeek class' Enum constants are singleton instances – what does this mean
          2. Did not understand also
             1. During serialization, static fields, like transient variables, are not serialized. Indeed, if you save any data in a static field, it will contain its initial (default) value after deserialization. For example, if a static field is an int, its value will be zero after deserialization. If its type is float, the value will be 0.0. If the field is an Object, the value will be null. To be honest, this is one of the most frequently asked questions about serialization in interviews for Java positions. Don't store essential object data in a static field!
+      
    3. Method parameters are pass-by-value - https://dzone.com/articles/java-pass-by-reference-or-pass-by-value, http://www.javadude.com/articles/passbyvalue.htm, https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value?rq=1, https://stackoverflow.com/questions/373419/whats-the-difference-between-passing-by-reference-vs-passing-by-value#comment102368162_430958
-      1. Copies of primitive variables are passed
-      2. Copies of object variables are passed also, but as the value of an object is its reference, the same object is passed
+      1. Java is strictly pass-by-value
+   
+         1. For primitives, copies of values are passed
+         2. For objects, copies of the object's values are passed - but as the value of an object is its reference, the same object is passed
+   
          1. Except in the case of strings which are immutable, treat strings as primitives or use StringBuilder
+   
+      2. This distinction applies when checking for object reference equality, as compared to object value equality - using == vs String.equals()
+   
    4. Initialising fields
       1. Traditional way - declaring and initialising fields in one-line at the start of the class body
       2. Alternatives
@@ -81,7 +91,9 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
             3. Static initalisation blocks
                1. For complex initialisation, like try-catch block or conditionals
                2. Initialised before any objects of the class are created
+   
    5. *Did not understand*
+   
       1. https://stackoverflow.com/questions/4694661/declaring-java-object-given-its-type-class-name-as-string
 3. Access Modifiers and Annotations (javadocs - https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#format, https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/javadoc.html#leadingasterisks) 
 4. Operators - https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html
@@ -295,7 +307,7 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
           5. Groups and backreferences
           6. https://www.regular-expressions.info/
           7. https://regexr.com/
-       3. As == checks for reference equality, use .equals() for strings to check for logical(?) equality
+       3. As == checks for reference equality, use .equals() for strings to check for value equality
        4. Iterate over strings
           1. https://stackoverflow.com/questions/3925130/java-how-to-get-iteratorcharacter-from-string
           2. StringCharacterIterator class

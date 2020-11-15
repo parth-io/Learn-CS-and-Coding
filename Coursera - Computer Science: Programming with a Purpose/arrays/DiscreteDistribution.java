@@ -49,4 +49,33 @@ public class DiscreteDistribution {
 
     }
 }
+
+Alternative 2
+
+public class  DiscreteDistribution{
+	public static void main(String[] args){
+		int n=args.length;
+		int m=Integer.parseInt(args[0]);
+		int delta=0;
+		int [] distribution=new int [n];
+		for (int i=1; i<n; i++){
+			distribution[i-1]=Integer.parseInt(args[i]);
+			delta+=distribution[i-1];
+		}
+		int r=0;
+		for (int j=0; j<m; j++){
+			r= (int)(delta*Math.random());
+			int k=0;
+			int minValue=0;
+			int maxValue=0;
+			while(r>=minValue){
+				minValue+=distribution[k];
+				k++;
+				}
+		System.out.print(k+" ");
+	}
+	System.out.println();
+	}
+	
+}
 */

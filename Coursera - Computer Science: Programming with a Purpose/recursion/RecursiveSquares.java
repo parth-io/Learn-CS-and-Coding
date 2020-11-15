@@ -24,7 +24,6 @@ public class RecursiveSquares {
         double length = 0.5;
         draw(n, x, y, length);
     }
-
 }
 
 /* My first try - failed the autograder because loops are not allowed

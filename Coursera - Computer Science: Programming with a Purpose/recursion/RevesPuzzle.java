@@ -1,6 +1,36 @@
-//Figure out what's wrong! See the sample output for values of n = 6, 10, 15
-//https://codereview.stackexchange.com/questions/42524/solving-the-reves-puzzle
+public class RevesPuzzle {
 
+    private static void hanoi3(int n, int k, String from, String temp, String to) {
+        if (n == k) {
+            return;
+        }
+        hanoi3((n - 1), k, from, to, temp);
+        System.out.println("Move disc " + n + " from " + from + " to " + to);
+        hanoi3((n - 1), k, temp, from, to);
+    }
+    
+    private static void hanoi4(int n, String from, String temp1, String temp2, String to) {
+        int k = n + 1 - (int) Math.round(Math.sqrt((2 * n) + 1));
+        if (n <= 1) {
+            System.out.println("Move disc " + n + " from " + from + " to " + to);
+            return;
+        }
+        else {
+            hanoi4(k, from, temp2, to, temp1);
+            hanoi3(n, k, from, temp2, to);
+            hanoi4(k, temp1, temp2, from, to);
+        }
+    }
+
+    public static void main(String[] args) {
+        int n = Integer.parseInt(args[0]);
+        //Since n > 0, k > 0 - prove it yourself!
+        hanoi4(n, "A", "B", "C", "D");
+    }
+}
+
+//My pathetic first try is below:
+/*
 public class RevesPuzzle {
 
     private static void hanoi3(int n, int end, String starting, String temp, String ending) {
@@ -38,19 +68,4 @@ public class RevesPuzzle {
         int n = Integer.parseInt(args[0]);
         hanoi4(n, "A", "B", "C", "D");
     }
-}
-/* Towers of Hanoi - 3-pole version
-    // move n smallest discs from one pole to another, using the temp pole
-    private static void hanoi(int n, String from, String temp, String to) {
-        if (n == 0) return;
-        hanoi(n-1, from, to, temp);
-        StdOut.println("Move disc " + n + " from " + from + " to " + to);
-        hanoi(n-1, temp, from, to);
-    }
-
-    public static void main(String[] args) {
-        int n = Integer.parseInt(args[0]);
-        hanoi(n, "A", "B", "C");
-    }
-}
-*/
+}*/

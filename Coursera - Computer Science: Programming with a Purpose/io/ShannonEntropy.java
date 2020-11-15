@@ -9,7 +9,7 @@ public class ShannonEntropy {
             values[i]++;
             count++;
         }
-        
+        //You can combine the 2 loops here by using while (!StdIn.isEmpty())
         double entropy = 0.0;
         for(int i = 1; i <= m; i++) {
             if(!(values[i] == 0)){
