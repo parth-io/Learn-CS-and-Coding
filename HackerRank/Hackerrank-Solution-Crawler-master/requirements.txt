@@ -1,3 +1,0 @@
-requests==2.22.0
-ConfigArgParse==0.15.1
-progress==1.5

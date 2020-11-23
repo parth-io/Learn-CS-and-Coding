@@ -4,29 +4,45 @@
 https://github.com/rossant/awesome-math
 https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md
 
-This repository is meant to serve as a guide for beginners beginning their journey into the realm of Computer Science, Mathematics and Software Development. It is in the form of code samples I created when learning CS and coding, and short notes that are intended to serve as a diving platform for deeper studies or for review of the individual's own knowledge of the subject matter. I also am posting collections of resources I have gathered.
+This repository is meant for me as a personal record of my journey into the realm of Computer Science, Mathematics and Software Development. However, to the legions of interested wannabe-programmers, you can use this page as a starting point.
 
-It also serves as a summary detailing my CS and coding learning journey for my own use, replete with code fragments I have created!
+See the following descriptions of the folders:
 
-My aim to serve the legions of interested wannabe-programmers, and help them use this page as a starting point.
+- Python - for the complete beginners to Python and/or coding
+- HackerRank - my HackerRank solutions + links to other people's solutions
+- Linux and OSes - all about Linux
+- Coursera - Computer Science: Programming with a Purpose - my solutions to the course
+- Java - my learning resources
+
+**Fair warning to the uninitiated - Computer Science, which can be considered a subset of Math, is different from the fairly mundane and now easy-to-automate task of programming. **And if you were wondering, learning never stops in CS. From new languages, to new operating systems, to new concepts such as functional programming or the Linux kernel or operating system architecture or linear algebra, if you do not challenge yourself on a daily basis, you are gonna just end up as a code monkey. Harsh truth I am beginning to realise too. 
+
+This repo is in the form of code samples I created when learning CS and coding, and short notes that are intended to serve as a diving platform for deeper studies or for review of the individual's own knowledge of the subject matter. I also am posting collections of resources I have gathered.
+
 My advice is, get started with Python first, then transition to OOP, then to C++ and C (then assembly language if you feel like it - and Perl for the whiz kids).
 Practise coding and participate in online competitions and hackathons to gain some experience.
-There are some amazing bootcamps out there, but programming is a largely meritocratic field and students can design their own curriculum at their own pace for free. (Resources I have gathered and tips for Java and Python will be posted here soon).
+There are some amazing bootcamps out there, but programming is a largely meritocratic field and students can design their own curriculum at their own pace for free.
 Get used to Linux, do not be daunted by the terminal. The terminal is the coolest and snappiest feature of Linux. Period.
 Oh, and please support open-source!
 
-(Format this markdown text) (Another thing to do and learn, sigh) (Learning never stops in CS)
+List of programming software required
 
-BEGIN HISTORY>>>>>
-So I got interested in coding, seeming to be a superpower of sorts. One hears about all these successful techpreneurs and gold-plated brands like Google, and one feels like joining their ranks. After all, it's always easier to join the winning side than to defend a losing side (the losing side being the people with unsellable or poorly-paying liberal arts degrees) (Note - I am a supporter of a broad-based education, but not of well-marketed degrees that deceive the uninformed). 
-
-My first foray was with Linux. After hating on Windows for years, and yearing for a smoother experience on an ageing laptop, I decided to take the plunge with Linux. I had some limited experience with Ubuntu when I was a kid, but I was mainly limited to the GUI aspect. Boy, was Linux fun. I had some fun customising my install of Xubuntu (I wanted a light and quick experience), but Xubuntu seemed a bit stale and dated to me. Frankly, it grew out on me after a few months of use. I tried out Linux Mint, Kubuntu, and Ubuntu Mate, but Kubuntu offered the best of the Linux world to me. (Yes, I am biased towards Debian, it is very beginner-friendly - but that being said, i am planning to try Arch Linux, Manjaro and Kali Linux next). I slowly learnt the ins-and-outs of the Linux world, and read endless articles recent and old that proclaimed the death of Windows and the rise of Linux (however, I received a shock when Microsoft did a U-turn recently and started to support open-source, with its most prominent show of support being the Windows Subsystem for Linux). Then came a fair bit of reading on DNS as I tried to setup my home VPN network on my server and router. The intricacies of networking, which were boring and frustuating, eluded me. It made me feel like wanting to redesign the whole networking system from scratch. A blissful period ensued, where I enjoyed some cool Linux programs (Xaos - Fractal Zoomer), puzzles (SGT Puzzles Collection), games (the Battle for Wesnoth and 0 A.D.).
-
-Then began an exploration into Python and coding essentials via the book 'Head First: Learn to Code'. Fair warning, the book is way too easy for someone from a STEM background in high school, and it simplies explanations to the point of confusion - you are left scratching your head as to what the author meant at times, then feeling the light from a breaking dawn of realisation suffuse you. The book could do with some brevity, but for all that, it has some decent Python code that serves as an excellent primer to the Python coding style and language syntax. Oh - an interesting read is the Zen of Python (PEP 20).
-
-Wanting a challenge, I then proceeded on to HackerRank. I solved a few HackerRank problems under the category of Problem Solving, got bored with Python, and transited to learning Java under '30 Days of Learning to Code'. Where I got smacked in the face by concepts such as devious concepts such as linked lists and data trees. Fascinating stuff, the '30 Days' course starts slow, but builds up quickly later. (It took me more than 30 days to master the basics of Java and OOP).
-
-Parallely, I began studying Math under MIT's OpenCourseware Math for Computer Science (still completing). I also realised the need for a formal experience in learning Computer Science and not just programming, so I began Princeton's Programming with a Purpose course on Coursera (still completing).
-
-Along the way, I picked up lots of useless technical articles, webpages, resources, guides and books. I will upload this whole compendium of resources on a progressive basis, starting with my coding samples.
-<<<<<END HISTORY
+1. For coding
+   1. Power tools for pros
+      1. Emacs
+      2. Vim
+   2. For learners
+      1. Any text editor
+      2. Notepad works for the Windows scrubs
+      3. Kate for Kubuntu
+      4. Atom
+      5. Sublime
+   3. For the working men
+      1. Intellij
+      2. Just search up IDEs on Google lol
+2. For Markdown
+   1. Typora - hands-down the best, I already did my market research
+3. Terminal
+   1. bash
+      1. A quick Google search reveals a number of wondrous terminals, each with their own special tools or animations. However, I use the stock terminal as a daily driver
+   2. ksh
+      1. Honestly I gave up on this stupid thing

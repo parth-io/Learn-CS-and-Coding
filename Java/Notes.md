@@ -46,15 +46,16 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
       2. Instance variables, local variables and class variables
          1. Instance variables have object-level scope, being defined in a class; local variables have a block-level scope, being defined in a method or loop; class (static) variables have a class-level scope. 
             1. Therefore, you cannot access local variables from outside the method, you must declare them outside the method 
-         2. *Did not understand why local variables are not initialised to any default values unlike class or instance variables*
+         2. Constructors do not have a return statement, they simply assign the values that are the constructor's arguments to the class' instance variables which are normally private, and if required, final - thus, each object has its own set of instance variables with values that are from the constructor's arguments
+         3. *Did not understand why local variables are not initialised to any default values unlike class or instance variables*
             1. https://stackoverflow.com/questions/415687/why-are-local-variables-not-initialized-in-java
             2. https://stackoverflow.com/questions/268814/uninitialized-variables-and-members-in-java
             3. https://stackoverflow.com/questions/1542824/initialization-of-instance-fields-vs-local-variables
             4. https://stackoverflow.com/questions/22811261/why-local-variable-must-be-initialized-and-why-instance-variables-must-not-be-in
             5. https://softwareengineering.stackexchange.com/questions/361502/why-doesnt-java-automatically-initialize-local-variables-with-its-default-value
-         3. Local variables shadow instance variables, to access instance variable, use this.instanceVariable
+         4. Local variables shadow instance variables, to access instance variable, use this.instanceVariable
             1. Constructor parameters can shadow instance variables
-         4. Neither can you have static fields inside a method, nor can you have a static field in an inner class (for why, see https://stackoverflow.com/questions/1953530/why-does-java-prohibit-static-fields-in-inner-classes)
+         5. Neither can you have static fields inside a method, nor can you have a static field in an inner class (for why, see https://stackoverflow.com/questions/1953530/why-does-java-prohibit-static-fields-in-inner-classes)
       
    2. Static methods and variables
       

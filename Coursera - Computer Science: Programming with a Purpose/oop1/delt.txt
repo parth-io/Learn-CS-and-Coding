@@ -1,0 +1,177 @@
+import java.awt.*;
+
+public class KernelFilter {
+
+    private static Picture kernel(Picture picture, double[][] weights) {
+        int width = picture.width();
+        int height = picture.height();
+        Color[][] values = new Color[width][height];
+        Picture pic = new Picture(width, height);
+        for (int i = 1; i < (width - 1); i++) {
+            for (int j = 1; j < (height - 1); j++) {
+                float redValue = 0;
+                float greenValue = 0;
+                float blueValue = 0;
+                for (int x = -1; x < 2; x++) {
+                    for (int y = -1; y < 2; y++) {
+                        if (values[(i + x)][(j + y)] == null) {
+                               values[(i + x)][(j + y)] = picture.get((i + x), (j + y));
+                        }
+                        redValue += weights[(x + 1)][(y + 1)] * values[(i + x)][(j + y)].getRed();
+                        greenValue += weights[(x + 1)][(y + 1)] * values[(i + x)][(j + y)].getGreen();
+                        blueValue += weights[(x + 1)][(y + 1)] * values[(i + x)][(j + y)].getBlue();
+                    }
+                }
+                redValue = (int) Math.round(redValue);
+                greenValue = (int) Math.round(greenValue);
+                blueValue = (int) Math.round(blueValue);
+                if (redValue < 0 || redValue > 255) {
+                    if (redValue < 0) {
+                        redValue = 0;
+                    }
+                    else {
+                        redValue = 255;
+                    }
+                }
+                if (greenValue < 0 || greenValue > 255) {
+                    if (greenValue < 0) {
+                        greenValue = 0;
+                    }
+                    else {
+                        greenValue = 255;
+                    }
+                }
+                if (blueValue < 0 || blueValue > 255) {
+                    if (blueValue < 0) {
+                        blueValue = 0;
+                    }
+                    else {
+                        blueValue = 255;
+                    }
+                }
+                Color newValue = new Color(redValue, greenValue, blueValue);
+                pic.set(i, j, newValue);
+            }
+        }
+        System.out.println(java.util.Arrays.deepToString(values));
+        //if int i and j = 0 and width and height
+        return pic;
+    }
+
+    public static Picture identity(Picture picture) {
+        double[][] weights = new double[3][3];
+        weights[1][1] = 1;
+        picture = kernel(picture, weights);
+        return picture;
+    }
+    
+    public static Picture gaussian(Picture picture) {
+        double[][] weights = new double[3][3];
+        weights[0][0] = 1/16;
+        weights[0][1] = 1/8;
+        weights[0][2] = 1/16;
+        weights[1][0] = 1/8;
+        weights[1][1] = 1/4;
+        weights[1][2] = 1/8;
+        weights[2][0] = 1/16;
+        weights[2][1] = 1/8;
+        weights[2][2] = 1/16;
+        picture = kernel(picture, weights);
+        return picture;
+    }
+    
+    /*// Returns a new picture that applies a sharpen filter to the given picture.
+    public static Picture sharpen(Picture picture) {
+        return pic;
+    }
+    // Returns a new picture that applies an Laplacian filter to the given picture.
+    public static Picture laplacian(Picture picture) {
+        
+        return pic;
+    }
+    // Returns a new picture that applies an emboss filter to the given picture.
+    public static Picture emboss(Picture picture) {
+        return pic;
+    }
+    // Returns a new picture that applies a motion blur filter to the given picture.
+    public static Picture motionBlur(Picture picture) {
+        return pic;
+    }*/
+    
+    public static void main(String[] args) {   
+        Picture picture = new Picture("/home/parth/Desktop/Coding/Learn-CS-and-Coding/Coursera - Computer Science: Programming with a Purpose/oop1/baboon.png");
+//         identity(picture);
+//         gaussian(picture);
+//         sharpen(picture);
+//         laplacian(picture);
+//         emboss(picture);
+//         motionBlur(picture);
+        Picture pic = identity(picture);
+        pic.show();
+    }
+}
+/*
+to apply a kernel filter to a grayscale image, perform the following operation for
+each pixel p:
+Align the center of the kernel on pixel p.
+The new grayscale value of pixel p is obtained by multiplying each kernel element with the
+corresponding grayscale value, and adding the results.
+
+To apply a kernel filter to a color image, perform the above operation to the red, green, and blue
+components of each pixel p separately, and combine the results.
+The following table describes the kernel filters that you will implement and illustrates the results
+using a classic test image (baboon.png):
+
+Here is some more information about the required behavior:
+Periodic boundary conditions. When applying a kernel filter to a pixel near the boundary,
+some of its neighboring pixels may not exist. In such cases, assume the leftmost column
+wraps around to the rightmost column and the top row wraps around to the bottom row
+(and vice versa).
+
+Rounding. When applying a kernel filter, the resulting RGB components may become
+fractional if the kernel weights are fractional. Round each RGB component to the nearest
+integer, with ties rounding up.
+Clamping. When applying a kernel filter, the resulting RGB components may not remain
+between 0 and 255. If an RGB component of a pixel is less than 0, set it to 0; if is greater than
+255, set it to 255. This mechanism for handling arithmetic overflow and underflow is known
+as clamping or saturating arithmetic.
+Test client. Your main() method should test each of your public methods.
+Performance requirement. All methods should take time proportional to the product of the
+number of pixels in the image and the number of elements in the kernel.
+
+
+How do I round a floating-point number x to the nearest integer, with ties rounding up?
+    Call Math.round(x) and cast the resulting long to an int. 
+My program has many cases to handle the periodic boundary conditions. Any tips for simplifying my code?
+    Use either the remainder operator (%) or the Math.floorMod() function. 
+When implementing a 3-by-3 kernel filter, how do I iterate over the 9 pixels centered at a given pixel?
+    Use a double nested loop, as in the Minesweeper problem (from the Arrays assignment). Same idea also works for a 9-by-9 kernel filter. 
+Can I define a helper method that applies an arbitrary linear filter to an image?
+    Yes. In your final design, we recommend that you implement the following helper function: 
+// Returns a new picture that applies an arbitrary kernel filter to the given picture.
+private static Picture kernel(Picture picture, double[][] weights)
+
+
+All of the other kernel filters can be implemented by calling this function with a particular matrix. Note that the method is private, which means that clients cannot call it directly.
+
+However, to get started, we recommend that you implement sharpen() directly, to gain experience with manipulating Picture and Color objects, and then attempt kernel(). 
+
+
+Is applying a kernel filter the same as matrix multiplication?
+    No. Mathematically, it corresponds to the convolution operation. For this reason, the kernel is sometimes referred to as the convolution matrix. 
+Why do the matrix elements sum to 1 in most of the kernels?
+    It ensures that the resulting image has the same brightness as the original image. 
+Do kernels always have an equal number of rows and columns? Is the number of rows and columns always odd?
+    Both properties are very typical, but neither is required. If the number of rows or columns is even, you would need to specify how to align the kernel to the image when processing pixel p. 
+Why use periodic boundary conditions?
+    Periodic boundary conditions (also known as circular or toroidal boundary conditions) are simple to implement, but not the only reasonable choice. Other common boundary conventions include
+
+        Dirichlet: treat out-of-bounds pixels as black or zero.
+
+        Neumann: compute out-of-bounds pixels by mirror-reflecting the array across the array border.
+
+        Replicate: treat out-of-bounds pixel as equal to the nearest array border pixel. 
+
+    Different boundary conditions work best in different situations. Image-processing libraries often provide the user a choice of boundary conditions. 
+*/
+ 

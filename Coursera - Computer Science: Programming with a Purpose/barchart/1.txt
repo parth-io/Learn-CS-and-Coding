@@ -1,0 +1,17 @@
+The most populous cities in the world from 1500 to 2018
+Population (thousands)
+Sources: SEDAC; United Nations; Demographia
+
+12
+1519,Beijing,China,679,East Asia
+1519,Cairo,Egypt,385,Middle East
+1519,Gauda,India,186,South Asia
+1519,Guangzhou,China,154,East Asia
+1519,Hangzhou,China,254,East Asia
+1519,Istanbul,Turkey,331,Europe
+1519,Nanjing,China,151,East Asia
+1519,Naples,Italy,153,Europe
+1519,Paris,France,195,Europe
+1519,Suzhou,China,143,East Asia
+1519,Tabriz,Iran,212,Middle East
+1519,Vijayanagar,India,492,South Asia
