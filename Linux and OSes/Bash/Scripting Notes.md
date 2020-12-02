@@ -10,22 +10,51 @@ For example, `$?`.
 ### Operators
 
 #### The best resource - https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators (Read it once, read it twice, ... bloody hell just reread it)
-#### Control operators
+Control operators
+
 `&   &&   (   )   ;   ;;   <newline>   |   ||`\
 `|&` - only for bash\
 `!` - it is a Reserved Word that acts as a NOT operator in test constructs and arithmetic expressions\
 
 ` command &` - run command in background\
+
 #### Piping and redirection
+
+Piping is for piping streams of text (STDIN, STDOUT, STDERR) from one process or program to another; redirection is for redirecting streams of text to/from files from/to streams of texts.
+
 `<     >     >|     <<     >>     <&     >&     <<-     <>`\
 In the case of passing input to echo and other similar commands that cannot process standard input:
+
 ```
 cat my_file.txt | xargs echo 
 echo $(<my_file.txt) #This is called input redirection
 echo "$(cat my_file.txt)"
 ```
 
+To redirect STDERR to STDOUT, do `2>&1`
+
+Redirection can be bidirectional: `sort < fileName.txt > sortNewFile.txt`
+
+### Process and Command Substitution
+
+#### Process Substitution
+
+https://tldp.org/LDP/abs/html/process-sub.html
+
+#### Command Substitution
+
+https://stackoverflow.com/questions/15416570/command-substitution-vs-process-substitution
+
+https://unix.stackexchange.com/questions/393349/difference-between-subshells-and-process-substitution
+
+#### Some niche cases
+
+https://unix.stackexchange.com/questions/585430/whats-currently-the-most-efficient-way-to-copy-paste-output-of-ls-into-anothe/621337#621337
+
+https://unix.stackexchange.com/questions/28503/how-can-i-send-stdout-to-multiple-commands
+
 ### Passing data/string to a command instead of a file
+
 https://unix.stackexchange.com/questions/505828/how-to-pass-a-string-to-a-command-that-expects-a-file
 https://unix.stackexchange.com/questions/16990/using-data-read-from-a-pipe-instead-than-from-a-file-in-command-options
 
@@ -57,6 +86,18 @@ Owners - user, group, others
 Permissions - read, write, execute
 
 For executable files, setuid and setgid bits will allow any user to execute the program with the rights of the owner or the group, respectively. Ensure a setuid root program is secure and reliable before granting it permissions.
+
+#### Root
+
+`sudo -i`
+
+`sudo -s`
+
+`su -`
+
+The -i option tells sudo to run the shell specified by the root user’s password database entry as a login shell. If you pass the -s to the sudo command, it runs the shell specified by the SHELL  environment variable if it exists or the shell defined by the invoking  user’s password database entry.
+
+`su`  vs `sudo` - Google it!
 
 #### Directories
 
@@ -176,3 +217,13 @@ https://unix.stackexchange.com/questions/560162/how-to-show-how-many-times-bash-
 https://superuser.com/questions/176783/what-is-the-difference-between-executing-a-bash-script-vs-sourcing-it
 
 ### Child Processes
+
+## Miscellaneous
+
+### Passing Output as Commands
+
+https://stackoverflow.com/questions/33431842/how-to-pass-command-output-as-multiple-arguments-to-another-command
+
+https://stackoverflow.com/questions/6833582/pass-output-as-an-argument-for-cp-in-bash
+
+https://unix.stackexchange.com/questions/585430/whats-currently-the-most-efficient-way-to-copy-paste-output-of-ls-into-anothe?newreg=428f4781d6c14719860abb004c631e5c - see my answer lol

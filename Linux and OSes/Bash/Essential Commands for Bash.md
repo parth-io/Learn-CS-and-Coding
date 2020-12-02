@@ -23,7 +23,14 @@ If no pathname is specified, `cd` assumes you means the current working director
 **R**e**M**ove empty sub**DIR**ectory\
 `rm -vrf` - to recursively remove files and folders from non-empty directories in verbose format, ignoring non-existent files and arguments
 
+## Root
+
+### sudo - i; sudo -s
+
+After successful login, the $ prompt would change to # to indicate that you logged in as root user on Ubuntu
+
 ## File Commands
+
 ### cp
 Copy
 ### mv
