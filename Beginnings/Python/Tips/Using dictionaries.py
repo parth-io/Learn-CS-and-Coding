@@ -1,3 +1,7 @@
+##Note, as of Python 3.7, keys are added to dictionaries in insertion order
+## To add a new key to a dictionary, there is no add() method. Just type dictionary[key] = value
+## Dictionary view objects are convenient af
+
 users = {} 
 users['Kim'] = {'email' : 'kim@oreilly.com','gender': 'f', 'age': 27, 'friends': ['John', 'Josh']}
 users['John'] = {'email' : 'john@abc.com','gender': 'm', 'age': 24, 'friends': ['Kim', 'Josh']}

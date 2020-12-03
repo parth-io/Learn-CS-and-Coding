@@ -109,6 +109,9 @@ Hardware details are found in the `/proc/` and `/sys/` filesystems\
 
 ## Managing files
 ### locate; find
+
+http://www.hypexr.org/linux_find_help.php
+
 ### wildcards
 
 ## Managing file content

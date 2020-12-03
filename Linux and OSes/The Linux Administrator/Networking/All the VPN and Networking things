@@ -1,0 +1,46 @@
+VPN Qs
+##Figure out the install.sh script and why the configuration file does not need to create a separate certificate and key
+https://www.linux.com/training-tutorials/configure-linux-clients-connect-openvpn-server/
+##Figure out if I can create a VPN router or server on the spare laptop
+https://www.linux.com/topic/networking/build-real-vpn-openvpn/
+https://openvpn.net/community-resources/
+https://www.linux.com/training-tutorials/how-set-secure-remote-networking-openvpn-linux-part-1/
+https://www.linux.com/training-tutorials/install-and-configure-openvpn-server-linux/
+https://openvpn.net/vpn-server-resources/installing-openvpn-access-server-on-a-linux-system/
+https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-linux/
+https://www.linux.com/training-tutorials/install-and-configure-openvpn-server-linux/
+https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-18-04
+https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-an-openvpn-server-on-ubuntu-20-04
+https://www.tecmint.com/install-openvpn-in-ubuntu/
+https://www.cyberciti.biz/faq/howto-setup-openvpn-server-on-ubuntu-linux-14-04-or-16-04-lts/
+##Figure out what is Wireguard, OpenConnect, OpenVPN, Fortinet, Juniper, SSH server OpenVPN
+https://tech.co/vpn/what-is-openvpn-review
+https://www.linux.com/news/ssl-vpns-and-openvpn-lot-lies-and-shred-truth/
+##Understand all this VPN shit, like keys and certificates - what they do, how are they generated
+https://www.osnews.com/story/5803/introduction-to-openvpn/
+
+https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Configuration
+Dnsmasq
+
+Why is DNS on Linux so complicated? Figure out what these guys are doing 
+https://unix.stackexchange.com/questions/588658/override-ubuntu-20-04-dns-using-systemd-resolved
+https://unix.stackexchange.com/questions/371759/interpreting-the-output-from-systemd-resolve-status
+https://unix.stackexchange.com/questions/424799/why-doesnt-systemd-resolved-use-my-local-dns-server
+https://github.com/jonathanio/update-systemd-resolved
+https://serverfault.com/questions/865363/openvpn-and-systemd-resolved-dns-does-not-resolve-vpn-internal-names
+https://serverfault.com/questions/947798/enforce-usage-of-vpn-provided-dns-servers-on-ubuntu-18-04
+https://www.reddit.com/r/ProtonVPN/comments/7t5gsa/i_always_got_dns_leaks_on_linux_with_openvpn_cli/
+https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Installation-linux
+https://github.com/systemd/systemd/issues/6076
+https://unix.stackexchange.com/questions/434916/how-to-fix-openvpn-dns-leak
+https://ubuntu-mate.community/t/dns-leaking-with-systemd-resolved-and-openvpn/16709
+https://ohthehugemanatee.org/blog/2018/01/25/my-war-on-systemd-resolved/
+
+https://victoria.dev/blog/how-to-set-up-openvpn-on-aws-ec2-and-fix-dns-leaks-on-ubuntu-18.04-lts/
+https://askubuntu.com/questions/1065568/block-outside-dns-fix-dns-leak-ubuntu-18-04#:~:text=To%20fix%20DNS%20leaks%20on,by%20statically%20assigning%20an%20address.%22
+
+https://www.tecmint.com/set-permanent-dns-nameservers-in-ubuntu-debian/https://www.tecmint.com/setup-local-dns-using-etc-hosts-file-in-linux/
+
+Networking
+Secure Shell - https://en.wikipedia.org/wiki/Secure_Shell
+PuTTY

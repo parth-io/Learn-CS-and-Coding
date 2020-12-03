@@ -1,16 +1,10 @@
-OSCP 
+Some tools
 
-1) installing Kali Linux 2)Basic terms of cyber world 3) Basics of networking 4) Web exploits with step wise approach on a practice environment DVWA 5) Steganography related techniques 6) Wireless security 7) google dorks 8) OS detection / Scanning techniques - nmap 9) Few advance exploitation concepts/attacks - msf 10) google dorks 
-
- 
-
-https://www.hackthebox.eu/ 
-
- 
-
-[My OSCP Journey | cracked OSCP at 20](https://www.youtube.com/watch?v=fkNozXlrB6I) 
-
- 
+1. network-manager-* (usually gnome)
+2. ifupdown
+   1. wpasupplicant
+3. systemd-networkd
+   1. See Chapter 5.1.3 of Kali Linux Revealed for details on usage
 
 scp vs ssh vs sftp vs ftp 
 
@@ -68,6 +62,4 @@ ssh-add
 
  
 
-For an explanation on why we need eval, see your Scripting Notes 
-
-  
+For an explanation on why we need eval, see your Scripting Notes  

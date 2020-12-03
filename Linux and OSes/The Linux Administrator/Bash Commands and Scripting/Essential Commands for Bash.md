@@ -50,21 +50,3 @@ Some systems hardlink `more` to `less`\
 For more details, see [this](https://unix.stackexchange.com/questions/604/isnt-less-just-more).
 ### most
 Ah, another one purporting to be more than `less`. See [this](https://unix.stackexchange.com/questions/81129/what-are-the-differences-between-most-more-and-less).
-## Useful sequences of keys for vim
-
-### i
-To enter INSERT mode
-
-### \<ESC>
-To enter COMMAND mode
-
-### \<ESC>:wq\<ENTER>
-Saves your program and exits vim
-### \<ESC>ZZ 
-(Note that the Zs are uppercase) Saves your program and exits
-### \<ESC>:q!\<ENTER>
-Exits from vim without saving your program.
-### \<ESC>ZQ
-Exits from vim without saving your program.
-
-## For more vim commands, go to this [reference](https://github.com/parth-io/Learn-CS-and-Coding/blob/master/Bash%20Scripting/vimqrc.pdf).

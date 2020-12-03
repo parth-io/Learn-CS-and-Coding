@@ -1,8 +1,16 @@
 # Learn CS and Coding
 
-**UPDATE - This repository is going significant reconstruction. I am planning to narrow its purpose to only short summaries of Java and Python, and code samples. For learning resources (to which instead I intend to contribute), please see:**
-https://github.com/rossant/awesome-math
-https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md
+**UPDATE - This repository is going significant reconstruction.**
+
+### Some amazing links
+
+1. https://teachyourselfcs.com/
+   1. https://www.reddit.com/r/learnprogramming/comments/acuakt/ossu_or_teachyourselfcscom_for_self_learning_cs/
+2. https://github.com/rossant/awesome-math
+3. https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md
+4. https://functionalcs.github.io/curriculum/
+5. http://blog.agupieware.com/2014/06/online-learning-intensive-bachelors.html?m=1 and http://blog.agupieware.com/2014/05/online-learning-bachelors-level.html
+6. https://isaaccomputerscience.org/topics
 
 This repository is meant for me as a personal record of my journey into the realm of Computer Science, Mathematics and Software Development. However, to the legions of interested wannabe-programmers, you can use this page as a starting point.
 
