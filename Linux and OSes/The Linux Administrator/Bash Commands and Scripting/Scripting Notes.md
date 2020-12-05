@@ -31,7 +31,9 @@ echo $(<my_file.txt) #This is called input redirection
 echo "$(cat my_file.txt)"
 ```
 
-To redirect STDERR to STDOUT, do `2>&1`
+To redirect STDERR to STDOUT, do `program > file 2>&1`
+
+To redirect both STDERR and STDOUT, use `program >& file`
 
 Redirection can be bidirectional: `sort < fileName.txt > sortNewFile.txt`
 
@@ -78,6 +80,14 @@ $ echo -e '\xC3\xAA'
 $ echo -e '\u00ea'
 ê
 ```
+
+### File Descriptors
+
+Represent file streams
+
+0, 1, 2 - stdin, stdout, stderrr
+
+3, 4, ... - files
 
 ### Permissions
 
@@ -141,6 +151,10 @@ https://stackoverflow.com/questions/6462894/how-can-i-format-the-output-of-a-bas
 ### exec
 To replace the shell with a command - in effect, redirecting output to the command
 https://askubuntu.com/questions/525767/what-does-an-exec-command-do
+
+### Locales
+
+LC_ALL = C - https://unix.stackexchange.com/a/87763/443433
 
 ### Creating Shell and Environmental Variables
 When creating a shell variable `shell_variable='Hello World`, ensure it does not clash with an existing environmental variable by running `printenv | grep shell_variable`.\

@@ -270,6 +270,9 @@ Functional Programming Modules
 
 26. Abstract Base Classes 
 
+    1. https://www.python.org/dev/peps/pep-3119/
+    2. https://stackoverflow.com/questions/3570796/why-use-abstract-base-classes-in-python
+
 27. Python ternary operator expression 
 
     1. value_when_true if condition else value_when_false 
@@ -356,3 +359,95 @@ Functional Programming Modules
     2. https://stackoverflow.com/questions/4486382/slice-operator-understanding 
 
 44. Enumerate() and join() 
+
+45. Rounding numbers in Python
+
+    1. Using decimals (you can round floating-point numbers too)
+
+       1. Recommended method
+
+          ```python
+          ## Use format()
+          
+          for dec in decimals:
+              print(format(dec, '7.2f'))
+              
+          ## This is the official way - the Decimal class implements the .__format__() method to handle such formatting efficiently.
+          ```
+
+       2. ```python 
+          ## Round decimal using round()
+          
+          from decimal import Decimal
+          
+          # First we take a float and convert it to a decimal
+          x = Decimal(16.0/7)
+          
+          # Then we round it to 2 places
+          output = round(x,2)
+          print output
+          ```
+
+       3. ```python
+          ## Round decimal with super rounding powers
+          
+          from decimal import Decimal, ROUND_HALF_UP
+          # Here are all your options for rounding:
+          # This one offers the most out of the box control
+          # ROUND_05UP       ROUND_DOWN       ROUND_HALF_DOWN  ROUND_HALF_UP
+          # ROUND_CEILING    ROUND_FLOOR      ROUND_HALF_EVEN  ROUND_UP
+          
+          our_value = Decimal(16.0/7)
+          output = Decimal(our_value.quantize(Decimal('.01'), rounding=ROUND_HALF_UP))
+          
+          print output
+          ```
+
+       4. ```python
+          ## Round decimal by setting precision
+          
+          # If you use deimcal, you need to import
+          from decimal import getcontext, Decimal
+          
+          # Set the precision.
+          getcontext().prec = 3
+          
+          # Execute 1/7, however cast both numbers as decimals
+          output = Decimal(16.0)/Decimal(7)
+          
+          # Your output will return w/ 6 decimal places, which
+          # we set above.
+          print output
+          ```
+
+    2. String formatting
+
+       1. See below
+
+    3. Formatting output
+
+       1. See below
+
+46. String formatting
+
+    1. f-strings
+       1. https://docs.python.org/3/reference/lexical_analysis.html#f-strings
+    2. Formatter class in string module
+       1. https://docs.python.org/3/library/string.html#formatstrings
+
+47. Formatting output
+
+    1. String formatting
+    2. https://docs.python.org/3/library/string.html#formatspec
+    3. https://docs.python.org/3/library/functions.html#format
+
+48. Magic methods
+
+    1. Akin to overloaded methods in Java
+
+49. Why Python has no integer overflow
+
+    1. https://www.quora.com/How-is-there-no-integer-overflow-in-Python
+    2. https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic
+    3. https://stackoverflow.com/questions/52151647/integer-overflow-in-python3
+    4. https://mortada.net/can-integer-operations-overflow-in-python.html

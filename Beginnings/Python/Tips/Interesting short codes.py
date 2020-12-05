@@ -1,3 +1,8 @@
+## Why do they do this on HackerRank for Python when inputting arrays?
+arr = list(map(int, input().rstrip().split()))
+Basically, get input, rstrip it, split it, map makes each number an int, list combines this all back to a list
+
+
 ##See how the below line has a function in a function
 dog_age = int(input("What is your dog's age? "))
 

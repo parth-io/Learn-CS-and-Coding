@@ -97,6 +97,8 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
    
       1. https://stackoverflow.com/questions/4694661/declaring-java-object-given-its-type-class-name-as-string
 3. Access Modifiers and Annotations (javadocs - https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#format, https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/javadoc.html#leadingasterisks) 
+   1. private public default protected
+   2. abstract final static
 4. Operators - https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html
    1. Boolean and ternary (ternary operator ? can replace if-else statements https://stackoverflow.com/questions/4192225/prettiness-of-ternary-operator-vs-if-statement, https://www.programiz.com/java-programming/ternary-operator)
    2. Bitwise and Conditional Operators
@@ -179,23 +181,29 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
           3. System.out.printf("%-8d%-8d%-8.7g\n", x, y, fraction)
              1. To print a table of 2 integers and a double
        2. For numbers, you can still use the two methods above or use DecimalFormat
-    2. Beware – the nextInt() method does not scan until the end of the line unlike nextLine() method
-    3. Console, Reader class (implemented by BufferReader among others), and Scanner class
-       1. For text data
-       2. BufferReader is used for costly/long input operations
-          1. It is a Decorater Pattern class
-          2. To check for EOF in BufferedReader
-             1. Either do while (null != (String_inputted = bufferedreader_object.readLine()))
-             2. Or String s = r.readLine(); 
-                while (s != null) { 
-                    // do something;  s = r.readLine();}
-       3. Scanner
-          1. https://www.hackerrank.com/challenges/30-data-types/tutorial  
-          2. nextLine() proceeds to the end of the current line, so you may need to use nextLine() twice 
-          3. Instead of using scan.nextLine() twice, you can use a loop to concatenate when there is next line: for (scan.hasNextLine()) {	st += scan.nextLine(); } 
     4. InputStream class is for reading bytes 
        1. Wrap a FileInputStream in a InputStreamReader object if you are reading text with a different encoding, as FileReader uses the default platform encoding 
-    5. Output - https://howtodoinjava.com/java/io/java-write-to-file/#PrintWriter
+    3. Some input classes (Java has io and nio)
+       1. Google 'fastest way to write/read data from huge files', 'fastest way to write to a file'
+       2. https://www.tutorialspoint.com/java/java_files_io.htm
+       3. https://stackoverflow.com/questions/21817816/java-reading-a-file-different-methods; https://stackoverflow.com/questions/22749096/efficient-way-to-read-a-file-java
+       4. Broadly similar to the Output classes
+       5. Reader (abstract class)
+          1. Subclasses of Reader such as InputStreamReader and BufferedReader
+          2. BufferReader is used for costly/long input operations
+             1. When do you not need BufferedReader - http://java-performance.info/java-io-bufferedinputstream-and-java-util-zip-gzipinputstream/
+             2. It is a Decorater Pattern class
+             3. To check for EOF in BufferedReader
+                1. Either do while (null != (String_inputted = bufferedreader_object.readLine()))
+                2. Or String s = r.readLine(); 
+                   while (s != null) { 
+                       // do something;  s = r.readLine();}
+             4. https://medium.com/@isaacjumba/why-use-bufferedreader-and-bufferedwriter-classses-in-java-39074ee1a966
+       6. Scanner
+          1. https://www.hackerrank.com/challenges/30-data-types/tutorial
+          2. nextLine() proceeds to the end of the current line, so you may need to use nextLine() twice
+          3. Instead of using scan.nextLine() twice, you can use a loop to concatenate when there is next line: for (scan.hasNextLine()) {	st += scan.nextLine(); }
+    4. Some output classes - https://howtodoinjava.com/java/io/java-write-to-file/#PrintWriter
        1. System.out
        2. Files.writeString()
        3. Files.write()
@@ -211,8 +219,8 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
            1. Primitive data types
        11. FileChannel
            1. Large files
-    6. System.exit
-    7. Strings and escape sequences
+    5. System.exit
+    6. Strings and escape sequences
        1. Escape characters and UTF (unicode) values (signalled by a \) in strings from the input stream will be considered appropriately, however, the program will ignore any escape characters in text from files
           1. Either use Apache Commons Lang's StringEscapeUtils.unescapeJava(),
           2. Or take each \ separately, convert it to hexadecimal and then to a character
@@ -240,6 +248,7 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
           1. DecimalFormat - https://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html
 12. Because performance is important to graphics applications, and because it's faster to access an array element than to call a method, developers resort to performance tricks such as creating and initializing arrays of sines and cosines.
 13. Assertion  
+14. https://stackabuse.com/javas-object-methods-tostring/
 
 ### Stepping Up 
 
@@ -287,17 +296,22 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
          1. An operation performed on a type argument, the class Number, is equally valid if performed on its subtypes, the classes Integer and Double, also
          2. Generic classes themselves can subtype
             1. `ArrayList<T>` is a subtype of `List<T>`, itself a subtype of `Collection<T>`
-   5. https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it
-   6. Covariance and contravariance - https://dzone.com/articles/covariance-and-contravariance, https://stackoverflow.com/questions/2770264/what-is-the-difference-between-e-extends-number-and-number/, https://www.freecodecamp.org/news/understanding-java-generic-types-covariance-and-contravariance-88f4c19763d2/
-   7. *Could not understand* - https://stackoverflow.com/questions/2745193/why-is-using-collectionstring-class-illegal
-   8. Variable-length arguments (varargs)
-   9. Converting types - https://docs.oracle.com/javase/specs/jls/se8/html/jls-5.html#jls-5.1
-   10. Inner classes
+   5. Using arrays with generics
+      1. One possible approach - `Item[] array = (Item[]) new Object[n]`
+      2. This link will debate the pros and cons of each approach - https://stackoverflow.com/questions/529085/how-to-create-a-generic-array-in-java
+      3. https://www.softwaretestinghelp.com/java-generic-array/
+   6. https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it
+   7. Covariance and contravariance - https://dzone.com/articles/covariance-and-contravariance, https://stackoverflow.com/questions/2770264/what-is-the-difference-between-e-extends-number-and-number/, https://www.freecodecamp.org/news/understanding-java-generic-types-covariance-and-contravariance-88f4c19763d2/
+   8. *Could not understand* - https://stackoverflow.com/questions/2745193/why-is-using-collectionstring-class-illegal
+   9. Variable-length arguments (varargs)
+   10. Converting types - https://docs.oracle.com/javase/specs/jls/se8/html/jls-5.html#jls-5.1
+   11. Inner classes
        1. Inner classes can be static
        2. Non-static inner classes cannot have static fields or methods
-   11. Inner methods alternatives
+   12. Inner methods alternatives
+       
        1. https://www.geeksforgeeks.org/method-within-method-in-java/
-   12. Manipulating and searching strings
+   13. Manipulating and searching strings
        1. Use String class methods – for example, String.split(String regex)
           1. A regex must first be compiled as an instance of Pattern class
        2. Regular expressions (a set of characters used to identify common in given strings)
@@ -325,19 +339,76 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
           4. Sorting strings
              1. Convert to charArray
              2. *Use Comparator interface* - https://www.geeksforgeeks.org/sort-a-string-in-java-2-different-ways/
-   13. Characters and Unicode
+   14. Characters and Unicode
        1. To convert characters to Unicode code points
           1. Use CharSequence class's codePoints() method
           2. If you're using characters outside BMP - https://stackoverflow.com/questions/1527856/how-can-i-iterate-through-the-unicode-codepoints-of-a-java-string?answertab=votes#tab-top
-   14. Micro-optimisations
+   15. Micro-optimisations
        1. For-each and for loops
           1. For arrays and Random Access objects like ArrayLists, use the traditional for loops
           2. Otherwise, for-each is more readable and efficient - https://stackoverflow.com/questions/1006395/fastest-way-to-iterate-an-array-in-java-loop-variable-vs-enhanced-for-statement, https://stackoverflow.com/a/12156099/13742805
-   15. Expressions and Statements
+   16. Expressions and Statements
        1. https://docs.oracle.com/javase/specs/jls/se9/html/jls-15.html#jls-Expression
        2. https://docs.oracle.com/javase/specs/jls/se9/html/jls-14.html#jls-Statement
-   16. Reflection
+   17. Reflection
+       
        1. https://www.baeldung.com/java-reflection
+       
+       2. http://omtlab.com/java-reflection-tutorial/
+       
+       3. https://docs.oracle.com/javase/tutorial/reflect/
+       
+       4. ```java
+          class MyPojo {
+              public static void main(String[] args) {
+                  System.out.println(new MyPojo());
+              }
+          
+              int i = 1;
+              String s = "foo";
+          
+              @Override
+              public String toString() {
+                  StringBuilder result = new StringBuilder();
+                  for (Field f: getClass().getDeclaredFields()) {
+                      try {
+                      result
+                      .append(f.getName())
+                      .append(" : ")
+                      .append(f.get(this))
+                      .append(System.getProperty("line.separator"));
+                      }
+                      catch (IllegalStateException ise) {
+                          result
+                          .append(f.getName())
+                          .append(" : ")
+                          .append("[cannot retrieve value]")
+                          .append(System.getProperty("line.separator"));
+                      }
+                      // nope
+                      catch (IllegalAccessException iae) {}
+                  }
+                  return result.toString();
+              }
+          }
+          ```
+       
+       5. ```java
+          public class Example{
+          
+            String activityState = "resume";
+          
+            public static void main(String[] args) {
+          
+                 Example example = new Example();
+                 Class<?> c = example.getClass();
+                 Field field = c.getDeclaredField("activityState");
+                 System.out.println(field.getName());
+                 System.out.println(field.get(example));
+            }    
+          
+          }
+          ```
 
 ### OO Concepts 
 

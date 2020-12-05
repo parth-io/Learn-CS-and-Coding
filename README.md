@@ -2,6 +2,8 @@
 
 **UPDATE - This repository is going significant reconstruction.**
 
+![ye bois](https://imgs.xkcd.com/comics/estimation.png "Lolol why you should become a programmer")
+
 ### Some amazing links
 
 1. https://teachyourselfcs.com/
@@ -32,6 +34,32 @@ Practise coding and participate in online competitions and hackathons to gain so
 There are some amazing bootcamps out there, but programming is a largely meritocratic field and students can design their own curriculum at their own pace for free.
 Get used to Linux, do not be daunted by the terminal. The terminal is the coolest and snappiest feature of Linux. Period.
 Oh, and please support open-source!
+
+Learning Pathways
+
+1. The latest and the hottest
+   1. AI, ML, Data Science, Robotics, Quantum Computing
+   2. Blockchain
+2. Cryptography and CyberSecurity
+3. The dull and the steady
+   1. Operating systems and kernels
+   2. Electronics, Instrumentation, Hardware
+   3. Math and Algorithms
+
+Programming Hazards
+
+1. RSI
+   1. Change keyboard layout!
+      1. http://xahlee.info/kbd/most_efficient_keyboard_layout.html
+      2. http://xahlee.info/kbd/keyboard_remap_copy_cut_paste_undo.html
+      3. https://www.quora.com/What-are-the-advantages-of-Colemak-vs.-Dvorak
+      4. http://xahlee.info/kbd/dvorak_vs_colemak.html
+      5. http://xahlee.info/kbd/dvorak_and_all_keyboard_layouts.html
+   2. Buy an ergonomic keyboard
+2. Eye strain
+   1. Dry eyes
+      1. Safe Eyes extension, reminds you to take a break
+   2. Blue light filter
 
 List of programming software required
 

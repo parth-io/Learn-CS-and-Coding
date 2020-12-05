@@ -32,8 +32,6 @@ Shift vs for loops - https://docstore.mik.ua/orelly/unix3/upt/ch35_22.htm
 
 ### fdisk; cfdisk 
 
-### chmod; chown
-
 ### su; sudo
 
 ### mount
@@ -44,9 +42,6 @@ Shift vs for loops - https://docstore.mik.ua/orelly/unix3/upt/ch35_22.htm
 When compiling from source\
 Compare with make install\
 http://checkinstall.izto.org/; https://en.wikipedia.org/wiki/CheckInstall 
-
-### touch
-Compare with cat
 
 ### hash
 
@@ -107,20 +102,52 @@ Hardware details are found in the `/proc/` and `/sys/` filesystems\
 ### Check if your laptop is 32 or 64-bit
 `grep -qP '^flags\s*:.*\blm\b' /proc/cpuinfo && echo 64-bit || echo 32-bit`
 
-## Managing files
+## Navigating filesystems
+
+### tree
+
+Gives a recursive overview of the filesystem
+
+### pushd; popd; dirs
+
+Advanced `cd`
+
+## Managing files (you can use wildcards like ?, *, [])
+
 ### locate; find
 
 http://www.hypexr.org/linux_find_help.php
 
-### wildcards
+`find -name "\*.swp" -exec/ok rm {} ’;’`
+
+{} are placeholders that will be filled with all the file names  that result from the find expression, and the preceding command will be  run on each one individually.
+
+End the command with either ‘;’ (including the single-quotes) or "\;". Both forms are fine.
+
+### chmod; chown
+
+### ln
+
+To create hard links
+
+`ln -s` - soft links
+
+`ls -li` - this will help you check
+
+### ls -l; stat
+
+To view permissions
 
 ## Managing file content
-### cat
+
+### cat; tac
 ### touch
-### head
-### tail
+### head; tail
 ### less; more; most
-### nano; vi; vim
+### nano; vi; vim; emacs; ed; gedit
+
+CLI editors
+
 ### grep
 
 ## Managing text
@@ -149,7 +176,7 @@ A more concise version of man
 
 ## Managing processes
 
-### top
+### top; htop
 `top | grep process_name` 
 ### killall; kill
 `killall –9 process_name`
@@ -191,4 +218,4 @@ Anything to do with shell variables
 ## Networking
 ### wget; curl
 ### ifconfig
-### ping
+### ping	

@@ -10,6 +10,7 @@ https://stackoverflow.com/questions/18717016/what-are-ring-0-and-ring-3-in-the-c
 https://unix.stackexchange.com/questions/87625/what-is-difference-between-user-space-and-kernel-space\
 https://en.wikipedia.org/wiki/User_space\
 UEFI vs BIOS - http://www.extremetech.com/computing/96985-demystifying-uefi-the-long-overdue-bios-replacement
+
 ### Hardware
 Data about hardware - stored in /proc/ and /sys/\
 Applications can access devices via files in /dev/ - /dev/input/mouse0 for mice, /dev/snd/* for soundcards\
@@ -28,6 +29,10 @@ Multitasking and multiple processor cores
 
 Permissions for users can be set. See Scripting Notes.
 
+### Boot Process
+
+Power On --> BIOS --> MBR --> Boot loader (GRUB) --> Kernel --> Initial RAM --> /sbin/init --> getty --> X window/Wayland
+
 ## Command Line
 
 ### tty and the GUI
@@ -35,9 +40,15 @@ If you cannot access the GUI, use tty.\
 https://ostechnix.com/how-to-switch-between-ttys-without-using-function-keys-in-linux/\
 https://askubuntu.com/questions/66195/what-is-a-tty-and-how-do-i-access-a-tty
 
+https://unix.stackexchange.com/questions/4126/what-is-the-exact-difference-between-a-terminal-a-shell-a-tty-and-a-con
+
+Ctrl + Alt + Fn1-7
+
 #### Booting into tty or into GUI
 https://askubuntu.com/questions/825094/how-do-i-boot-directly-to-tty1-in-ubuntu\
 startx has not been maintained for long - https://askubuntu.com/questions/436546/ubuntu-12-04-boots-to-tty1, https://askubuntu.com/questions/518454/what-does-startx-command-do
+
+`sudo systemctl start gdm`
 
 ### Basics
 Bash, zh, sh, ksh\
