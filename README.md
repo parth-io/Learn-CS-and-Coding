@@ -6,13 +6,34 @@
 
 ### Some amazing links
 
-1. https://teachyourselfcs.com/
-   1. https://www.reddit.com/r/learnprogramming/comments/acuakt/ossu_or_teachyourselfcscom_for_self_learning_cs/
-2. https://github.com/rossant/awesome-math
-3. https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md
-4. https://functionalcs.github.io/curriculum/
-5. http://blog.agupieware.com/2014/06/online-learning-intensive-bachelors.html?m=1 and http://blog.agupieware.com/2014/05/online-learning-bachelors-level.html
-6. https://isaaccomputerscience.org/topics
+1. Books (programming, theory, math)
+   1. https://github.com/namvdo/CS-and-Programming-Books
+   2. https://github.com/EbookFoundation/free-programming-books/
+2. Purely math stuff (with links to textbooks)
+   1. https://github.com/rossant/awesome-math
+3. Getting a CS degree, for free
+   1. https://teachyourselfcs.com/
+      1. https://www.reddit.com/r/learnprogramming/comments/acuakt/ossu_or_teachyourselfcscom_for_self_learning_cs/
+   2. https://github.com/nushackers/notes-to-cs-freshmen-from-the-future
+   3. https://github.com/jwasham/coding-interview-university
+   4. https://github.com/jasonsbarr/computer-science-program
+   5. https://github.com/prakhar1989/awesome-courses
+   6. https://github.com/cs-MohamedAyman/Coursera-Specializations
+   7. https://www.reddit.com/r/learnprogramming/comments/akbeqk/the_open_source_computer_science_degree/
+   8. https://github.com/salimt/Courses-
+   9. https://github.com/ossu/computer-science
+      1. https://github.com/ossu/computer-science/issues/664
+      2. https://github.com/ossu/data-science/issues/61
+   10. https://functionalcs.github.io/curriculum/
+   11. http://blog.agupieware.com/2014/06/online-learning-intensive-bachelors.html?m=1 and http://blog.agupieware.com/2014/05/online-learning-bachelors-level.html
+   12. https://github.com/farhankarim/MY-COMPUTER-SCIENCE-CURRICULUM
+   13. MOOCs
+       1. https://www.coursera.org/specializations/algorithms
+       2. https://www.coursera.org/instructor/~250165
+       3. https://see.stanford.edu/Course
+       4. https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/about
+   14. https://isaaccomputerscience.org/topics
+   15. A most useful summary - https://btholt.github.io/four-semesters-of-cs/
 
 This repository is meant for me as a personal record of my journey into the realm of Computer Science, Mathematics and Software Development. However, to the legions of interested wannabe-programmers, you can use this page as a starting point.
 
@@ -67,7 +88,7 @@ List of programming software required
    1. Power tools for pros
       1. Emacs
       2. Vim
-   2. For learners
+   2. For the lazy and the students
       1. Any text editor
       2. Notepad works for the Windows scrubs
       3. Kate for Kubuntu

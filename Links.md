@@ -20,7 +20,11 @@ AWK - https://www.gnu.org/software/gawk/manual/gawk.html
 
 For Java - https://medium.com/javarevisited/9-things-java-programmers-should-learn-in-2018-3f0b2207dfc4 
 
+https://sp19.datastructur.es/
+
 http://math.hws.edu/javanotes/
+
+http://www.cs.columbia.edu/~aho/cs3261/
 
 https://www.edx.org/course/cs50s-introduction-to-computer-science 
 

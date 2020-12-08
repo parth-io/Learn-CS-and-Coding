@@ -1,5 +1,8 @@
 https://guides.github.com/features/mastering-markdown/
 https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
+
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images
+
 https://daringfireball.net/projects/markdown/
 https://www.markdownguide.org/getting-started/
 

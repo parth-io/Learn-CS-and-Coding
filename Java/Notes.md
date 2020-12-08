@@ -253,13 +253,18 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
 ### Stepping Up 
 
 1. Exceptions – throw can be used to throw any exception, checked or unchecked; throws must be put in the method declaration if the exception is checked and you want throw the exception up the method call stack (no catch statement); throws allows the compiler and program to know that the given exception(s) can occur in the method - https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html
+
 2. Streams vs Loops - https://blog.overops.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/, https://www.baeldung.com/java-collection-stream-foreach, https://blog.jooq.org/2015/12/08/3-reasons-why-you-shouldnt-replace-your-for-loops-by-stream-foreach/, https://stackoverflow.com/questions/44180101/in-java-what-are-the-advantages-of-streams-over-loops, http://cr.openjdk.java.net/~briangoetz/lambda/lambda-libraries-final.html, https://jaxenter.com/java-performance-tutorial-how-fast-are-the-java-8-streams-118830.html
    1. Convert int array to String array via Streams
       1. https://www.techiedelight.com/convert-int-array-string-array-java/
    2. https://www.techiedelight.com/convert-int-array-string-array-java/
+   
 3. Threads
+
 4. `This` - https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html
+
 5. Lambda expression vs Anonymous class
+
 6. Java collections - https://dzone.com/articles/an-introduction-to-the-java-collections-framework
    1. Maps interface
       1. Hash maps, Map interface, and Dictionary class
@@ -274,6 +279,7 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
             3. https://stackoverflow.com/questions/2265503/why-do-i-need-to-override-the-equals-and-hashcode-methods-in-java
             4. https://www.programcreek.com/2011/07/java-equals-and-hashcode-contract/
             5. hashCode() equals() hashmap
+   
 7. Generics; Classes; Types
    1. Formats
       1. Declaring object - Map<String, Integer> object = new LinkedHashMap<String, Integer>();
@@ -300,115 +306,136 @@ https://www3.ntu.edu.sg/home/ehchua/programming/
       1. One possible approach - `Item[] array = (Item[]) new Object[n]`
       2. This link will debate the pros and cons of each approach - https://stackoverflow.com/questions/529085/how-to-create-a-generic-array-in-java
       3. https://www.softwaretestinghelp.com/java-generic-array/
-   6. https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it
-   7. Covariance and contravariance - https://dzone.com/articles/covariance-and-contravariance, https://stackoverflow.com/questions/2770264/what-is-the-difference-between-e-extends-number-and-number/, https://www.freecodecamp.org/news/understanding-java-generic-types-covariance-and-contravariance-88f4c19763d2/
-   8. *Could not understand* - https://stackoverflow.com/questions/2745193/why-is-using-collectionstring-class-illegal
-   9. Variable-length arguments (varargs)
-   10. Converting types - https://docs.oracle.com/javase/specs/jls/se8/html/jls-5.html#jls-5.1
-   11. Inner classes
-       1. Inner classes can be static
-       2. Non-static inner classes cannot have static fields or methods
-   12. Inner methods alternatives
-       
+   
+8. https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it
+
+9. Covariance and contravariance - https://dzone.com/articles/covariance-and-contravariance, https://stackoverflow.com/questions/2770264/what-is-the-difference-between-e-extends-number-and-number/, https://www.freecodecamp.org/news/understanding-java-generic-types-covariance-and-contravariance-88f4c19763d2/
+
+10. *Could not understand* - https://stackoverflow.com/questions/2745193/why-is-using-collectionstring-class-illegal
+
+11. Variable-length arguments (varargs)
+
+12. Converting types - https://docs.oracle.com/javase/specs/jls/se8/html/jls-5.html#jls-5.1
+
+13. Inner (nested) classes
+    1. Inner classes can be static
+    2. Non-static inner classes cannot have static fields or methods
+
+    1. Inner methods alternatives
+
        1. https://www.geeksforgeeks.org/method-within-method-in-java/
-   13. Manipulating and searching strings
-       1. Use String class methods – for example, String.split(String regex)
-          1. A regex must first be compiled as an instance of Pattern class
-       2. Regular expressions (a set of characters used to identify common in given strings)
-          1. Character class, escape sequences, other constructs and quantifiers like *, ^, $, ., +
-          2. To escape metacharacters, you would use a \, but you need to escape the \ too, so use \\metacharacter
-          3. When you want to match one character in a sequence of characters, use [character_to_be_matched], with square brackets
-          4. Pattern and Matcher classes
-          5. Groups and backreferences
-          6. https://www.regular-expressions.info/
-          7. https://regexr.com/
-       3. As == checks for reference equality, use .equals() for strings to check for value equality
-       4. Iterate over strings
-          1. https://stackoverflow.com/questions/3925130/java-how-to-get-iteratorcharacter-from-string
-          2. StringCharacterIterator class
-          3. StringReader class
-          4. https://stackoverflow.com/questions/196830/what-is-the-easiest-best-most-correct-way-to-iterate-through-the-characters-of-a?
-             1. charAt() method
-             2. toCharArray() method
-          5. *Figure out later* - https://www.javaspecialists.eu/archive/Issue237.html, https://stackoverflow.com/questions/8894258/fastest-way-to-iterate-over-all-the-chars-in-a-string?answertab=votes#tab-top 
-       5. compareTo() method
-       6. split()
-          1. Beware – it adds an empty string if the first element of the string proves to be a match for the regex parameter
-          2. Either convert the characters matching the regex to whitespace and call the trim() method to remove trailing and leading whitespace,
-          3. Or convert to ArrayList and use contains() and remove()
-          4. Sorting strings
-             1. Convert to charArray
-             2. *Use Comparator interface* - https://www.geeksforgeeks.org/sort-a-string-in-java-2-different-ways/
-   14. Characters and Unicode
-       1. To convert characters to Unicode code points
-          1. Use CharSequence class's codePoints() method
-          2. If you're using characters outside BMP - https://stackoverflow.com/questions/1527856/how-can-i-iterate-through-the-unicode-codepoints-of-a-java-string?answertab=votes#tab-top
-   15. Micro-optimisations
-       1. For-each and for loops
-          1. For arrays and Random Access objects like ArrayLists, use the traditional for loops
-          2. Otherwise, for-each is more readable and efficient - https://stackoverflow.com/questions/1006395/fastest-way-to-iterate-an-array-in-java-loop-variable-vs-enhanced-for-statement, https://stackoverflow.com/a/12156099/13742805
-   16. Expressions and Statements
-       1. https://docs.oracle.com/javase/specs/jls/se9/html/jls-15.html#jls-Expression
-       2. https://docs.oracle.com/javase/specs/jls/se9/html/jls-14.html#jls-Statement
-   17. Reflection
+
+14. Manipulating and searching strings
+    1. Use String class methods – for example, String.split(String regex)
+       1. A regex must first be compiled as an instance of Pattern class
+    2. Regular expressions (a set of characters used to identify common in given strings)
+       1. Character class, escape sequences, other constructs and quantifiers like *, ^, $, ., +
+       2. To escape metacharacters, you would use a \, but you need to escape the \ too, so use \\metacharacter
+       3. When you want to match one character in a sequence of characters, use [character_to_be_matched], with square brackets
+       4. Pattern and Matcher classes
+       5. Groups and backreferences
+       6. https://www.regular-expressions.info/
+       7. https://regexr.com/
+    3. As == checks for reference equality, use .equals() for strings to check for value equality
+    4. Iterate over strings
+       1. https://stackoverflow.com/questions/3925130/java-how-to-get-iteratorcharacter-from-string
+       2. StringCharacterIterator class
+       3. StringReader class
+       4. https://stackoverflow.com/questions/196830/what-is-the-easiest-best-most-correct-way-to-iterate-through-the-characters-of-a?
+          1. charAt() method
+          2. toCharArray() method
+       5. *Figure out later* - https://www.javaspecialists.eu/archive/Issue237.html, https://stackoverflow.com/questions/8894258/fastest-way-to-iterate-over-all-the-chars-in-a-string?answertab=votes#tab-top 
+    5. compareTo() method
+    6. split()
+       1. Beware – it adds an empty string if the first element of the string proves to be a match for the regex parameter
+       2. Either convert the characters matching the regex to whitespace and call the trim() method to remove trailing and leading whitespace,
+       3. Or convert to ArrayList and use contains() and remove()
+       4. Sorting strings
+          1. Convert to charArray
+          2. *Use Comparator interface* - https://www.geeksforgeeks.org/sort-a-string-in-java-2-different-ways/
+
+15. Characters and Unicode
+    1. To convert characters to Unicode code points
+       1. Use CharSequence class's codePoints() method
+       2. If you're using characters outside BMP - https://stackoverflow.com/questions/1527856/how-can-i-iterate-through-the-unicode-codepoints-of-a-java-string?answertab=votes#tab-top
+
+16. Micro-optimisations
+    1. For-each and for loops
+       1. For arrays and Random Access objects like ArrayLists, use the traditional for loops
+       2. Otherwise, for-each is more readable and efficient - https://stackoverflow.com/questions/1006395/fastest-way-to-iterate-an-array-in-java-loop-variable-vs-enhanced-for-statement, https://stackoverflow.com/a/12156099/13742805
+
+17. Expressions and Statements
+    1. https://docs.oracle.com/javase/specs/jls/se9/html/jls-15.html#jls-Expression
+    2. https://docs.oracle.com/javase/specs/jls/se9/html/jls-14.html#jls-Statement
+
+18. Reflection
+
+    1. https://www.baeldung.com/java-reflection
+
+    2. http://omtlab.com/java-reflection-tutorial/
+
+    3. https://docs.oracle.com/javase/tutorial/reflect/
+
+    4. ```java
+       class MyPojo {
+           public static void main(String[] args) {
+               System.out.println(new MyPojo());
+           }
        
-       1. https://www.baeldung.com/java-reflection
+           int i = 1;
+           String s = "foo";
        
-       2. http://omtlab.com/java-reflection-tutorial/
+           @Override
+           public String toString() {
+               StringBuilder result = new StringBuilder();
+               for (Field f: getClass().getDeclaredFields()) {
+                   try {
+                   result
+                   .append(f.getName())
+                   .append(" : ")
+                   .append(f.get(this))
+                   .append(System.getProperty("line.separator"));
+                   }
+                   catch (IllegalStateException ise) {
+                       result
+                       .append(f.getName())
+                       .append(" : ")
+                       .append("[cannot retrieve value]")
+                       .append(System.getProperty("line.separator"));
+                   }
+                   // nope
+                   catch (IllegalAccessException iae) {}
+               }
+               return result.toString();
+           }
+       }
+       ```
+
+    5. ```java
+       public class Example{
        
-       3. https://docs.oracle.com/javase/tutorial/reflect/
+         String activityState = "resume";
        
-       4. ```java
-          class MyPojo {
-              public static void main(String[] args) {
-                  System.out.println(new MyPojo());
-              }
-          
-              int i = 1;
-              String s = "foo";
-          
-              @Override
-              public String toString() {
-                  StringBuilder result = new StringBuilder();
-                  for (Field f: getClass().getDeclaredFields()) {
-                      try {
-                      result
-                      .append(f.getName())
-                      .append(" : ")
-                      .append(f.get(this))
-                      .append(System.getProperty("line.separator"));
-                      }
-                      catch (IllegalStateException ise) {
-                          result
-                          .append(f.getName())
-                          .append(" : ")
-                          .append("[cannot retrieve value]")
-                          .append(System.getProperty("line.separator"));
-                      }
-                      // nope
-                      catch (IllegalAccessException iae) {}
-                  }
-                  return result.toString();
-              }
-          }
-          ```
+         public static void main(String[] args) {
        
-       5. ```java
-          public class Example{
-          
-            String activityState = "resume";
-          
-            public static void main(String[] args) {
-          
-                 Example example = new Example();
-                 Class<?> c = example.getClass();
-                 Field field = c.getDeclaredField("activityState");
-                 System.out.println(field.getName());
-                 System.out.println(field.get(example));
-            }    
-          
-          }
-          ```
+              Example example = new Example();
+              Class<?> c = example.getClass();
+              Field field = c.getDeclaredField("activityState");
+              System.out.println(field.getName());
+              System.out.println(field.get(example));
+         }    
+       
+       }
+       ```
+
+19. Comparable interface
+
+    1. https://www.geeksforgeeks.org/comparable-vs-comparator-in-java/
+    2. Implement this interface when you want to compare or sort objects
+
+20. Iterable interface
+
+    1. Implement this when you have a data structure and want to implement the for-each loop
 
 ### OO Concepts 
 
