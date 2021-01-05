@@ -4,6 +4,10 @@ https://development.zeef.com/hub
 
  
 
+A great resource for both languages and trending tech (AI, blockchain, frontend) - https://www.javatpoint.com/
+
+
+
 https://programminghistorian.org/en/lessons/ - **excellent** 
 
  
@@ -369,10 +373,6 @@ https://github.com/artemjackson/MilitaryNavigationEquipmentTrainer
  
 
 **Coding environments** 
-
-Text editors – Atom, Sublim, vim 
-
-IDEs – PyCharm, Spyder, Kite plugin 
 
 Jupyter, NumPy 
 

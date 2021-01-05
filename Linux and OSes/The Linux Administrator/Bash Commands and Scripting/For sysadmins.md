@@ -1,8 +1,5 @@
 # Some Interesting Commands
 
-### type
-Used to understand how its keyword would be translated if passed as a command, and if the command is a shell builtin or external binary
-
 ### -dry-run
 
 For many utilities, you can test your command first
@@ -83,23 +80,8 @@ Produce patch files by running `$ diff -Nur originalfile newfile > patchfile`
 
 To apply a patch, do either `$ patch -p1 < patchfile` or  `$ patch originalfile patchfile.`The first usage is often used to apply changes to an entire directory tree, rather than just one file, as in the second usage.
 
-### file
-
-Determines the nature of files, as in Linux the file extension is not meaningful (.txt files might actually be scripts)
-
 ### rsync
 
 Locations are designated in the target:path form, where target can be in the form of someone@host. The someone@ part is optional and used if the remote user is different from the local user.
 
 `$ rsync -r project-X archive-machine:archives/project-X`
-
-### gzip; bzip2; xz; zip
-
-| **Command** | **Usage**                                                    |
-| ----------- | ------------------------------------------------------------ |
-| **gzip**    | The most frequently used Linux compression utility           |
-| **bzip2**   | Produces files significantly smaller than those produced by gzip |
-| **xz**      | The most space-efficient compression utility used in Linux   |
-| **zip**     | Is often required to examine and decompress archives from other operating systems |
-
-More efficient techniques take longer, but decompression time does not vary as much across different methods. In addition, the tar utility is often used to group files in an archive and then compress the whole archive at once.

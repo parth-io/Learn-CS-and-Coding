@@ -35,7 +35,9 @@
    14. https://isaaccomputerscience.org/topics
    15. A most useful summary - https://btholt.github.io/four-semesters-of-cs/
 
-This repository is meant for me as a personal record of my journey into the realm of Computer Science, Mathematics and Software Development. However, to the legions of interested wannabe-programmers, you can use this page as a starting point.
+This repository is meant for me as a personal record of my journey into the realm of Computer Science, Mathematics and Software Development. However, to the legions of interested wannabe-programmers, you can use this page as a starting point. 
+
+**The guiding principle of my notes is the creation of a concise record of what I have learnt - for example, if the definitions or detailed explanations of a certain topic can be easily Googled, then I will not include the definition or explanation. Including only the topic name will help me remember that I have learnt this topic and will prevent unneeded explanations from cluttering up the notes**
 
 **See the following descriptions of the folders:**
 
@@ -54,7 +56,7 @@ My advice is, get started with Python first, then transition to OOP with C++ or 
 Practise coding and participate in online competitions and hackathons to gain some experience.
 There are some amazing bootcamps out there, but programming is a largely meritocratic field and students can design their own curriculum at their own pace for free.
 Get used to Linux, do not be daunted by the terminal. The terminal is the coolest and snappiest feature of Linux. Period.
-Oh, and please support open-source!
+Open-source programs are also comparable to proprietary ones!
 
 Learning Pathways
 
@@ -66,6 +68,7 @@ Learning Pathways
    1. Operating systems and kernels
    2. Electronics, Instrumentation, Hardware
    3. Math and Algorithms
+   4. Programming languages
 
 Programming Hazards
 
@@ -101,6 +104,6 @@ List of programming software required
    1. Typora - hands-down the best, but do your market research
 3. Terminal
    1. bash
-      1. A quick Google search reveals a number of wondrous terminals emulators, each with their own special tools or animations. However, I use the stock terminal as a daily driver
+      1. A quick Google search reveals a number of wondrous terminals emulators, each with their own special tools or animations. However, I use the konsole as a daily driver
    2. ksh
       1. Honestly I gave up on this stupid thing

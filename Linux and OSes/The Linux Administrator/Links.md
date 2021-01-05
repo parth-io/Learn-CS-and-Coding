@@ -27,7 +27,8 @@ https://www.techradar.com/best/best-linux-training-providers
 Create scripts/Use the shell/Learn Linux 
 https://www.gnu.org/software/bash/manual/html_node/index.html
 
-1. https://www.google.com.sg/search?client=opera&q=create+script+ubuntu&sourceid=opera&ie=UTF-8&oe=UTF-8 
+https://www.google.com.sg/search?client=opera&q=create+script+ubuntu&sourceid=opera&ie=UTF-8&oe=UTF-8 
+
 2. https://vitux.com/how-to-write-a-shell-script-in-ubuntu/ 
 3. https://help.ubuntu.com/community/Beginners/BashScripting 
 5. https://my.safaribooksonline.com/0672323583 
@@ -62,8 +63,9 @@ https://www.gnu.org/software/bash/manual/html_node/index.html
     2. https://www.thegeekdiary.com/what-is-the-purpose-of-bash_profile-file-under-user-home-directory-in-linux/ 
     3. https://stackoverflow.com/questions/21192420/how-do-i-use-variables-in-single-quoted-strings 
     4. https://stackoverflow.com/questions/13799789/expansion-of-variables-inside-single-quotes-in-a-command-in-bash 
-23. https://www.linuxtopia.org/online_books/ 
-24. https://medium.com/javarevisited/6-free-courses-to-learn-bash-shell-scripting-in-linux-and-unix-a50461ecd4fe 
+22. https://www.linuxtopia.org/online_books/ 
+    1. https://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/
+23. https://medium.com/javarevisited/6-free-courses-to-learn-bash-shell-scripting-in-linux-and-unix-a50461ecd4fe 
     1. https://medium.com/javarevisited/top-10-courses-to-learn-linux-command-line-in-2020-best-and-free-f3ee4a78d0c0 
 
 https://itsfoss.tradepub.com/category/information-technology-servers-and-linux-server-os/806/ 

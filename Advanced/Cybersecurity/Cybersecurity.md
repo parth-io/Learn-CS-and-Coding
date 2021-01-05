@@ -2,7 +2,9 @@ OSCP
 
 1) installing Kali Linux 2)Basic terms of cyber world 3) Basics of networking 4) Web exploits with step wise approach on a practice environment DVWA 5) Steganography related techniques 6) Wireless security 7) google dorks 8) OS detection / Scanning techniques - nmap 9) Few advance exploitation concepts/attacks - msf 10) google dorks 
 
-
+Shell Escape
+https://www.sans.org/blog/escaping-restricted-linux-shells/
+https://fireshellsecurity.team/restricted-linux-shell-escaping-techniques/
 
 https://www.secjuice.com/penetration-testing-for-beginners-part-1-an-overview/ 
 

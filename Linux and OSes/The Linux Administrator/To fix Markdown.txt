@@ -1,4 +1,0 @@
-Creating new line in Typora - does it create a new paragraph? And if it does not, it is creating a new line, why does it not need a '\' character but GitHub needs it? 
-TOC is broken on GitHub
-
-See why Typora's GitHub-flavoured MarkDown is not working

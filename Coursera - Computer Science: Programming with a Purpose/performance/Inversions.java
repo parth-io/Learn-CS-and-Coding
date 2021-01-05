@@ -14,9 +14,9 @@ public class Inversions {
     }
     
     /*
-    Your original method is inefficient. A faster way to do it upon reflection is by checking if k < (n-1). If yes, then depending on the diff, go calculate the diff and slot the value of (n-1) at the appropriate location while the rest of the numbers are filled in in ascending order from the left. Or what you could do is put (n-1) last in the permutation (at the rightmost index of the array). If no, (n-1) goes at the zeroth index or the start of the array. Then check if k - (n-1) < (n - 2). Rinse and repeat.
+    Your original method is inefficient. A faster way to do it is by checking if k < (n-1). If yes, then depending on the diff, go calculate the diff and slot the value of (n-1) at the appropriate location while the rest of the numbers are filled in in ascending order from the left. Or what you could do is put (n-1) last in the permutation (at the rightmost index of the array). If no, (n-1) goes at the zeroth index or the start of the array. Then check if k - (n-1) < (n - 2). Rinse and repeat.
     
-    
+    My original method:
     Basically what I am doing is firstly finding the value of n, x, for which k < (x+1)*((x+1)-1)/2. n(n-1)/2 = 0 + 1 + 2 + ... + (n-1) + n.
     Once found, calculate the difference diff. diff = (x+1)*((x+1)-1)/2 - k
     The first for loop enters the largest values first at the right of the array.

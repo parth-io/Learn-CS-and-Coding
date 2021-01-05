@@ -1,17 +1,59 @@
 # Useful Commands for Bash
 
+Some extremely useful shortcuts for Bash - https://ostechnix.com/list-useful-bash-keyboard-shortcuts/
+
+```
+ctrl-c
+    interrupts the running programctrl-d    sends an EOF (end of file) to close the terminal
+ctrl-z
+    suspends the running program
+ctrl-s
+    freezes the screen, stopping the display
+ctrl-q
+    thaws out the screen and allows the screen display to continue
+ctrl-h
+    deletes the last character typed
+ctrl-w
+    deletes the last word typed
+ctrl-u
+    deletes from beginning of the line to cursor position
+ctrl-r
+    retrieves previously run commands so you can run them again
+ctrl-u
+    removes text from the command line and places it in the clipboard
+ctrl-y
+    grabs text from the clipboard and runs it
+ctrl-l
+    clears the screenctrl-a    moves cursor to the beginning of the linectrl-e    moves cursor to the end of the line
+ctrl-a
+	goes to the beginning of the line
+ctrl-e
+	goes to the end of the line
+ctrl-d
+    exits the current shell
+tab
+	Auto-complete feature for directories, filenames, and binaries!
+```
+
+Executing previous commands
+
+1. `$ !!` - executes the previous command
+2. `!$` - refers to the last argument in a line
+3. `!n` - n^th command
+4. `!string` - most recent command starting with `string`
+
+## How to Use
+
+These are some of the more essential commands any Linux user/administrator will encounter. Examples are given in `inline code`.
+
+From the Table of Contents above, find a random comment, Google it (or read the `man`  page, practise with it in your shell, commit to memory.  Simple? You wish.
+
 [TOC]
 
-
-
-### Command
-
-Description\
-*Further links/explanation*\
-`Sample use of the command` - supporting explanation
+## Random
 
 ### xargs
-Reads items from standard input as separated by blanks and executes a command once for each argument
+Reads items from standard input as arguments for a command
 `xargs -n 1 curl -O < urls-to-download.txt`- when you want to use curl to download from multiple URLs\
 `echo 'one two three' | xargs mkdir` - creates three folders\
 `ls ‘one two three.txt’ ‘four.txt’ find . -name ‘*.txt’ | xargs -d ‘\n’ rm`- when filenames contains spaces you need to use -d option to change delimiter\
@@ -22,6 +64,14 @@ Used to parse command options and arguements\
 getopts is defined by POSIX - be sure that it runs on any system running bash in POSIX mode (e.g., set -o posix)), but it does not support long options\
 getopt supports long options, but is system-specific\
 More detailed explanation - [https://www.computerhope.com/unix/bash/getopts.htm](https://www.computerhope.com/unix/bash/getopts.htm)
+
+### clear
+
+### date
+
+### cal
+
+### history
 
 ### shift
 https://unix.stackexchange.com/questions/174566/what-is-the-purpose-of-using-shift-in-shell-scripts
@@ -53,19 +103,21 @@ http://checkinstall.izto.org/; https://en.wikipedia.org/wiki/CheckInstall
 
 ### editor
 
-### whoami
-
 ### which
 
-### echo $?
-Gets the exit status of the last run command
+### echo
+
+`echo $?` - Gets the exit status of the last run command
+
+`echo string >> file`
 
 ### bash
 Starts a subshell in exisiting shell\
 See [Scripting Notes](https://github.com/parth-io/Learn-CS-and-Coding/blob/master/Bash%20Scripting/Scripting%20Notes.md#shells-bash) for more details
 
 ### dd
-https://linuxconfig.org/learning-linux-commands-dd\
+
+Versatile tool: can be used for managing file systems, system-related tasks, backup, and even text manipulation! See https://linuxconfig.org/learning-linux-commands-dd
 Might need root permissions\
 If copying to a USB, ensure that the USB key is unused; make sure that none of its partitions are mounted.\
 The command also assumes that it is run while in the directory hosting the ISO image or file to be copied, otherwise the full path will need to be provided.
@@ -126,6 +178,10 @@ To compare 3 files - `diff3`
 
 Just like diff, except it is meant for for binary files
 
+### file
+
+Determines the nature of files, as in Linux the file extension is not meaningful (.txt files might actually be scripts)
+
 ### locate; find
 
 http://www.hypexr.org/linux_find_help.php
@@ -160,8 +216,6 @@ This sequence looks in /users/home/directory/documents for a file (*-type f*) wi
 
 End the command with either ‘;’ (including the single-quotes) or "\;". Both forms are fine.
 
-### chmod; chown
-
 ### ln
 
 To create hard links
@@ -174,20 +228,55 @@ To create hard links
 
 To view permissions
 
-## Managing file content
+### gzip; bzip2; xz; zip; tar
+
+| **Command** | **Usage**                                                    |
+| ----------- | ------------------------------------------------------------ |
+| `gzip`      | The most frequently used Linux compression utility -  `gzip *`, `gunzip foo`, `gzip -r dir` |
+| `bzip2`     | Produces files significantly smaller than those produced by gzip - `bzip2` |
+| `xz`        | Most space-efficient, mainly used to compress the kernel - `xz foo`, `xz -dk foo.xz #decompress but do not remove`, `xz -dcf 1.txt 2.txt.xz > 3.txt`, `xz -d *.xz` |
+| `zip`       | Is often required to examine and decompress archives from other operating systems |
+| `tar`       | Used to group files in an archive (and then (un)compress the whole archive at once) - `tar -xvf mydir.tar #extract files in tar into ./mydir`, `tar -xvzf mydir.tar.gz`, `tar jcvf mydir.tar.gz mydir #for bzip2` |
+
+More efficient techniques take longer, but decompression time does not vary as much across different methods.
+
+## Managing files
 
 ### cat; tac
+
+`cat > file << EOF` - Standard input will end once you type EOF
+
+`cat file` - Ctrl + D will end Std. In.
+
 ### touch
+
 ### head; tail
+
+`tail -f`
+
 ### less; more; most
 ### nano; vi; vim; emacs; ed; gedit
 
-CLI editors
+CLI editors, except for `gedit`
 
 ### grep
 
-## Managing text
-### sed
+### z* bz* xz*
+
+For compressed files
+
+`zdiff; zgrep; zless; zcat; bzcat; xzcat`
+
+## Managing text and file content
+
+### uniq
+
+### paste
+
+### join
+
+### split
+
 ### cut
 ### spell
 ### sort
@@ -210,17 +299,51 @@ A more concise version of man
 
 `help -name_of_command`
 
+### type
+
+Used to find out if the command is a shell built-in or external binary
+
+### help
+
+Especially useful for shell built-ins on Debian, which do not have proper documented `man` pages
+
+`help command; command --help`
+
 ## Managing permissions
 
 ### chown
 
 `chown user:group file` - to change both the user and group of a file at the same time
 
+`# chown root:root file` - change both user and group to root
+
 ### chgrp
 
 ### chmod
 
+`chmod u+x, g-w, o=r file`
+
+`chmod uo+x, g+w file`
+
+`chmod 754 file` 
+
 ### newgrp
+
+## Managing Users and Groups
+
+### who
+
+### whoami
+
+### id
+
+`id -nG`
+
+### groups
+
+### getent
+
+`getent group group_name`
 
 ## Managing processes
 
@@ -272,12 +395,6 @@ To modify environmental variables
 ### set
 Anything to do with shell variables
 `set -o posix; set` - to view shell variables but not shell functions, by setting it to POSIX mode
-
-## Introductory terminal commands
-### clear
-### date
-### cal
-### history
 
 ## Networking
 ### wget; curl
