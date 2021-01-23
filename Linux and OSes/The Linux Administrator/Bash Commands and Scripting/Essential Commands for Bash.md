@@ -14,8 +14,8 @@ Description\
 ### ls
 **L**i**S**t files in your current directory 
 ### cd
-**C**hange **D**irectory\
-`cd -` - go to former working directory\
+**C**hange **D**irectory
+`cd -` - go to former working directory
 
 `cd ~`
 

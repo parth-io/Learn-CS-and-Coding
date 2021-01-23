@@ -1,8 +1,14 @@
-**AMAZING RESOURCE** http://www.physics.udel.edu/~bnikolic/teaching/phys660/RUTE/rute/node1.html 
+**AMAZING RESOURCE** http://www.physics.udel.edu/~bnikolic/teaching/phys660/RUTE/rute/node1.htm
+
+https://ryanstutorials.net/bash-scripting-tutorial/l 
+
+https://www.aplawrence.com/index.html
+
+https://www.shellscript.sh/philosophy.html
 
 https://www.tecmint.com/linux-foundation-lfcs-lfce-certification-exam-book/ 
 
-https://tldp.org/guides.html 
+**https://tldp.org/guides.html** 
 
 https://antofthy.gitlab.io/info/ 
 
@@ -21,6 +27,8 @@ https://linuxcommando.blogspot.com/p/resources.html
 https://fsl.fmrib.ox.ac.uk/fslcourse/unix_intro/index.html
 
 https://www.booleanworld.com/ 
+
+https://linuxize.com/
 
 https://www.techradar.com/best/best-linux-training-providers
 
@@ -44,28 +52,30 @@ https://www.google.com.sg/search?client=opera&q=create+script+ubuntu&sourceid=op
 11. http://www.compciv.org/recipes/cli/basic-shell-scripts/ 
 12. http://linuxcommand.org/lc3_wss0010.php 
 13. https://guide.bash.academy/
-14. https://linuxjourney.com/
-15. http://www.ee.surrey.ac.uk/Teaching/Unix/unix1.html 
-16. https://opensource.com/article/20/4/bash-programming-guide 
+14. http://mywiki.wooledge.org/BashGuide
+15. https://wiki.bash-hackers.org/start
+16. https://linuxjourney.com/
+17. http://www.ee.surrey.ac.uk/Teaching/Unix/unix1.html 
+18. https://opensource.com/article/20/4/bash-programming-guide 
     1. See links in this website 
-17. https://training.linuxfoundation.org/training/course-catalog/?_sft_difficulty_level=beginner 
+19. https://training.linuxfoundation.org/training/course-catalog/?_sft_difficulty_level=beginner 
     1. There are some free beginner courses 
        1. https://training.linuxfoundation.org/training/introduction-to-linux/?utm_source=linuxcom&utm_medium=blog&utm_campaign=linux 
-18. https://openclassrooms.com/en/courses 
-19. https://linuxacademy.com/learning-path/junior-linux-systems-administrator-entry-level/ 
-20. Matt 
+20. https://openclassrooms.com/en/courses 
+21. https://linuxacademy.com/learning-path/junior-linux-systems-administrator-entry-level/ 
+22. Matt 
     1. http://matt.might.net/articles/bash-by-example/ 
     2. http://matt.might.net/articles/settling-into-unix/ 
     3. http://matt.might.net/articles/basic-unix/ 
-21. https://www.linux.com/training-tutorials/writing-simple-bash-script/ 
-22. Some Bash tips 
+23. https://www.linux.com/training-tutorials/writing-simple-bash-script/ 
+24. Some Bash tips 
     1. http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_02_03.html 
     2. https://www.thegeekdiary.com/what-is-the-purpose-of-bash_profile-file-under-user-home-directory-in-linux/ 
     3. https://stackoverflow.com/questions/21192420/how-do-i-use-variables-in-single-quoted-strings 
     4. https://stackoverflow.com/questions/13799789/expansion-of-variables-inside-single-quotes-in-a-command-in-bash 
-22. https://www.linuxtopia.org/online_books/ 
+25. https://www.linuxtopia.org/online_books/ 
     1. https://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/
-23. https://medium.com/javarevisited/6-free-courses-to-learn-bash-shell-scripting-in-linux-and-unix-a50461ecd4fe 
+26. https://medium.com/javarevisited/6-free-courses-to-learn-bash-shell-scripting-in-linux-and-unix-a50461ecd4fe 
     1. https://medium.com/javarevisited/top-10-courses-to-learn-linux-command-line-in-2020-best-and-free-f3ee4a78d0c0 
 
 https://itsfoss.tradepub.com/category/information-technology-servers-and-linux-server-os/806/ 

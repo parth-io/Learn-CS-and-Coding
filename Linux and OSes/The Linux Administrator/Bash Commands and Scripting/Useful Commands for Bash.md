@@ -1,5 +1,9 @@
 # Useful Commands for Bash
 
+Useful shell tips - https://tldp.org/LDP/GNU-Linux-Tools-Summary/html/c1195.htm
+
+When using the `less` command (`man` uses `less` as its paginator), type `h` to see all the possible keyboard shortcuts. Typing `/text` searches for the specified text.
+
 Some extremely useful shortcuts for Bash - https://ostechnix.com/list-useful-bash-keyboard-shortcuts/
 
 ```
@@ -52,49 +56,10 @@ From the Table of Contents above, find a random comment, Google it (or read the 
 
 ## Random
 
-### xargs
-Reads items from standard input as arguments for a command
-`xargs -n 1 curl -O < urls-to-download.txt`- when you want to use curl to download from multiple URLs\
-`echo 'one two three' | xargs mkdir` - creates three folders\
-`ls ‘one two three.txt’ ‘four.txt’ find . -name ‘*.txt’ | xargs -d ‘\n’ rm`- when filenames contains spaces you need to use -d option to change delimiter\
-`find /tmp -mtime +14 | xargs rm` - files older than two weeks in the temp folder are found then removed
-
-### getopt; getopts
-Used to parse command options and arguements\
-getopts is defined by POSIX - be sure that it runs on any system running bash in POSIX mode (e.g., set -o posix)), but it does not support long options\
-getopt supports long options, but is system-specific\
-More detailed explanation - [https://www.computerhope.com/unix/bash/getopts.htm](https://www.computerhope.com/unix/bash/getopts.htm)
-
-### clear
-
-### date
-
-### cal
-
-### history
-
-### shift
-https://unix.stackexchange.com/questions/174566/what-is-the-purpose-of-using-shift-in-shell-scripts
-https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#index-shift
-Shift vs for loops - https://docstore.mik.ua/orelly/unix3/upt/ch35_22.htm
-
-### time
-
-### fdisk; cfdisk 
-
-### su; sudo
-
-### mount
-
-`sudo mount /dev/sda5 /home`
-
-Edit /etc/fstab to auto-mount
-
-### apt; apt-get
-
 ### checkinstall
-When compiling from source\
-Compare with make install\
+
+When compiling from source
+Compare with make install
 http://checkinstall.izto.org/; https://en.wikipedia.org/wiki/CheckInstall 
 
 ### hash
@@ -105,6 +70,49 @@ http://checkinstall.izto.org/; https://en.wikipedia.org/wiki/CheckInstall
 
 ### which
 
+### shutdown; poweroff; halt; reboot
+
+### sensible-pager; sensible-browser; sensible-editor
+
+## Managing Standard I/O and Arguments
+
+### xargs
+Reads items from standard input as arguments for a command
+`xargs -n 1 curl -O < urls-to-download.txt`- when you want to use curl to download from multiple URLs\
+`echo 'one two three' | xargs mkdir` - creates three folders\
+`ls ‘one two three.txt’ ‘four.txt’ find . -name ‘*.txt’ | xargs -d ‘\n’ rm`- when filenames contains spaces you need to use -d option to change delimiter\
+`find /tmp -mtime +14 | xargs rm` - files older than two weeks in the temp folder are found then removed
+
+### tee
+
+### getopt; getopts
+
+Used to parse command options and arguments
+`getopts` is defined by POSIX - be sure that it runs on any system running bash in POSIX mode (e.g., set -o posix)), but it does not support long options
+getopt supports long options, but is system-specific
+More detailed explanation - [https://www.computerhope.com/unix/bash/getopts.htm](https://www.computerhope.com/unix/bash/getopts.htm), https://wiki.bash-hackers.org/howto/getopts_tutorial
+
+## Time and Date
+
+### date
+
+### cal
+
+### time
+
+## Using bash
+
+### clear
+
+### history
+
+### su; sudo
+
+### apt; apt-get
+
+`apt-get -f install` - to install unsatisfied dependencies
+`apt-rdepends; apt-cache` - some other low-level `apt` tools
+
 ### echo
 
 `echo $?` - Gets the exit status of the last run command
@@ -112,8 +120,19 @@ http://checkinstall.izto.org/; https://en.wikipedia.org/wiki/CheckInstall
 `echo string >> file`
 
 ### bash
+
 Starts a subshell in exisiting shell\
 See [Scripting Notes](https://github.com/parth-io/Learn-CS-and-Coding/blob/master/Bash%20Scripting/Scripting%20Notes.md#shells-bash) for more details
+
+## Managing drives
+
+### fdisk; cfdisk 
+
+### mount
+
+`sudo mount /dev/sda5 /home`
+
+Edit /etc/fstab to auto-mount
 
 ### dd
 
@@ -121,8 +140,6 @@ Versatile tool: can be used for managing file systems, system-related tasks, bac
 Might need root permissions\
 If copying to a USB, ensure that the USB key is unused; make sure that none of its partitions are mounted.\
 The command also assumes that it is run while in the directory hosting the ISO image or file to be copied, otherwise the full path will need to be provided.
-
-### shutdown; poweroff; halt; reboot
 
 ## System Info, Logs, and Hardware
 
@@ -140,7 +157,12 @@ The command also assumes that it is run while in the directory hosting the ISO i
 
 `uname -a`
 
+### lsb_release
+
+### hostnamectl
+
 ### dmesg
+
 To access kernel logs
 
 ### journalctl
@@ -183,6 +205,8 @@ Just like diff, except it is meant for for binary files
 Determines the nature of files, as in Linux the file extension is not meaningful (.txt files might actually be scripts)
 
 ### locate; find
+
+https://unix.stackexchange.com/questions/60205/locate-vs-find-usage-pros-and-cons-of-each-other
 
 http://www.hypexr.org/linux_find_help.php
 
@@ -232,21 +256,21 @@ To view permissions
 
 | **Command** | **Usage**                                                    |
 | ----------- | ------------------------------------------------------------ |
-| `gzip`      | The most frequently used Linux compression utility -  `gzip *`, `gunzip foo`, `gzip -r dir` |
+| `gzip`      | The most frequently used Linux compression utility -  `gzip *`, `gunzip foo`; `gzip -r dir` |
 | `bzip2`     | Produces files significantly smaller than those produced by gzip - `bzip2` |
 | `xz`        | Most space-efficient, mainly used to compress the kernel - `xz foo`, `xz -dk foo.xz #decompress but do not remove`, `xz -dcf 1.txt 2.txt.xz > 3.txt`, `xz -d *.xz` |
 | `zip`       | Is often required to examine and decompress archives from other operating systems |
-| `tar`       | Used to group files in an archive (and then (un)compress the whole archive at once) - `tar -xvf mydir.tar #extract files in tar into ./mydir`, `tar -xvzf mydir.tar.gz`, `tar jcvf mydir.tar.gz mydir #for bzip2` |
+| `tar`       | Used to group files in an archive (and then (un)compress the whole archive at once) - `tar -xvf mydir.tar #extract files in tar into ./mydir`; `tar -xvzf mydir.tar.gz`; `tar jcvf mydir.tar.gz mydir #for bzip2` |
 
 More efficient techniques take longer, but decompression time does not vary as much across different methods.
 
-## Managing files
+## Editing and Viewing Files
 
 ### cat; tac
 
-`cat > file << EOF` - Standard input will end once you type EOF
+`cat > file` - Standard input will end once you type Ctrl + D
 
-`cat file` - Ctrl + D will end Std. In.
+`cat > file << EOF` - Standard input will end once you type EOF
 
 ### touch
 
@@ -261,6 +285,10 @@ CLI editors, except for `gedit`
 
 ### grep
 
+`grep -C 3 [pattern] file_name` - print the context of matched lines, in this case print 3 lines above and below the matched line
+
+`grep [0-9] file_name` - print lines containing the numbers 0 through 9man
+
 ### z* bz* xz*
 
 For compressed files
@@ -271,13 +299,19 @@ For compressed files
 
 ### uniq
 
-### paste
+Removes consecutive duplicate lines in a file
+Equivalent to `sort -u`
 
-### join
+Run `sort` before `uniq`  - `sort file | uniq > file2`
+
+### paste; join
+
+Used to combine entries (lines or fields) of 2 or more files
+
+`join` is an advanced version of `paste` as it checks for duplicate fields across files 
 
 ### split
 
-### cut
 ### spell
 ### sort
 
@@ -288,16 +322,18 @@ To navigate, use 'n', 'p', 'u'. '*' denotes links and '::'  denotes named items 
 
 ### man; apropos; whatis
 
+https://www.cs.mcgill.ca/~guide/help/man.html
+
+`man intro; man man; man bash`
+
 `man -a`
+
+`man -wK`
+
+`man -k` and `apropos` are equivalent
 
 ### tldr
 A more concise version of man
-
-### help
-
-`help`
-
-`help -name_of_command`
 
 ### type
 
@@ -305,9 +341,11 @@ Used to find out if the command is a shell built-in or external binary
 
 ### help
 
-Especially useful for shell built-ins on Debian, which do not have proper documented `man` pages
+For shell built-ins
 
-`help command; command --help`
+`help command_name; command_name --help; command -V command_name`
+
+`help` lists all shell builtins and is equivalent to `compgen; enable -a`
 
 ## Managing permissions
 
@@ -335,6 +373,8 @@ Especially useful for shell built-ins on Debian, which do not have proper docume
 
 ### whoami
 
+If you ever forget who you are
+
 ### id
 
 `id -nG`
@@ -345,20 +385,23 @@ Especially useful for shell built-ins on Debian, which do not have proper docume
 
 `getent group group_name`
 
-## Managing processes
+## Managing Processes
 
 ### top; htop; atop
 `top | grep process_name` 
 
 See top's manual page Section 4a for interactive keys such as 'k', 'f'
 
-### killall; kill
+### killall; kill; pkill; xkill
 `killall –9 process_name`
 
-`kill -signal PID`- PID is Process Identifier, and signal is TERM, KILL, etc.\
+`kill -signal PID`- PID is Process Identifier, and signal is TERM, KILL, etc.
+`kill -9 PID`1
 
-TERM - terminate gracefully\
+TERM - terminate gracefully
 KILL - force kill
+
+You can also use `top` and press `k` to enter in the PID.
 
 ### ps
 BSD style - `ps aux/axo`
@@ -387,7 +430,9 @@ The Ctrl + Z key combination pauses a foreground job and resumes control of the 
 
 To get load average
 
-## Managing variables
+### pgrep; pidof
+
+## Managing Variables
 ### printenv
 To print environmental variables
 ### env
@@ -398,5 +443,24 @@ Anything to do with shell variables
 
 ## Networking
 ### wget; curl
-### ifconfig
+
+https://daniel.haxx.se/docs/curl-vs-wget.html
+Use `wget` if you are conducting large files; recursive; password-locked; multiple file downloads
+
+`curl -o file_name url`
+
+### ifconfig; ip
+
+`ifconfig` is older than `ip`
+
+`ip route get 8.8.8.8``
+``ip address`
+
+Might need to run it as root or as follows on some distributions (`adress` is the object, `show` the (optional) command):
+`/sbin/ip address show`
+
 ### ping
+
+If there is something wrong with your DNS set-up, you will get an unknown host message or (sometimes) it appears to connect to the site but is actually a self-feedback loop where the address is 127.0.x.x
+
+### hostname

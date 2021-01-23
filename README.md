@@ -43,10 +43,10 @@ This repository is meant for me as a personal record of my journey into the real
 
 - Beginnings - for the complete beginners to Python and/or coding
 - Coursera - Computer Science: Programming with a Purpose - my solutions to the course
-- HackerRank - my HackerRank solutions + links to other people's solutions
+- HackerRank - my HackerRank solutions + links to other people's solutions (**incomplete**)
 - Linux and OSes - all about Linux
 - Java - my learning resources for Java
-- Advanced - incomplete as of yet
+- Advanced - **incomplete as of yet**
 
 Fair warning to the uninitiated - Computer Science, which can be considered a subset of Math, is different from the fairly mundane and now easy-to-automate task of programming. And if you were wondering, learning never stops in CS. From new languages, to new operating systems, to new concepts such as functional programming or the Linux kernel or operating system architecture or linear algebra, if you do not challenge yourself on a daily basis, you are gonna just end up as a code monkey. Harsh truth I am beginning to realise too. 
 
@@ -85,16 +85,35 @@ Programming Hazards
       1. Safe Eyes extension, reminds you to take a break
    2. Blue light filter
 
+Languages I wanna learn in depth
+
+1. Scripting
+   1. Bash
+   2. Perl
+   3. Ruby
+   4. Python
+2. OOP
+   1. C++ and Java (definitely)
+   2. Kotlin (enhanced Java)
+   3. Rust (sexy Java)
+3. Others
+   1. Haskell
+   2. Scala
+   3. Lisp
+4. Frontend (yawn)
+   1. JavaScript (boring, boring, boring)
+   2. HTML and CSS (seriously?)
+
 List of programming software required
 
 1. For coding
    1. Power tools for pros
       1. Emacs
       2. Vim
-   2. For the lazy and the students
+   2. For the lazy and for the students
       1. Any text editor
-      2. Notepad works for the Windows scrubs
-      3. Kate for Kubuntu
+      2. Notepad (for the Windows scrubs)
+      3. Kate (KDE software)
       4. Atom
       5. Sublime
    3. For the working men
@@ -102,8 +121,40 @@ List of programming software required
       2. Just search up IDEs on Google lol
 2. For Markdown
    1. Typora - hands-down the best, but do your market research
-3. Terminal
+3. For LaTeX
+   1. TeXWorks
+4. Terminal
    1. bash
-      1. A quick Google search reveals a number of wondrous terminals emulators, each with their own special tools or animations. However, I use the konsole as a daily driver
-   2. ksh
-      1. Honestly I gave up on this stupid thing
+      1. A quick Google search reveals a number of wondrous terminals emulators, each with their own special tools or animations. However, I use KDE's konsole as a daily driver
+      2. Quick
+   2. dash
+      1. Debian's
+   3. fish
+      1. Looking good so far!
+      2. This site concisely summarises why I like fish
+         1. https://medium.com/better-programming/why-i-use-fish-shell-over-bash-and-zsh-407d23293839
+   4. ksh
+      1. Honestly I gave up on this thing, and i suspect many other beginners simply don't bother
+   5. csh
+      1. http://www.faqs.org/faqs/unix-faq/shell/csh-whynot/
+
+List of some open-source software I have ever used (I've used many more, but I've forgotten and can't be bothered to remember)
+
+1. Calibre (for books)
+2. LibreOffice (lol goes without saying)
+3. GIMP (photos)
+4. Audio and Video
+   1. Subtitle Edit (for subtitles, duh)
+   2. Audacity
+   3. HandBrake
+   4. VLC
+5. Android Studio and Intellij
+6. Browsers
+   1. Vivaldi
+   2. Firefox
+   3. Opera (not open-source, but it was at one point)
+7. Games
+   1. SGT Puzzles Collection
+   2. Battle for Wesnoth (what a lovely game)
+   3. 0 A.D.
+8. All the KDE applications (especially Kate - Kate my dear, I love you ever so much. You are the sexiest and the wittiest. Clean, frugal, and homespun. Possessor of a deadly smile that once floored my hard disk. More elegant than those stupid snakes vim and emacs, quicker than Intellij the charging bear, more appealing than that bug-ridden stinking corpse Notepad. Please never leave me, my dear Kate.)

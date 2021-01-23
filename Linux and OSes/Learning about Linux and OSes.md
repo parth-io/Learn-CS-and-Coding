@@ -21,26 +21,20 @@ ioctl command
 Kernel translates between disk storage locations and the filesystem hierarchy\
 Linux makes a single disk the root, other disks are simply mounted\
 File system formats - ext4, NTFS, etc.
+
 ### Processes
 
-Process =/= program or command
-
-Types - threads, kernel thread, daemons, interactive and batch processes
-
+A process is not the same as a program or command
+Types of processes- threads, kernel thread, daemons, interactive and batch processes
 Scheduler in kernel allocates processes to CPU
-
 Running, sleep
-
 PID, PPID, TID, UID (RUID and EUID), GID (RGID and EGID)
-
-Priority of processes - nice values range from -20 to +19 (lowest), you can aslo assign real-time priority
-
+Priority of processes - nice values range from -20 to +19 (lowest), you can also assign real-time priority
 Multitasking and multiple processor cores
 
 #### Load average
 
 Average of load number
-
 Considers running, queued, sleeping processes (including uninterruptible sleepers)
 
 ### Boot Process
@@ -117,25 +111,18 @@ Also see the /etc/passwd file
 
 #### Adding and Removing Users
 
-`# useradd user #sets home directory /home/user, modifies /etc/passwd`
-
-`# userdel user #use -r to remove /home directory` 
-
-`# usermod`
-
-`$ id`
+`# useradd user #sets home directory /home/user, modifies /etc/passwd``
+``# userdel user #use -r to remove /home directory` 
+`# usermod``
+``$ id`
 
 #### Adding and Removing Groups
 
-`# groupadd`
-
-`# groupdel`
-
-`$ group user #see what group the user belongs to`
-
-`# usermod -a -G group_to_be_added_to user`
-
-`# groupmod`
+`# groupadd``
+``# groupdel``
+``$ group user #see what group the user belongs to``
+``# usermod -a -G group_to_be_added_to user``
+``# groupmod`
 
 ## Shells
 
@@ -162,11 +149,14 @@ Environmental variables are also created when shell variables are made global by
 
 | **Task**                                                     | **Command**                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Check currently set environmental variables                  | `set`, `env`, or `export`                                    |
+| Check currently set environmental variables                  | `set`, `env`, `printenv` or `export`                         |
 | Add an environmental variable **permanently to any and all new shell processes** | Add the line "export var=value" to ~/.bashrc **(but this only works for interactive shells)** or edit /etc/environment or edit /etc/profile (for login shells, need to use `export`)  **See bookmarks, this is way too complicated** |
-| Create an environmental variable from a shell variable **only for the current shell processes and any child shells** | `var=value; export var` or `export var=value`                |
+| Create an environmental variable from a shell variable **only for the current shell processes and any child shells **(See below for why) | `var=value; export var` or `export var=value`                |
 | Demote an environmental to a shell variable                  | `export -n`                                                  |
 | Remove the shell or environmental variable                   | `unset`                                                      |
+
+By default, the variables created within a script are available only to the subsequent steps of that script. Any child processes (sub-shells) do not have automatic access to the values of these variables. To make them available to child processes, they must be promoted to environment variables as shown. 
+While child processes are allowed to modify the value of exported variables, the parent will not see any changes; exported variables are not shared, they are only copied and inherited.
 
 ##### HOME
 
@@ -186,13 +176,11 @@ An empty (null) directory name indicates the current directory at any given time
 Refers to prompt statement, used to customise the terminal's prompt string
 
 My current PS1 (add this via `export` in ~/.bashrc) (`!` prints the history number) - `PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\t on \d, \!@\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '`
-
 Old - `PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '`
 
 ##### HIST*
 
-In ~/.bashrc, I added the following lines
-
+In ~/.bashrc, I added the following lines:
 HISTCONTROL=ignoreboth:erasedups
 HISTIGNORE="ls*":"man*":"exit":"history*"
 
@@ -204,15 +192,13 @@ An **interactive** shell session is a shell session that is attached to a termin
 ### Built-ins
 
 https://www.thegeekstuff.com/2010/08/bash-shell-builtin-commands/
-
 https://www.gnu.org/software/bash/manual/html_node/Shell-Builtin-Commands.html
-
 `set` - change shell attributes, options, and positional parameters
+`type command_name` and `command -V command_name` will give you information on whether `command_name` is a built-in
 
 ### Command search and execution
 
 If the script/command is in `$PATH`, then run `script`, else run `./script`
-
 https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_09_01_01
 
 ### `source` command
@@ -326,11 +312,8 @@ https://unix.stackexchange.com/questions/90306/is-there-a-flag-corresponding-to-
 ### .d convention
 
 If a directory ends in .d, it just means that it is a directory. Lol.
-
 See /etc/sudoers and /etc/sudoers.d/
-
 For example, /etc/sudoers.d/ contains files and scripts relevant to /etc/sudoers/
-
 Why this .d convention? No damn clue
 
 ### /proc
@@ -354,7 +337,6 @@ The /var directory may be put on its own filesystem so that any exploding file s
 ### /etc
 
 Contains system config files and global startup files for all users
-
 No binary programs are here, but executable scripts can be here
 
 ### /boot
@@ -370,17 +352,13 @@ Files needed to boot the system
 ### /lib; /lib64
 
 Contains libraries shared by applications in /bin and /sbin
-
 Most libraries are dynamically loaded libraries or Shared Objects (SO)
-
 Kernel modules (device drivers) are in /lib/modules
-
 Usually these libraries are symbolic links to /usr/lib and /usr/lib64 - to verify, run `ls -F/-lF`
 
 ### /media; /run; /mnt
 
 Modern distros place these removable media's mount point at /run instead of /media
-
 /mnt is now ususally used for loopback (files pretending to be partitions) filesystems, or for network filesystems
 
 ### /opt; /sys; /srv; /tmp; /usr
@@ -407,3 +385,15 @@ For multi-user applications, data and utilities; contains theoretically non-esse
 | **/usr/src**        | Source code, usually for the Linux kernel                    |
 | **/usr/local**      | Data and programs specific to the local machine. Subdirectories include **bin**, **sbin**, **lib**, **share**, **include**, etc. |
 | **/usr/bin**        | This is the primary directory of executable commands on the system |
+
+## Networking
+
+IP addresses
+Information exchange consists of data buffers and headers
+IPv4 and IPv6
+NAT
+Classes A, B, C, D, E
+DHCP and static addresses
+Name Resolution
+Subnet
+Classless Inter-Domain Routing

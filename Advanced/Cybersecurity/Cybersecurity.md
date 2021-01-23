@@ -2,6 +2,8 @@ OSCP
 
 1) installing Kali Linux 2)Basic terms of cyber world 3) Basics of networking 4) Web exploits with step wise approach on a practice environment DVWA 5) Steganography related techniques 6) Wireless security 7) google dorks 8) OS detection / Scanning techniques - nmap 9) Few advance exploitation concepts/attacks - msf 10) google dorks 
 
+https://stackoverflow.com/questions/11636790/why-do-we-need-mktemp
+
 Shell Escape
 https://www.sans.org/blog/escaping-restricted-linux-shells/
 https://fireshellsecurity.team/restricted-linux-shell-escaping-techniques/
@@ -54,4 +56,4 @@ https://www.hackthebox.eu/
 6. https://medium.com/@ipspecialist/which-would-be-the-better-certification-oscp-ceh-or-cissp-78e96d66b595 
 7. https://www.cbtnuggets.com/blog/career/career-progression/8-most-difficult-it-security-certifications 
 
-  
+Fork Bombs; Logic Bombs  
