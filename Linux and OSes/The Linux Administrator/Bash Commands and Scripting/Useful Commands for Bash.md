@@ -64,11 +64,13 @@ http://checkinstall.izto.org/; https://en.wikipedia.org/wiki/CheckInstall
 
 ### hash
 
-### whereis
+### whereis; which
+
+Generally for bash, `whereis` > `which`
+
+Alternative to `whereis` include `find` and `locate`
 
 ### editor
-
-### which
 
 ### shutdown; poweroff; halt; reboot
 

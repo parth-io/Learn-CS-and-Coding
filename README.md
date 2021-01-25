@@ -48,14 +48,14 @@ This repository is meant for me as a personal record of my journey into the real
 - Java - my learning resources for Java
 - Advanced - **incomplete as of yet**
 
-Fair warning to the uninitiated - Computer Science, which can be considered a subset of Math, is different from the fairly mundane and now easy-to-automate task of programming. And if you were wondering, learning never stops in CS. From new languages, to new operating systems, to new concepts such as functional programming or the Linux kernel or operating system architecture or linear algebra, if you do not challenge yourself on a daily basis, you are gonna just end up as a code monkey. Harsh truth I am beginning to realise too. 
+Fair warning to the uninitiated - Computer Science, which can be considered a subset of Math, is different from the fairly mundane and now easy-to-automate task of programming. And if you were wondering, learning never stops in CS. From new languages, to new operating systems, to new concepts such as functional programming or the Linux kernel or operating system architecture or linear algebra, if you do not challenge yourself on a daily basis, you are gonna just end up as a code monkey. Harsh truth. 
 
 This repo is in the form of code samples I created when learning CS and coding, and short notes that are intended to serve as a diving platform for deeper studies or for review of the individual's own knowledge of the subject matter. I also am posting collections of resources I have gathered.
 
-My advice is, get started with Python first, then transition to OOP with C++ or Java. Then learn functional programming and others styles of programming in Lisp, Haskell, etc.
+My advice is, get started with Python first, then transition to OOP with C++ or Java or front-end with JavaScript. Then learn functional programming and others styles of programming in Lisp, Haskell, etc.
 Practise coding and participate in online competitions and hackathons to gain some experience.
 There are some amazing bootcamps out there, but programming is a largely meritocratic field and students can design their own curriculum at their own pace for free.
-Get used to Linux, do not be daunted by the terminal. The terminal is the coolest and snappiest feature of Linux. Period.
+Get used to Linux. The terminal is the coolest and snappiest feature of Linux. Period.
 Open-source programs are also comparable to proprietary ones!
 
 Learning Pathways
@@ -93,7 +93,7 @@ Languages I wanna learn in depth
    3. Ruby
    4. Python
 2. OOP
-   1. C++ and Java (definitely)
+   1. C++ and Java
    2. Kotlin (enhanced Java)
    3. Rust (sexy Java)
 3. Others
@@ -102,7 +102,7 @@ Languages I wanna learn in depth
    3. Lisp
 4. Frontend (yawn)
    1. JavaScript (boring, boring, boring)
-   2. HTML and CSS (seriously?)
+   2. HTML and CSS
 
 List of programming software required
 
@@ -118,7 +118,9 @@ List of programming software required
       5. Sublime
    3. For the working men
       1. Intellij
-      2. Just search up IDEs on Google lol
+      2. VSCode
+         1. For a Microsoft product, pretty solid
+      3. Just search up IDEs on Google lol
 2. For Markdown
    1. Typora - hands-down the best, but do your market research
 3. For LaTeX
@@ -134,27 +136,56 @@ List of programming software required
       2. This site concisely summarises why I like fish
          1. https://medium.com/better-programming/why-i-use-fish-shell-over-bash-and-zsh-407d23293839
    4. ksh
-      1. Honestly I gave up on this thing, and i suspect many other beginners simply don't bother
+      1. Honestly I gave up on this thing, and I suspect many other beginners simply don't bother
    5. csh
       1. http://www.faqs.org/faqs/unix-faq/shell/csh-whynot/
 
 List of some open-source software I have ever used (I've used many more, but I've forgotten and can't be bothered to remember)
 
 1. Calibre (for books)
-2. LibreOffice (lol goes without saying)
+2. Productivity
+   1. P3X Onenote
+   2. LibreOffice (lol goes without saying)
+   3. htop
+   4. nmap
 3. GIMP (photos)
 4. Audio and Video
    1. Subtitle Edit (for subtitles, duh)
    2. Audacity
    3. HandBrake
-   4. VLC
+   4. Kdenlive
+   5. Kodi
+   6. VLC
 5. Android Studio and Intellij
 6. Browsers
    1. Vivaldi
    2. Firefox
-   3. Opera (not open-source, but it was at one point)
+   3. Opera (partially open-source due to Chromium, but the Chinese factor is intriguing)
 7. Games
    1. SGT Puzzles Collection
    2. Battle for Wesnoth (what a lovely game)
    3. 0 A.D.
-8. All the KDE applications (especially Kate - Kate my dear, I love you ever so much. You are the sexiest and the wittiest. Clean, frugal, and homespun. Possessor of a deadly smile that once floored my hard disk. More elegant than those stupid snakes vim and emacs, quicker than Intellij the charging bear, more appealing than that bug-ridden stinking corpse Notepad. Please never leave me, my dear Kate.)
+8. All the KDE applications
+   1. Kate (just bloody lovely)
+
+List of other apps I have used
+
+1. Spotify
+2. Discord
+3. Chrome
+4. scrcpy
+5. Google Earth
+6. Tesseract-OCR
+
+Firefox Extensions
+
+1. BypassPaywalls
+2. Grepper
+3. Plasma Integration
+
+Chrome Extensions
+
+1. Ghostery
+2. Adblock
+3. VideoDownloadHelper
+4. WebRTC Network Limiter 
