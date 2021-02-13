@@ -1,0 +1,11 @@
+This guide is based on my frustuations compilings programs in Linux. All-over-the-place documentation, broken packages, different versions of the same package, heck at times you don't even know what to Google for.
+
+Install build tools like gcc, etc.
+Usually sudo apt install build-essential covers it
+
+Also, during the compile process, if bash complains about missing dependencies or missing shared objects, but you have the missing dependency, the compiler might need the "-dev" version of the package.  So add "-dev" to the end of the package name and compile it. So for package "randompackge1.0", install "randompackage1.0-dev"
+
+Also, running ldconfig after installing dependencies might help.
+
+https://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html
+https://stackoverflow.com/questions/3588164/the-dev-suffix-in-package-names

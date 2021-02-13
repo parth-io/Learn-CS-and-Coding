@@ -50,7 +50,7 @@ Executing previous commands
 
 These are some of the more essential commands any Linux user/administrator will encounter. Examples are given in `inline code`.
 
-From the Table of Contents above, find a random comment, Google it (or read the `man`  page, practise with it in your shell, commit to memory.  Simple? You wish.
+From the Table of Contents above, find a random comment, Google it (or read the `man`  page), practise with it in your shell, commit to memory.  Simple? You wish.
 
 [TOC]
 
@@ -143,15 +143,15 @@ Might need root permissions\
 If copying to a USB, ensure that the USB key is unused; make sure that none of its partitions are mounted.\
 The command also assumes that it is run while in the directory hosting the ISO image or file to be copied, otherwise the full path will need to be provided.
 
+### df
+
+`df -h || df -Th`
+
 ## System Info, Logs, and Hardware
 
 ### free
 
 `free -m/-g`
-
-### df
-
-`df -h || df -Th`
 
 ### id
 

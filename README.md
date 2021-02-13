@@ -146,8 +146,6 @@ List of some open-source software I have ever used (I've used many more, but I'v
 2. Productivity
    1. P3X Onenote
    2. LibreOffice (lol goes without saying)
-   3. htop
-   4. nmap
 3. GIMP (photos)
 4. Audio and Video
    1. Subtitle Edit (for subtitles, duh)
@@ -165,8 +163,18 @@ List of some open-source software I have ever used (I've used many more, but I'v
    1. SGT Puzzles Collection
    2. Battle for Wesnoth (what a lovely game)
    3. 0 A.D.
+   4. WoT
+   5. Halo: Reach
 8. All the KDE applications
    1. Kate (just bloody lovely)
+9. Sysadmin
+   1. Optical media
+      1. cdck
+      2. qpxtool
+      3. Brasero
+   2. testdisk
+   3. htop
+   4. nmap
 
 List of other apps I have used
 
