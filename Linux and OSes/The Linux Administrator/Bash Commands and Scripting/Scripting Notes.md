@@ -106,6 +106,8 @@ http://mywiki.wooledge.org/BashFAQ/031
 https://unix.stackexchange.com/questions/32210/why-does-parameter-expansion-with-spaces-without-quotes-work-inside-double-brack
 https://unix.stackexchange.com/questions/99185/what-do-square-brackets-mean-without-the-if-on-the-left
 
+Also, `$RANDOM` is random
+
 ### Functions/Subroutines
 
 function () {

@@ -276,6 +276,8 @@ More efficient techniques take longer, but decompression time does not vary as m
 
 ### touch
 
+### wc
+
 ### head; tail
 
 `tail -f`
@@ -386,6 +388,10 @@ If you ever forget who you are
 ### getent
 
 `getent group group_name`
+
+### useradd; userdel
+
+### last
 
 ## Managing Processes
 
