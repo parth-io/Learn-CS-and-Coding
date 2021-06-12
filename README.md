@@ -4,6 +4,8 @@
 
 ![ye bois](https://imgs.xkcd.com/comics/estimation.png "Lolol why you should become a programmer")
 
+Credits: Comic images in this repo from xkcd
+
 ### Some amazing links
 
 1. Books (programming, theory, math)
