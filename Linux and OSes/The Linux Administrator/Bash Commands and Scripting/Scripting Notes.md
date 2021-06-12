@@ -313,3 +313,8 @@ https://stackoverflow.com/questions/33431842/how-to-pass-command-output-as-multi
 https://stackoverflow.com/questions/6833582/pass-output-as-an-argument-for-cp-in-bash
 
 https://unix.stackexchange.com/questions/585430/whats-currently-the-most-efficient-way-to-copy-paste-output-of-ls-into-anothe?newreg=428f4781d6c14719860abb004c631e5c - see my answer lol
+
+### Getting the size of the terminal
+echo $LINES, $COLUMNS
+tput cols, tput lines
+stty size
