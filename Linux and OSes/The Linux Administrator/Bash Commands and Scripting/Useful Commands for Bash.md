@@ -318,6 +318,8 @@ Used to combine entries (lines or fields) of 2 or more files
 
 ### spell
 ### sort
+### sed; awk
+### tr
 
 ## Getting help
 ### info
