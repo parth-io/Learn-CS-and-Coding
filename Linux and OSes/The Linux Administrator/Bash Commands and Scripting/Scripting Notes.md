@@ -84,11 +84,19 @@ More details than you would ever need - https://www.austintripp.ca/blog/2019/07/
 
 `quote; shell-quote` - obscure command - https://askubuntu.com/questions/354915/quote-command-in-the-shell
 
-`{...}` 
+`(...)` - run the commands in a subshell; `$(...)` - to also return the stdout
+
+`((...))` - perform arithmetic, possibly changing the values of shell variables; `$((...))` - to also return the result of the arithmetic
+
+`{...}` - execute the commands in the braces as a group - `echo foo; echo bar > /dev/null` vs `{ echo foo; echo bar; } > /dev/null`; `${...}` - return the value, useful for returning the value of the shell variable named in the braces - `$ echo ${SHELL}`
+
+For the 3 usages above, the dollar-prefixed version signifies an expansion of the commands in the braces. 
+
+`${...}` is called disambiguation. `${var}text` - give me the contents of `var`, then followed by `text`. Contrast with `$vartext`, which means give me the contents of vartext
 
 `[...]` - equivalent  to `test`, see the manual page for `bash` and `test`
 
-`[[...]]` - more capable than `[...]` but not POSIX-compliant
+`[[...]]` - more capable than `[...]` but not POSIX-compliant (useful feature is =~ for regex)
 
 Links that explain in-depth about other characters
 https://unix.stackexchange.com/questions/306111/what-is-the-difference-between-the-bash-operators-vs-vs-vs
@@ -227,10 +235,6 @@ For tar - https://www.gnu.org/software/tar/manual/html_section/tar_21.html\
 It should be explained that all of this is a matter of convention…there are MANY commands that allow (or REQUIRE) long-form names to use a single ‘-’ (“find”, for example), and many that don’t need either ‘-’ or ‘—’ and rely only on the positions of arguments alone to distinguish parameters from filenames (“tar” and “ar” for example).\
 Some programs (for example “rm” - for removing a file) have problems distinguishing between a command line option (like “rm -f”) and a file that might possibly have a ‘-’ sign in it’s name.\
 So - if, for example, you accidentally created a file called ‘-file’ - it would be impossible to delete it because ‘rm -file’ would think the ‘-file’ was a set of four command-line options and not a filename. Hence it offers the option to us ‘—’ to mean “this is the last command line option - what comes next is a filename”.
-
-### Disambiguation
-`${var}text` - Give me the contents of `var`, then followed by `text`\
-Contrast with `$vartext`, which means give me the contents of vartext
 
 ### Shell equality operators and syntax
 https://stackoverflow.com/questions/20449543/shell-equality-operators-eq
