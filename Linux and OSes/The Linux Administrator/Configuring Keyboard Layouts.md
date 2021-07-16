@@ -38,18 +38,18 @@ If you do not have KDE or Gnome, fret not.
 3. KDE will store the keyboard settings in the /home/user/.config/kxkbrc file.
    The file contents for Yoga 7i are below.
 
-   [$Version]
+   [$Version]\
    update_info=kxkb_variants.upd:split-variants
 
-   [Layout]
-   DisplayNames=Col
-   LayoutList=us
-   LayoutLoopCount=-1
-   Model=pc104
-   Options=caps:backspace,parens:swap_brackets,shift:both_capslock,lv3:ralt_alt
-   ResetOldOptions=true
-   ShowFlag=false
-   ShowLabel=true
+   [Layout]\
+   DisplayNames=Col\
+   LayoutList=us\
+   LayoutLoopCount=-1\
+   Model=pc104\
+   Options=caps:backspace,parens:swap_brackets,shift:both_capslock,lv3:ralt_alt\
+   ResetOldOptions=true\
+   ShowFlag=false\
+   ShowLabel=true\
    ShowLayoutIndicator=true\
    ShowSingle=false\
    SwitchMode=Global\
