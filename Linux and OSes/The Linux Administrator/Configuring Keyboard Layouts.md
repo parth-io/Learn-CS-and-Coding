@@ -46,7 +46,7 @@ If you do not have KDE or Gnome, fret not.
    LayoutList=us
    LayoutLoopCount=-1
    Model=pc104
-   Options=caps:backspace,parens:swap_brackets
+   Options=caps:backspace,parens:swap_brackets,shift:both_capslock,lv3:ralt_alt
    ResetOldOptions=true
    ShowFlag=false
    ShowLabel=true
@@ -124,3 +124,17 @@ Validation after the fact
 https://askubuntu.com/questions/1003640/why-does-setxkbmap-de-not-have-an-effect-in-a-terminal
 
 https://askubuntu.com/questions/1211307/persistent-remapping-of-keys-with-setxkbmap-or-xorg-configuration <-- lol.
+
+# Advanced
+
+1. Look at all the options
+   1. The source code for all the options is in `/usr/share/X11/xkb/symbols`. If you want to add some new options, add them directly to the code.
+2. If you want to change the keyboard mappings for individual keys also, same thing - edit the source code.
+   1. https://askubuntu.com/questions/325272/permanent-xmodmap-in-ubuntu-13-04/347382#347382?newreg=4eb097870a15490ebbe39d78412f9797
+   2. `xmodmap` is ancient ant not recommended, but worth a look at.
+      1. https://ictsolved.github.io/remap-key-in-linux/
+   3. https://unix.stackexchange.com/questions/84707/how-can-i-make-ctrl-alt-act-like-alt-gr-in-ubuntu
+3. `xmodmap -pm` - to list modifier keys
+4. Interesting discussion
+   1. https://bbs.archlinux.org/viewtopic.php?id=254313
+5. `xev` to test your key bindings worked
