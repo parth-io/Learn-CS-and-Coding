@@ -395,6 +395,8 @@ If you ever forget who you are
 
 ### last
 
+### finger
+
 ## Managing Processes
 
 ### top; htop; atop

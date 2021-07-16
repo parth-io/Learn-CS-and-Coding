@@ -58,6 +58,14 @@ startx has not been maintained for long - https://askubuntu.com/questions/436546
 
 `sudo systemctl start gdm`
 
+Xorg implements X11, the 11th iteration of X. Currently Wayland is being phased in. D-Bus is a network protocol.
+
+https://unix.stackexchange.com/questions/14085/x-xorg-and-d-bus-what-is-the-difference
+https://unix.stackexchange.com/questions/604258/what-is-d-bus-practically-useful-for
+https://docs.huihoo.com/qt//4.6/intro-to-dbus.html
+https://www.freedesktop.org/wiki/Software/dbus/
+https://www.freedesktop.org/wiki/IntroductionToDBus/
+
 ### Basics
 Bash, zh, sh, ksh\
 $ and #\
@@ -83,15 +91,22 @@ The -i option tells sudo to run the shell specified by the root user’s passwor
 
 When you first login to Linux, /etc/profile is read and evaluated. Then the following files are searched (if they exist) in the listed order:
 
-1. 1. 1. ~/.bash_profile
-      2. ~/.bash_login
-      3. ~/.profile 
+1. ~/.bash_profile
+2. ~/.bash_login
+3. ~/.profile 
 
 where  ~/. denotes the user's home directory. The Linux login shell evaluates whatever startup file that it comes across first and ignores the rest. This means that if it finds ~/.bash_profile, it ignores ~/.bash_login and ~/.profile. Recent distributions sometimes do not even have .bash_profile and/or .bash_login , and some just do little more than include .bashrc.
 
 However, every time you create a new shell, or terminal window, etc., you do not perform a full system login; only a file named ~/.bashrc file is read and evaluated. Although this file is not read and evaluated along with the login shell, most distributions and/or users include the ~/.bashrc file from within one of the three user-owned startup files.
 
 Most commonly, users only fiddle with ~/.bashrc, as it is invoked every time a new command line shell initiates, or another program is launched from a terminal window, while the other files are read and executed only when the user first logs onto the system.
+
+### Login vs Non-login & Interactive vs Non-interactive
+
+https://www.baeldung.com/linux/bashrc-vs-bash-profile-vs-profile <-- the best resource
+
+A **login** shell is a shell session that begins by authenticating the user. If you are signing into a terminal session or through SSH and authenticate, your shell session will be set as a “login” shell. If you start a new shell session from within your authenticated session, a **non-login** shell session is started.\
+An **interactive** shell session is a shell session that is attached to a terminal. A **non-interactive** shell session is one is not attached to a terminal session.
 
 ### Aliases
 
@@ -183,11 +198,6 @@ Old - `PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\
 In ~/.bashrc, I added the following lines:
 HISTCONTROL=ignoreboth:erasedups
 HISTIGNORE="ls*":"man*":"exit":"history*"
-
-### Login vs Non-login & Interactive vs Non-interactive
-
-A **login** shell is a shell session that begins by authenticating the user. If you are signing into a terminal session or through SSH and authenticate, your shell session will be set as a “login” shell. If you start a new shell session from within your authenticated session, a **non-login** shell session is started.\
-An **interactive** shell session is a shell session that is attached to a terminal. A **non-interactive** shell session is one is not attached to a terminal session.
 
 ### Built-ins
 

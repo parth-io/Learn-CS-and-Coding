@@ -146,30 +146,31 @@ List of some open-source software I have ever used (I've used many more, but I'v
 
 1. Calibre (for books)
 2. Productivity
-   1. P3X Onenote
+   1. P3X Onenote (now Notion)
    2. LibreOffice (lol goes without saying)
-3. GIMP (photos)
-4. Audio and Video
+3. Bitwarden
+4. GIMP (photos)
+5. Audio and Video
    1. Subtitle Edit (for subtitles, duh)
    2. Audacity
    3. HandBrake
    4. Kdenlive
    5. Kodi
    6. VLC
-5. Android Studio and Intellij
-6. Browsers
+6. Android Studio and Intellij
+7. Browsers
    1. Vivaldi
    2. Firefox
    3. Opera (partially open-source due to Chromium, but the Chinese factor is intriguing)
-7. Games
+8. Games
    1. SGT Puzzles Collection
    2. Battle for Wesnoth (what a lovely game)
    3. 0 A.D.
    4. WoT
    5. Halo: Reach
-8. All the KDE applications
+9. All the KDE applications
    1. Kate (just bloody lovely)
-9. Sysadmin
+10. Sysadmin
    1. Optical media
       1. cdck
       2. qpxtool
