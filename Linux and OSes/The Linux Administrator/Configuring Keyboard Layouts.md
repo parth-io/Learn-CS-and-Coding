@@ -50,11 +50,11 @@ If you do not have KDE or Gnome, fret not.
    ResetOldOptions=true
    ShowFlag=false
    ShowLabel=true
-   ShowLayoutIndicator=true
-   ShowSingle=false
-   SwitchMode=Global
-   Use=true
-   VariantList=colemak
+   ShowLayoutIndicator=true\
+   ShowSingle=false\
+   SwitchMode=Global\
+   Use=true\
+   VariantList=colemak\
 
 ## Setting up Debian without Gnome or KDE
 
