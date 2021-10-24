@@ -1,4 +1,4 @@
-From - https://stackoverflow.com/questions/26130909/bash-output-column-formatting
+rom - https://stackoverflow.com/questions/26130909/bash-output-column-formatting
 Also see - https://unix.stackexchange.com/questions/59249/print-output-to-3-separate-columns
 
 #Script 1

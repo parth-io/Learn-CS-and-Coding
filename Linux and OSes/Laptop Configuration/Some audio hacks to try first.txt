@@ -1,0 +1,39 @@
+This kind of bug plagued Linux, or at least Ubuntu, for years, but different people–depending on the hardware–had it at different times. Some had it in Ubuntu 12.04, some in 16.04, some in 18.04 (but not with the initial release). In my case, 18.04 was fine, but from 19.10 on, this is no more the case. My hardware:
+
+"HDA-Intel" "Intel Broadwell HDMI" "HDA:80862808,80860101,00100000" "0x1025" "0x0924" "HDA-Intel" "Realtek ALC282" "HDA:10ec0282,10250924,00100003" "0x1025" "0x0924"
+
+Now, about the fix. The pulseaudio update did change /etc/pulse/default.pa, but reverting to the original wouldn’t help. Here’s what worked:
+
+• As superuser, add this line to /etc/modprobe.d/alsa-base.conf:
+
+options snd-hda-intel dmic_detect=0
+
+• Also, add this line to /etc/modprobe.d/blacklist.conf:
+
+blacklist snd_soc_skl
+
+• Then, to avoid a logoff/logon (or, God forbid, a reboot), run these two lines as the normal user (the first one might be useless):
+
+pulseaudio -k
+pulseaudio -D
+
+Now it should again detect the inserting of the headphones:
+
+
+
+
+
+Five weeks ago I started poking around in the quest for a keeper Linux distro. I was insisting on the fact that recent versions of ALSA and PulseAudio started to stop detecting when headphones are inserted into my fairly recent (by my standards) and decent laptop, but that fixes seem to exist. In the meantime I found a German article–Ubuntu 20.04 : Kein Sound nach Update von 19.10–where the same fix is applied with a minor modification, and that summarizes the patching succinctly this way:
+
+sudo echo "options snd-hda-intel model=auto index=1" >> /etc/modprobe.d/alsa-base.conf
+sudo echo "blacklist snd_soc_skl" >> /etc/modprobe.d/blacklist.conf
+
+Well, the author didn’t actually try the above commands, or else he would have noticed that the effect of sudo disappears once the redirection is made through the non-privileged >>, so the correct version should be:
+
+sudo bash -c "echo \"options snd-hda-intel model=auto index=1\" >> /etc/modprobe.d/alsa-base.conf"
+sudo bash -c "echo \"blacklist snd_soc_skl\" >> /etc/modprobe.d/blacklist.conf"
+
+Being lazy, I usually issue administrative commands in a sudo bash shell.
+
+It’s worth noting that restarting PulseAudio (after killing it with pulseaudio -k) would fail on some distros if attempted with pulseaudio -D, but will succeed with pulseaudio --start or (even better), just use systemctl --user restart pulseaudio.
+

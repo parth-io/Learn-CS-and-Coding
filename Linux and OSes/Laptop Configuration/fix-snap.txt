@@ -1,0 +1,5 @@
+sudo snap connect xournalpp:removable-media
+[sudo] password for parth: 
+11:38:42 on Tue Oct 05, 825@parth:~$ snap connections xournalpp 
+To ensure that your snap app can connect to folders in /media, the removable-media connection needs to be enabled.
+Make a documentation PR for this on xournal github?

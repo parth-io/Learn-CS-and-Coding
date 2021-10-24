@@ -1,0 +1,185 @@
+If you dual boot Linux with Windows you definitely already noticed that Linux uses MUCH more battery and drain the battery much faster than windows.
+
+I noticed that battery life in Linux (Linux Mint 19.1 Cinnamon in my case) is WAY worse than in windows 10, I use my laptop more often to watch TV shows and movies and to browse the internet.
+
+I have a small battery in my laptop, The battery when I'm using mint can't make it over 2 hours of light usage, while in windows 10 with same light usage the battery can make it over 4-4.5 hours.
+
+
+
+I searched the web for "How to optimize battery life in Linux" but all the results were about powertop and tlp, which are great but not enough, so I asked this question on r/linuxmint subreddit, and this is the best what I could do to get the best out of my battery.
+
+
+
+1. Download tlp, start it, use the default configurations.
+
+run:
+
+sudo tlp start
+
+to start the app for the first time, or you can then reboot the system. The tlp will start automatically on every system start.
+
+The tlp configuration file is located in /etc/default/tlp
+
+you can modify it, but man !!! just leave it alone if you don't know what are you doing, the defaults are good.
+
+tlp will start automatically with the system, it will detect the power source (battery or AC adapter) and will change the power profile automatically for you to get the best life battery when you are on battery and the best performance when you are plugged in.
+
+To check the status of tlp type the command:
+
+sudo tlp-stat or sudo tlp-stat -s (-s for short output).
+
+This command will show the battery status and the power saving mode, the power source used to power the laptop at the moment, and several more useful information about the system ( PC info, BIOS, Release, Init system, Boot mode ............ and finally the tlp status).
+
+For more information see the man page.
+
+
+
+2. Use powertop to monitor battery usage and health, give tunables a look.
+
+To get more accurate information out of powertop, its better to run calibration before starting using it for the first time, to do that run the following command while using BATTERY (unplug AC adapter):
+
+sudo powertop --calibrate
+
+it will take a few minutes, so patiently wait.
+
+Powertop will show you a lot of useful information about what is draining your battery and which apps are doing that.
+
+To start powertop type:
+
+sudo powertop
+
+Use Tab button to browse between tabs, the last tab "Tunables" will show you the power status beside every option, you can change them manually by taping 'space' or you can use the default configurations by typing the command:
+
+sudo powertop --auto-tune
+
+PS. its good to have powertop installed as POWER MONITORING tool, but not as a power optimization solution as the "tlp" app is more advanced, easier to use and it will just do all the work for you.
+
+
+
+Another good alternative to powertop for monitoring power consumption is "powerstat" tool: powerstat man page
+
+
+
+3. If you can, install your system on SSD instead of using HDD, as SSDs need less power than HDDs, and they are really much faster.
+
+
+
+4. Use power saving options in apps when its possible, for example, I use Yandex browser, which has a built-in power saving mode, so why not !! also there is an extension for chrome called "The Great Suspender" which will suspend all inactive tabs to save you more memory and power. As far as i know Opera also has a Battery mode (power saving mode)
+
+
+
+5. Turn down your display brightness when you are using battery (Windows dims the display automatically when you unplug your laptop, while Linux doesn't, so you need to do that manually), I turned the brightness down to 90%, and this 10 % can really make a difference.
+
+
+
+6. If you have dedicated GPU (Nvidia Geforce MX150 in my case), and you don't use Linux for gaming, turn the dedicated GPU off, by selecting intel's (integrated) GPU as primary:
+
+prime-select query To see what GPU you are using, if you are using Nvidia GPU, then run the following command:
+
+sudo prime-select intel, you need to have "Nvidia-prime" installed on your system to use this command.
+
+Reboot the system.
+
+Some users reported a bug, about prime not turning off dedicated Nvidia's GPU completely, here is some more information and possible fixes.
+
+
+
+Ps, you can also turn off the "PCI Device NVIDIA" using powertop, which can be found under 'Tunables', when your not using your Nvidia GPU.
+
+
+
+7. Turn WiFi and Bluetooth off when you are not using them if you are using WiFi, then turn your Ethernet interface off.
+
+To do that you can use GUI tools to do that (on my Mint its network-manager), which can be found on the desktop panel or system settings.
+
+OR
+
+You can use your terminal to do that:
+
+ifconfig or ip a to see what interfaces you are using.
+
+sudo ifconfig wlan0/eth0 down (replace wlan0\eth0 with your internet interfaces).
+
+OR
+
+You can use a tool called "rfkill" to block and unblock wireless devices, yes I know it's not the only/perfect way, but I think it's the best option if you want to turn off wireless devices automatically when system boots up by adding one of these commands to your rc.local file or by adding it to your Startup Applications or whatever it's called on your distro :
+
+$ rfkill list - to list all wireless devices
+
+$ rfkill block bluetooth - to turn off bluetooth, I don't use bluetooth so I added this command to my startup applications
+
+$ rfkill block wifi - to turn off wifi
+
+For more information: visit read this article
+
+The best thing about this is that rfkill command doesn't turn the interface totally off, I mean the wifi/bluetooth applets on your panel will stay there and you can use it to turn bluetooth back on, anyway its easy to turn them back on using CLI by typing: $ rfkill unblock wifi
+
+
+
+8. Use "indicator-cpufreq" to get a GUI for "cpufreq" app which allows you to control CPU frequency, and to choose between power save mode and performance mode.
+
+you can download it for Mint/Ubuntu:
+
+sudo apt install indicator-cpufreq
+
+Reboot your system so it will start with your system and you will find it on your panel, or run indicator-cpufreq
+
+
+
+Use "indicator-cpufreq" application as it's better and safer to use than the cpufreq-set command, which allows you to set the CPU frequency manually for each core. On the newer Linux installations with newer kernels, this app will give you the ability to choose only between two modes (performance mode and power save mode), you are not going to see any frequencies.
+
+Click here for more information.
+
+
+
+9. Update your kernel to the latest stable version.
+
+Upgrading kernel will make your PC faster, safer, and have better compatibility with your Linux OS, and of course will bring some power-saving improvements.
+
+Linux Mint 19 is still on 4.15 (it's pretty easy to change this in Ubuntu/Linux Mint though, I used ukuu for that). That matters because power saving improvements landed in kernel 4.17, thanks for u/Poppejans for pointing on that.
+
+
+
+Also, remember to keep the whole system up to date, and try always to use only stable packages.
+
+
+
+10. Check if Your Battery Needs to Be Replaced
+
+If you’re struggling with battery life, it’s possible you need to replace your laptop’s battery. All batteries will deteriorate over time, gradually holding less power than they did when they left the factory.
+
+For example, on Ubuntu, you can open the Power Statistics application from the Dash. Look at the “Laptop battery” section. “Energy when full” is how much power your battery can currently store when it’s fully charged. “Energy (design)” is how much power your battery could originally store when it’s fully charged.
+
+Divide “Energy when full” by “Energy (design)”, multiple the result by 100, and you’ll get a percentage. For example, in the screenshot below, we’d do the following math:
+
+(44.8 / 54.3) * 100 = 82.5%
+
+This means the battery currently holds 82.5% of its original capacity. That’s not too bad. You won’t be at 100% unless you just purchased a new laptop. But if it’s low—under 50%, for example—and you aren’t getting much time out of your battery, you may just need to replace the battery.
+
+If you don’t have the Power Statistics application on your Linux distribution, you can get this information via a few terminal commands.
+
+Open a Terminal window and run the following commands:
+
+cat /sys/class/power_supply/BAT0/charge_full
+
+cat /sys/class/power_supply/BAT0/charge_full_design
+
+Divide the first number by the second number and multiple by 100 to get the percentage of the battery’s original capacity. For example, for the screenshot below, we’d do the following math:
+
+(5901000 / 7150000) * 100 = 82.5%
+
+This means the battery is currently at 82.5% of its original factory capacity.
+
+
+
+Other way to do this by using "acpi" tool:
+
+sudo apt install acpi
+
+sudo acpi -V
+
+
+
+11. Some distributions with power saving in mind:
+
+As some already replied to this post: Fedora, openSUS has a great battery life, all distributions with minimal installation or with light weight DE will have better battery life. 

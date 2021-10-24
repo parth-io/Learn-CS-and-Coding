@@ -1,0 +1,50 @@
+S3 Suspend to RAM was disabled on Tiger Lake CPUs -->
+
+To fix audio issue, must enable S3 first
+https://bugzilla.kernel.org/show_bug.cgi?id=208555
+https://wiki.archlinux.org/title/Lenovo_Yoga_7i
+https://bbs.archlinux.org/viewtopic.php?id=234913
+https://gist.github.com/javanna/38d019a373085e1ba0c784597bc7ec73/
+
+If you do not want to enable S3, you can read the following and disable Intel VMD Controller
+https://www.reddit.com/r/linuxhardware/comments/ng166t/s3_deep_sleep_not_working/
+
+Set up rsync backup to connect with old Dell laptop that is a server
+
+Fix backlight keys not working and audio drivers not working
+CPU kernel parameters --> underclock CPU and RAM, swappiness (SSD has no swap)
+See battery and ssd bookmarks folder on Chrome
+
+Add http://www.quotationspage.com/ quotes to fortune command
+Try Ttyper for terminal typing test
+Try Helix, a modern text editor written in Rust
+
+Screen flickering - Use xrender for compositor, GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i915.enable_psr=-1" in /etc/default/grub
+
+inxi
+
+https://github.com/sdushantha/tmpmail/pull/41 <-- understand
+https://github.com/sdushantha/tmpmail/issues/1 <-- read
+https://github.com/sdushantha/tmpmail/issues/5 <-- figure out where I saved this link
+
+acpi
+upower -e
+upower -i /org/freedesktop/...
+tlp <-- https://net2.com/how-to-extend-your-laptop-battery-lifespan-on-linux-ubuntu-debian/ & https://www.tecmint.com/tlp-increase-and-optimize-linux-battery-life/
+sudo powertop --calibrate
+https://hobo.house/2015/12/18/linux-laptop-power-usage-tuning-with-powertop/
+
+https://amanusk.medium.com/an-extensive-guide-to-optimizing-a-linux-laptop-for-battery-life-and-performance-27a7d853856c
+https://trisquel.info/en/wiki/optimizing-battery-time
+
+Lithium Battery has a voltage range where it'll have least stress while charging. 30% to 80% is the best charging range to increase the life of the battery. If the battery falls below a certain voltage, it's capacity decreases. & if you keep on charging to 100%,its capacity decreases because it is stressed at higher voltages. You need to go to the bios & set custom charge range to start charging only after the battery falls below 50%. If you keep it constantly at 75%,that means it is constantly charging when it drops 1%. That stresses the battery because it is not discharging.
+
+Disable bluetooth
+
+Write 12 to /sys/devices/system/cpu/cpufreq/intel_pstate/max_perf_pct
+This limits the CPU to low power states. Todays powerful CPUs are fast enough to do programming and other office tasks with this limited performance, If you do demanding tasks this may be bad advice! Because the CPU takes longer to finish a task it can take less breaks where it completely shuts off.
+
+Make sure to close every program which uses the processor all the time, powertop tells you the offenders. This even includes plasmashell (the KDE taskbar).
+Modern Processors are very good at saving power when they can truly rest, you just have to give them the chance.
+
+Dual-boot clock - https://www.linuxfromscratch.org/lfs/view/7.8-systemd/chapter07/clock.html, https://askubuntu.com/questions/169376/clock-time-is-off-on-dual-boot

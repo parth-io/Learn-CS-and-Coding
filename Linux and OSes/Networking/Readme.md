@@ -1,3 +1,5 @@
+Note: Wireguard works a lot better than OpenVPN, and installation is a lot less painful.
+
 Some tools
 
 1. network-manager-* (usually gnome)

@@ -18,7 +18,7 @@ Some background - https://superuser.com/questions/1216499/is-my-keyboard-generic
 
 Else, if you are running KDE or Gnome, the *Settings* for both has this wonderful *Preview* mode. Screenshot for Kubuntu:
 
-![kubuntu-keyboard.png](./kubuntu-keyboard.png)
+![kubuntu-keyboard.png](kubuntu-keyboard.png)
 
 That is enough to figure out your keyboard layout.
 

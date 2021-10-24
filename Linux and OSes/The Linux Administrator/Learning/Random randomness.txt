@@ -1,0 +1,6 @@
+$ od -A n -t d -N 1 /dev/urandom
+Here, -t d specifies that the output format should be signed decimal; -N 1 says to read one byte from /dev/urandom.
+
+shuf -i 1-10 -n 1
+
+https://stackoverflow.com/a/1195035 <-- see comments

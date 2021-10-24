@@ -1,5 +1,10 @@
 `vimtutor` to learn vim
 
+https://www.reddit.com/r/vim/comments/5adur6/cant_get_the_difference_between_map_and_noremap/
+https://www.reddit.com/r/vim/comments/eo5ozh/what_are_some_examples_of_when_to_use_map_vs/
+https://stackoverflow.com/questions/3776117/what-is-the-difference-between-the-remap-noremap-nnoremap-and-vnoremap-mapping
+http://vimdoc.sourceforge.net/htmldoc/map.html#map-overview
+
 | **Mode**    | **Feature**                                                  |
 | ----------- | ------------------------------------------------------------ |
 | **Command** | By default, **vi** starts in Command mode. Each key is an editor command. Keyboard strokes are interpreted as commands that can modify file contents. |
