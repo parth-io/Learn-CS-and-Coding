@@ -163,6 +163,8 @@ The command also assumes that it is run while in the directory hosting the ISO i
 
 ### hostnamectl
 
+### lsblk; blkid
+
 ### dmesg
 
 To access kernel logs
