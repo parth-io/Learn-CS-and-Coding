@@ -54,7 +54,7 @@ If you do not have KDE or Gnome, fret not.
    ShowSingle=false\
    SwitchMode=Global\
    Use=true\
-   VariantList=colemak\
+   VariantList=colemak
 
 ## Setting up Debian without Gnome or KDE
 

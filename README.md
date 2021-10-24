@@ -75,7 +75,7 @@ Learning Pathways
 Programming Hazards
 
 1. RSI
-   1. Change keyboard layout!
+   1. Changed keyboard layout to Colemak! (QWERTY max. WPM: 94, current max. Colemak WPM: 48)
       1. http://xahlee.info/kbd/most_efficient_keyboard_layout.html
       2. http://xahlee.info/kbd/keyboard_remap_copy_cut_paste_undo.html
       3. https://www.quora.com/What-are-the-advantages-of-Colemak-vs.-Dvorak
@@ -84,7 +84,7 @@ Programming Hazards
    2. Buy an ergonomic keyboard
 2. Eye strain
    1. Dry eyes
-      1. Safe Eyes extension, reminds you to take a break
+      1. [Safe Eyes](https://github.com/slgobinath/SafeEyes) extension, reminds you to take a break
    2. Blue light filter
 
 Languages I wanna learn in depth
@@ -95,38 +95,51 @@ Languages I wanna learn in depth
    3. Ruby
    4. Python
 2. OOP
-   1. C++ and Java
    2. Kotlin (enhanced Java)
    3. Rust (sexy Java)
 3. Others
    1. Haskell
    2. Scala
    3. Lisp
+   4. Typescript
 4. Frontend (yawn)
-   1. JavaScript (boring, boring, boring)
-   2. HTML and CSS
+   2. HTML and CSS (boring, boring, boring)
+
+Languages I'm decent/good at
+
+1. Javascript (Node.js, React)
+2. Java
+3. Python (Django)
+4. C++
+
+Cloud Computing Software I've used
+
+1. Firebase
+2. AWS
 
 List of programming software required
 
 1. For coding
    1. Power tools for pros
-      1. Emacs
+      1. Emacs (to learn org mode)
       2. Vim
    2. For the lazy and for the students
       1. Any text editor
       2. Notepad (for the Windows scrubs)
-      3. Kate (KDE software)
+      3. Kate (from KDE)
       4. Atom
       5. Sublime
    3. For the working men
       1. Intellij
       2. VSCode
          1. For a Microsoft product, pretty solid
-      3. Just search up IDEs on Google lol
 2. For Markdown
-   1. Typora - hands-down the best, but do your market research
+   1. Typora - hands-down the best, but not open-source
 3. For LaTeX
    1. TeXWorks
+   2. These two Intellij IDEA plugins work pretty well
+      1. [Texify](https://plugins.jetbrains.com/plugin/9473-texify-idea)
+      2. [PDF Viewer](https://plugins.jetbrains.com/plugin/14494-pdf-viewer) - or you can just use with Okular/any other PDF viewer, but Okular doesn't refresh automatically
 4. Terminal
    1. bash
       1. A quick Google search reveals a number of wondrous terminals emulators, each with their own special tools or animations. However, I use KDE's konsole as a daily driver
@@ -148,7 +161,10 @@ List of some open-source software I have ever used (I've used many more, but I'v
 2. Productivity
    1. P3X Onenote (now Notion)
    2. LibreOffice (lol goes without saying)
-3. Bitwarden
+   3. [Xournal++](https://xournalpp.github.io/)
+   4. Bitwarden
+   5. [ngrok](https://ngrok.com/)
+   6. [Wireguard](https://www.wireguard.com/)
 4. GIMP (photos)
 5. Audio and Video
    1. Subtitle Edit (for subtitles, duh)
@@ -157,11 +173,11 @@ List of some open-source software I have ever used (I've used many more, but I'v
    4. Kdenlive
    5. Kodi
    6. VLC
-6. Android Studio and Intellij
 7. Browsers
    1. Vivaldi
    2. Firefox
-   3. Opera (partially open-source due to Chromium, but the Chinese factor is intriguing)
+   3. Brave
+   4. Opera (partially open-source due to Chromium, but the Chinese factor is intriguing)
 8. Games
    1. SGT Puzzles Collection
    2. Battle for Wesnoth (what a lovely game)
@@ -169,7 +185,7 @@ List of some open-source software I have ever used (I've used many more, but I'v
    4. WoT
    5. Halo: Reach
 9. All the KDE applications
-   1. Kate (just bloody lovely)
+   1. Kate (just bloody lovely) (update as of October 2021 - Kate in Kubuntu 21.10 is amazing)
 10. Sysadmin
    1. Optical media
       1. cdck
@@ -183,14 +199,16 @@ List of other apps I have used
 
 1. Spotify
 2. Discord
-3. Chrome
-4. scrcpy
-5. Google Earth
-6. Tesseract-OCR
+3. Signal
+4. Chrome
+5. [scrcpy](https://github.com/Genymobile/scrcpy)
+6. [instaloader](https://instaloader.github.io/)
+7. Google Earth
+8. Tesseract-OCR
 
 Firefox Extensions
 
-1. BypassPaywalls
+1. [BypassPaywalls](https://github.com/iamadamdev/bypass-paywalls-chrome)
 2. Grepper
 3. Plasma Integration
 
