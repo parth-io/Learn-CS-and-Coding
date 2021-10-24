@@ -95,15 +95,15 @@ Languages I wanna learn in depth
    3. Ruby
    4. Python
 2. OOP
-   2. Kotlin (enhanced Java)
-   3. Rust (sexy Java)
+   1. Kotlin (enhanced Java)
+   2. Rust (sexy Java)
 3. Others
    1. Haskell
    2. Scala
    3. Lisp
    4. Typescript
 4. Frontend (yawn)
-   2. HTML and CSS (boring, boring, boring)
+   1. HTML and CSS (boring, boring, boring)
 
 Languages I'm decent/good at
 
