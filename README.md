@@ -184,6 +184,7 @@ List of some open-source software I have ever used (I've used many more, but I'v
    3. 0 A.D.
    4. WoT
    5. Halo: Reach
+   6. OpenTTD
 9. All the KDE applications
    1. Kate (just bloody lovely) (update as of October 2021 - Kate in Kubuntu 21.10 is amazing)
 10. Sysadmin
@@ -203,8 +204,11 @@ List of other apps I have used
 4. Chrome
 5. [scrcpy](https://github.com/Genymobile/scrcpy)
 6. [instaloader](https://instaloader.github.io/)
-7. Google Earth
-8. Tesseract-OCR
+7. [youtube-dl ](https://github.com/ytdl-org/youtube-dl/)(Useful for downloading any blob videos - [Link 1](https://stackoverflow.com/questions/37962620/retrieve-a-download-a-file-from-a-blob-url) [Link 2](https://www.cisdem.com/resource/download-blob-videos.html) [VLC Stream Blob](https://www.howtogeek.com/118075/how-to-stream-videos-and-music-over-the-network-using-vlc/) [Best Hack](https://stackoverflow.com/questions/42901942/how-do-we-download-a-blob-url-video))
+8. Google Earth
+9. Tesseract-OCR
+10. Openmediavault
+11. [Amphetype](https://pypi.org/project/amphetype/)
 
 Firefox Extensions
 

@@ -347,6 +347,10 @@ A more concise version of man
 
 Used to find out if the command is a shell built-in or external binary
 
+### alias
+
+Useful to expand bash alias, but `type alias` can do this as well
+
 ### help
 
 For shell built-ins

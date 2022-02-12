@@ -28,23 +28,75 @@ JS
 
 8. Destructuring
 
-9. Best practices I've forgotten about/Ways to shorten code and make it more readable
+9. The perennial problem of `this`
 
-   1. The length of a function should be <= 7 lines, 10-12 for the more exceptional ones.
-   2. https://deepsource.io/blog/javascript-code-quality-best-practices/
-   3. [Optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
-   4. https://modernweb.com/45-javascript-tips-tricks-practices/
-   5. https://github.com/rwaldron/idiomatic.js
-   6. https://jstherightway.org/#js-code-style
-   7. https://thewebdev.info/category/javascript/javascript-best-practices/
-   8. With multiple if checks,  do a `return`  at the end of each if check
-   9. Chaining promises and functions in JS
-      1. `const x = await getProducts({id, result: true, source})
-                 .then((products) => generateQuery(id, products)) //One-liner functions don't need a return statement
-                 .then(uploadQuery) //Note here how we do not need to specify a parameter, the function uploadQuery takes in the result of generateQuery() as its argument automatically
-                 .catch(onError) //similarly, onError takes in the argument automatically`
+   1. https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/
 
-10. Some npm libraries I used
+10. Certain sections such as static initialisation are useful
+
+    1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#binding_this_with_prototype_and_static_methods
+
+11. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+    1. Note the differences
+
+12. Best practices I've forgotten about/Ways to shorten code and make it more readable
+
+    1. The length of a function should be <= 7 lines, 10-12 for the more exceptional ones.
+
+    2. https://deepsource.io/blog/javascript-code-quality-best-practices/
+
+    3. [Optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+
+    4. https://modernweb.com/45-javascript-tips-tricks-practices/
+
+    5. https://github.com/rwaldron/idiomatic.js
+
+    6. https://jstherightway.org/#js-code-style
+
+    7. https://thewebdev.info/category/javascript/javascript-best-practices/
+
+    8. With multiple if checks,  do a `return`  at the end of each if check
+
+    9. Chaining promises and functions in JS
+       1. `const x = await getProducts({id, result: true, source})
+                  .then((products) => generateQuery(id, products)) //One-liner functions don't need a return statement
+                  .then(uploadQuery) //Note here how we do not need to specify a parameter, the function uploadQuery takes in the result of generateQuery() as its argument automatically
+                  .catch(onError) //similarly, onError takes in the argument automatically`
+       
+    10. Data Change with Mutation
+
+           ```
+           var player = {score: 1, name: 'Jeff'};
+           player.score = 2;
+           // Now player is {score: 2, name: 'Jeff'}
+           ```
+
+           Data Change without Mutation
+
+           ```
+           var player = {score: 1, name: 'Jeff'};
+           
+           var newPlayer = Object.assign({}, player, {score: 2});
+           // Now player is unchanged, but newPlayer is {score: 2, name: 'Jeff'}
+           
+           // Or if you are using object spread syntax proposal, you can write:
+           // var newPlayer = {...player, score: 2};
+           ```
+
+           Generally, the latter is preferred. Why?
+
+           1. Keep previous versions (undo feature)
+
+           2. Detect what has changed
+
+           3. For React
+
+                 1. The main benefit of immutability is that it helps you build *pure components* in React. Immutable data can easily determine if changes have been made, which helps to determine when a component requires re-rendering.
+
+                       You can learn more about `shouldComponentUpdate()` and how you can build *pure components* by reading [Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html#examples)
+
+13. Some npm libraries I used
 
     1. winston
 

@@ -2,7 +2,7 @@ https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list
 
 https://stackoverflow.com/questions/5431941/why-is-while-feof-file-always-wrong 
 
- 
+ `echo | gcc -E -xc -include 'stddef.h' - | grep size_t` <-- cool command to find out what size_t is
 
 Breaking nested loop 
 

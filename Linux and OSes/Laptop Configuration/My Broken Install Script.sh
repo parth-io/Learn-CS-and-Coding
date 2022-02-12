@@ -57,3 +57,4 @@ exit 0
 # alias singapore='sudo timedatectl set-timezone Singapore'
 # alias atlantic='sudo timedatectl set-timezone Atlantic/Reykjavik'
 # alias fuck-off="shutdown now"
+# alias up="sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y"
