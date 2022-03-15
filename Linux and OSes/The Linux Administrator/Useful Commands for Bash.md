@@ -181,7 +181,7 @@ Hardware details are found in the `/proc/` and `/sys/` filesystems\
 
 `lshw` combines the 4 following individual commands, with `lsdev` for communications resources used by devices
 
-#### lspci; lsusb; lspcmcia; lsdev
+#### lspci; lsusb; lspcmcia; lsdev; lscpu
 
 ### Check if your laptop is 32 or 64-bit
 `grep -qP '^flags\s*:.*\blm\b' /proc/cpuinfo && echo 64-bit || echo 32-bit`

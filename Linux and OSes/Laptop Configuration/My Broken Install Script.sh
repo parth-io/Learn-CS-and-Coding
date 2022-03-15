@@ -46,7 +46,7 @@ exit 0
 # fi
 # 
 # export PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\t on \d, \!@\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-# alias luminus-downloader='cd /home/parth/Desktop/Luminus/luminus-downloader/ && node main.js'
+# alias luminus-downloader='cd /home/parth/Desktop/Luminus/luminus-downloader/ && node main.js && rclone sync -i /media/parth/Dual/ OnedriveNUS:/'
 # There is a hack here for the commands below here requiring sudo permission, but any administrator worth his salt will discount the security liability as not worth the convenience.
 # As I am not worth my salt, I use that hack. But fortunately enough I didn't commit this hack to GitHub (or did I? Happy Easter Egg!)
 # alias maxbrightness='sudo brightnessctl -d "intel_backlight" set 100%'
@@ -57,4 +57,7 @@ exit 0
 # alias singapore='sudo timedatectl set-timezone Singapore'
 # alias atlantic='sudo timedatectl set-timezone Atlantic/Reykjavik'
 # alias fuck-off="shutdown now"
+# alias up="sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo      apt clean -y && sudo apt autoclean -y"
 # alias up="sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y"
+# alias vpn-up="sudo wg-quick up wg0"
+# alias vpn-down="sudo wg-quick down wg0"
