@@ -277,8 +277,6 @@ The double dash is used after commands to signify that there will be no more opt
 
 https://wiki.bash-hackers.org/scripting/posparams
 
-### $0, $1, $2, $*, $#
-
 #### $0
 
 It expands to the name of the shell or shell script, set at shell initialization.
@@ -298,9 +296,30 @@ All parameters
 
 Number of arguments
 
+#### $?
+
+Stores the exit value of the last command that was executed.
+
+#### "$@"
+
+Stores all the arguments that were entered on the command line, individually quoted ("$1" "$2" ...)
+
 #### getopts; getopt
 
 See 'Useful Commands'
+
+### shopt -s
+
+nullglob and globstar can be useful when set in scripts
+
+```
+shopt -s globstar nullglob
+arr=(**/*.xopp)
+for filename in ${arr[@]}; do
+  echo "$filename"
+done
+shopt -u globstar nullglob
+```
 
 ### shift
 

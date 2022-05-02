@@ -38,3 +38,7 @@ The -c option does not collect all following arguments of the bash command, but 
 
 /bin/bash test.sh a
 Since in this case, no PATH search is involved, you can also omit the ./ part. In fact, test.sh doesn't even need to be executable here.
+
+Historical choices
+https://unix.stackexchange.com/questions/136353/history-of-bash-globbing/136409#136409
+https://unix.stackexchange.com/questions/204803/why-is-nullglob-not-default

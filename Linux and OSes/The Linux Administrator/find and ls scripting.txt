@@ -1,0 +1,11 @@
+https://stackoverflow.com/questions/34983843/how-do-i-store-the-output-from-a-find-command-in-an-array-bash
+https://stackoverflow.com/questions/23356779/how-can-i-store-the-find-command-results-as-an-array-in-bash
+https://stackoverflow.com/questions/8213328/store-the-output-of-find-command-in-an-array
+
+Old way
+https://askubuntu.com/questions/343727/filenames-with-spaces-breaking-for-loop-find-command
+http://mywiki.wooledge.org/BashPitfalls#for_i_in_.24.28ls_.2A.mp3.29
+http://mywiki.wooledge.org/ParsingLs
+https://stackoverflow.com/questions/8509226/using-find-command-in-bash-script
+https://unix.stackexchange.com/questions/169716/why-is-using-a-shell-loop-to-process-text-considered-bad-practice
+https://unix.stackexchange.com/questions/321697/why-is-looping-over-finds-output-bad-practice
