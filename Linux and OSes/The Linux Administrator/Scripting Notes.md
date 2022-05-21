@@ -181,6 +181,10 @@ If you regularly create temporary files and directories, attackers can guess pre
 ### Changing the case of alphabetic characters
 Use {Variable,,} or {Variable^^}. See the 'Parameter Expansion' heading in `man bash`. 
 
+### Indirect Expansion, as used in ${!var}
+
+https://stackoverflow.com/questions/40928492/what-does-var-mean-in-shell-script
+
 ### Unicode support
 Bash now supports both the UTF-8 hexadecimal encoding and Java/C++ escape sequence.
 ```
@@ -326,6 +330,10 @@ shopt -u globstar nullglob
 https://unix.stackexchange.com/questions/174566/what-is-the-purpose-of-using-shift-in-shell-scripts
 https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#index-shift
 Shift vs for loops - https://docstore.mik.ua/orelly/unix3/upt/ch35_22.htm
+
+### IFS
+
+https://www.baeldung.com/linux/ifs-shell-variable
 
 ## Miscellaneous
 
