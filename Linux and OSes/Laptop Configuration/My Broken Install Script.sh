@@ -61,3 +61,7 @@ exit 0
 # alias up="sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y"
 # alias vpn-up="sudo wg-quick up wg0"
 # alias vpn-down="sudo wg-quick down wg0"
+
+
+
+# Also change tlp.conf to enable battery saving for the laptop

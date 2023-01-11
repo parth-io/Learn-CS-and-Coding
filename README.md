@@ -165,29 +165,29 @@ List of some open-source software I have ever used (I've used many more, but I'v
    4. Bitwarden
    5. [ngrok](https://ngrok.com/)
    6. [Wireguard](https://www.wireguard.com/)
-4. GIMP (photos)
-5. Audio and Video
+3. GIMP (photos)
+4. Audio and Video
    1. Subtitle Edit (for subtitles, duh)
    2. Audacity
    3. HandBrake
    4. Kdenlive
    5. Kodi
    6. VLC
-7. Browsers
+5. Browsers
    1. Vivaldi
    2. Firefox
    3. Brave
    4. Opera (partially open-source due to Chromium, but the Chinese factor is intriguing)
-8. Games
+6. Games
    1. SGT Puzzles Collection
    2. Battle for Wesnoth (what a lovely game)
    3. 0 A.D.
    4. WoT
    5. Halo: Reach
    6. OpenTTD
-9. All the KDE applications
+7. All the KDE applications
    1. Kate (just bloody lovely) (update as of October 2021 - Kate in Kubuntu 21.10 is amazing)
-10. Sysadmin
+8. Sysadmin
    1. Optical media
       1. cdck
       2. qpxtool
@@ -209,6 +209,7 @@ List of other apps I have used
 9. Tesseract-OCR
 10. Openmediavault
 11. [Amphetype](https://pypi.org/project/amphetype/)
+12. [gitui🦀](https://github.com/extrawurst/gitui)
 
 Firefox Extensions
 
